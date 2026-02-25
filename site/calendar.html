@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bay Area Kids & Family Events — Calendar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Calendar cell event chips */
+    .cal-chip {
+      font-size: 10px;
+      line-height: 1.3;
+      padding: 1px 4px;
+      border-radius: 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+    .cal-chip-lib  { background: #d1fae5; color: #065f46; }
+    .cal-chip-city { background: #e0f2fe; color: #0c4a6e; }
+    /* Dot-only on tiny cells (mobile) */
+    @media (max-width: 480px) {
+      .cal-chip-text { display: none; }
+      .cal-chip { width: 8px; height: 8px; border-radius: 50%; padding: 0; display: inline-block; margin-right: 2px; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-sky-500 to-violet-500 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <div>
+        <h1 class="text-2xl font-bold tracking-tight">🎉 Bay Area Family Events</h1>
+        <p class="text-sky-100 text-sm mt-0.5">Kids &amp; family activities from Bay Area cities and libraries</p>
+      </div>
+      <div class="text-right text-xs text-sky-100">
+        <div id="meta-updated"></div>
+        <div id="meta-counts"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- View tabs -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 flex">
+      <a href="index.html" class="px-4 py-2.5 text-sm font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 transition-colors">📋 Agenda</a>
+      <a href="calendar.html" class="px-4 py-2.5 text-sm font-medium border-b-2 border-sky-500 text-sky-600">📅 Calendar</a>
+    </div>
+  </div>
+
+  <!-- Filters bar -->
+  <div class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap gap-3 items-center">
+
+      <!-- Search -->
+      <input id="search" type="search" placeholder="Search events…"
+        class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm w-44 focus:outline-none focus:ring-2 focus:ring-sky-400" />
+
+      <!-- Kids toggle -->
+      <label class="flex items-center gap-2 cursor-pointer select-none">
+        <input type="checkbox" id="filter-kids" checked class="sr-only peer" />
+        <div class="toggle-pill peer-checked:bg-violet-500"><div class="toggle-knob"></div></div>
+        <span class="text-sm font-medium text-slate-700">👧 Kids &amp; Family only</span>
+      </label>
+
+      <!-- Library toggle -->
+      <label class="flex items-center gap-2 cursor-pointer select-none">
+        <input type="checkbox" id="filter-library" class="sr-only peer" />
+        <div class="toggle-pill peer-checked:bg-emerald-500"><div class="toggle-knob"></div></div>
+        <span class="text-sm font-medium text-slate-700">📚 Library events only</span>
+      </label>
+
+      <!-- Source filter -->
+      <div class="relative">
+        <select id="filter-source" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm appearance-none pr-7 focus:outline-none focus:ring-2 focus:ring-sky-400 bg-white">
+          <option value="">All sources</option>
+        </select>
+        <span class="pointer-events-none absolute right-2 top-2 text-slate-400 text-xs">▾</span>
+      </div>
+
+      <!-- Reset -->
+      <button id="reset-filters" class="text-xs text-slate-400 hover:text-slate-600 underline">Reset</button>
+
+      <!-- Count -->
+      <span id="result-count" class="ml-auto text-xs text-slate-500 font-medium"></span>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-4 py-6">
+
+    <div id="loading" class="text-center py-20 text-slate-400">
+      <div class="text-4xl mb-3">⏳</div>
+      <p>Loading events…</p>
+    </div>
+    <div id="error-msg" class="hidden text-center py-20 text-red-400">
+      <div class="text-4xl mb-3">⚠️</div>
+      <p id="error-text">Could not load events.</p>
+    </div>
+
+    <div id="cal-wrapper" class="hidden">
+
+      <!-- Month navigation -->
+      <div class="flex items-center justify-between mb-4">
+        <button id="prev-month"
+          class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-200 text-slate-600 text-xl font-bold transition-colors">‹</button>
+        <div class="flex items-center gap-3">
+          <h2 id="month-title" class="text-xl font-bold text-slate-800 min-w-[180px] text-center"></h2>
+          <button id="today-btn"
+            class="text-xs px-3 py-1 rounded-full border border-slate-300 text-slate-600 hover:bg-slate-100 transition-colors">Today</button>
+        </div>
+        <button id="next-month"
+          class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-200 text-slate-600 text-xl font-bold transition-colors">›</button>
+      </div>
+
+      <!-- Day-of-week headers -->
+      <div class="grid grid-cols-7 mb-px">
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Sun</div>
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Mon</div>
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Tue</div>
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Wed</div>
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Thu</div>
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Fri</div>
+        <div class="text-xs font-semibold text-slate-400 text-center py-1.5">Sat</div>
+      </div>
+
+      <!-- Calendar grid (cells injected by JS) -->
+      <div id="cal-grid" class="grid grid-cols-7 rounded-xl overflow-hidden shadow-sm border border-slate-200"></div>
+
+      <!-- Selected-day panel -->
+      <div id="day-panel" class="hidden mt-6 scroll-mt-24">
+        <div class="flex items-center justify-between mb-3">
+          <h3 id="day-title" class="text-base font-semibold text-slate-800"></h3>
+          <button id="close-panel" class="text-xs text-slate-400 hover:text-slate-600 underline">✕ Close</button>
+        </div>
+        <div id="day-no-events" class="hidden py-6 text-center text-slate-400 text-sm bg-white rounded-xl border border-slate-100 shadow-sm">
+          No matching events on this day.
+        </div>
+        <div id="day-events" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="calendar.js?v=1"></script>
+</body>
+</html>
