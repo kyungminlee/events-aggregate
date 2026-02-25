@@ -1,10 +1,12 @@
 {
-  "updated_at": "2026-02-25T07:56:19.240916+00:00",
-  "total": 22,
-  "kids_total": 22,
-  "library_total": 15,
+  "updated_at": "2026-02-25T15:49:04.590377+00:00",
+  "total": 28,
+  "kids_total": 28,
+  "library_total": 21,
   "sources": [
     "Menlo Park",
+    "Mountain View Public Library",
+    "Palo Alto City Library",
     "San José Public Library",
     "Santa Clara County Library"
   ],
@@ -66,6 +68,52 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "7a1785928d44",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349835",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is...",
+      "categories": [
+        "Babies",
+        "Children",
+        "Families",
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://d68g328n4ug0e.cloudfront.net/data/feat_img/3989/8800/1738805385.png"
+    },
+    {
+      "id": "852249ecd45c",
+      "title": "LEGO® Time",
+      "url": "https://mountainview.libcal.com/event/16090787",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "location": "1st Floor Program Room",
+      "description": "It's an open invitation to a LEGO® building extravaganza! Everyone is encouraged to participate in the construction excitement.\n\n \n\nLEGOs® will be supplied\n\n \n\nJoin the building fun on three...",
+      "categories": [
+        "Preschoolers",
+        "Tweens",
+        "Children",
+        "Just For Fun (Adult)",
+        "Make",
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://d68g328n4ug0e.cloudfront.net/data/feat_img/3989/8800/1767208476.png"
     },
     {
       "id": "7b99e1c8806e",
@@ -206,6 +254,25 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "c59529a53dea",
+      "title": "Income Tax Preparation by Tax-Aid",
+      "url": "https://paloalto.bibliocommons.com/events/6945f73ab5ff473000573ba8",
+      "source": "Palo Alto City Library",
+      "source_type": "library",
+      "date_start": "2026-02-28",
+      "date_end": "2026-02-28",
+      "time_start": "10:00",
+      "time_end": "15:00",
+      "location": "Mitchell Park Library — Midtown Room ",
+      "description": "Tax-Aid  will provide FREE basic 2025 income tax return preparation to qualified individuals who earned $67,000 or less on   Saturdays, February 7 and March 14 and 28.&nbsp;     \n  This service is drop-in, first come, first served!  Please arrive as early as possible to sign up.  The last file will be accepted no later than 2 PM!      \nItems to bring with you:     \n (Please bring copies of your tax documents) \n  Face masks are recommended!   Photo ID  Social \nSecurity Cards for you, your spouse ",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "5daceda86138",
       "title": "One-On-One Tech Help",
       "url": "https://sjpl.bibliocommons.com/events/693331718b29ea2800c2b528",
@@ -217,6 +284,25 @@
       "time_end": "12:00",
       "location": "19 — Internet Cafe",
       "description": "Do you need help using a computer? Want to set up an email account? Stop by the Santa Teresa Branch Library for a session with our experienced volunteer! They can assist you with basic tech issues, such as:  \n  Setting up an email account, composing & sending emails, using email attachments   Web searches and basic data entry   Learning the basics of Microsoft Word and Excel and web-based productivity software such as Google docs   Using the library's pay-for-print and photocopy machines  Downlo",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "dc22b14c78f8",
+      "title": "Vintage Media Lab",
+      "url": "https://paloalto.bibliocommons.com/events/6983d4791e64afd01e593c61",
+      "source": "Palo Alto City Library",
+      "source_type": "library",
+      "date_start": "2026-03-04",
+      "date_end": "2026-03-04",
+      "time_start": "13:00",
+      "time_end": "15:00",
+      "location": "Mitchell Park Library",
+      "description": "Preserve your old photographs, home movies, records and cassettes! \n How to Access \n  Check the  Vintage Media Lab  page. If appointments are still available for the month, click the Book@Mitchell Park button near the top of the page. Otherwise, check back on the first Monday of the month for another chance to sign up.  Each appointment includes a skilled volunteer or staff person to assist you. Appointments are limited to  a single two-hour  appointment&nbsp;per week per person.  Because space ",
       "categories": [
         "KID"
       ],
@@ -312,6 +398,44 @@
       "time_end": "12:00",
       "location": "12",
       "description": "Develop your English language skills by practicing speaking, listening, reading, writing, vocabulary, pronunciation, and grammar.  \n Do you want to build your English language skills and your confidence? The   Edenvale Branch Library  , in collaboration with  Evergreen Valley College (EVC) , offers you the opportunity to register today!&nbsp;This beginning non-credit ESL course is  FREE!  \n  ESL 502 Listening & Speaking 1  \n  What will you learn in this class?  This is&nbsp;a non-credit high-beg",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "8a401a4e68fa",
+      "title": "External Event: Preserving Natural Darkness",
+      "url": "https://paloalto.bibliocommons.com/events/6985521e70748138370906c1",
+      "source": "Palo Alto City Library",
+      "source_type": "library",
+      "date_start": "2026-03-25",
+      "date_end": "2026-03-25",
+      "time_start": "17:00",
+      "time_end": "18:00",
+      "location": null,
+      "description": "Canyon Conversations: Preserving Natural Darkness     Join McDonald Observatory and Grand Canyon Conservancy for a free, expert-led virtual panel discussion exploring the urgent need to preserve natural night skies.   Grand Canyon National Park enjoys some of the darkest night skies in the continental United States. However, light pollution is increasing at a rapid pace around the world,&nbsp;Rader will share the latest work being done to protect Grand Canyon’s night sky from artificial light po",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "bc7aaa80f939",
+      "title": "Family Storytime",
+      "url": "https://paloalto.bibliocommons.com/events/690957b33cbc052f00830c23",
+      "source": "Palo Alto City Library",
+      "source_type": "library",
+      "date_start": "2026-03-31",
+      "date_end": "2026-03-31",
+      "time_start": "11:00",
+      "time_end": "11:30",
+      "location": "Children's Library — Treetop Room",
+      "description": "Join Librarian Jennifer (and Rocky Raccoon) on Tuesdays at 11:00 AM for Family Storytime at Children's Library! Come sing, rhyme, and read stories with us!&nbsp;While this storytime will be geared towards those older than 2 years, all ages are welcome!&nbsp;    \n\n Make sure to follow us on  YouTube  for more stories, songs and rhymes, including a  playlist  of all of our favorite songs to sing!",
       "categories": [
         "KID"
       ],

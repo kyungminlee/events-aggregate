@@ -33,7 +33,7 @@ const metaCounts     = $("meta-counts");
 // ---------------------------------------------------------------------------
 async function loadEvents() {
   try {
-    const res = await fetch("data/events.json");
+    const res = await fetch("data/events.json?v=" + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 

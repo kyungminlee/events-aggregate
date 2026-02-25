@@ -37,6 +37,8 @@ def build_scrapers():
     from scrapers.sunnyvale import SunnyvaleScraper
     from scrapers.palo_alto import PaloAltoScraper
     from scrapers.menlo_park import MenloParkScraper
+    from scrapers.libcal import MVPLScraper
+    from scrapers.civicrec import PaloAltoCCScraper
     from scrapers.libraries import all_library_scrapers
 
     return [
@@ -45,6 +47,8 @@ def build_scrapers():
         SunnyvaleScraper(),
         PaloAltoScraper(),
         MenloParkScraper(),
+        MVPLScraper(),
+        PaloAltoCCScraper(),
         *all_library_scrapers(),
     ]
 

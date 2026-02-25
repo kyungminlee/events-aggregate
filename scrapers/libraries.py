@@ -6,6 +6,8 @@ Sources:
     Milpitas, Monte Sereno, Morgan Hill, Saratoga
   - San Jose Public Library (SJPL) — BiblioCommons JSON API
     (sjpl.org/events is a BiblioCommons site — same API pattern as SCCL)
+  - Palo Alto City Library (PACL) — BiblioCommons JSON API
+    Branches: Downtown, Mitchell Park, Children's Library
 
 BiblioCommons API (verified):
   GET https://{library}.bibliocommons.com/events
@@ -59,6 +61,13 @@ SJPL_BRANCH_NAMES: dict[str, str] = {
     "SMN": "San Martin", "SNO": "Snell", "SRR": "Santee",
     "TUL": "Tully", "VIN": "Vineland", "WES": "West Valley",
     "WHI": "Willow Glen", "ZAN": "Zanker",
+}
+
+PACL_BRANCH_NAMES: dict[str, str] = {
+    # Palo Alto City Library branch codes (from API responses)
+    "D": "Downtown Library",
+    "M": "Mitchell Park Library",
+    "C": "Children's Library",
 }
 
 _BC_HEADERS = {
@@ -211,9 +220,19 @@ class SJPLScraper(BiblioCommonsScraper):
         )
 
 
+class PACLScraper(BiblioCommonsScraper):
+    """Palo Alto City Library (PACL)."""
+    def __init__(self):
+        super().__init__(
+            source_name="Palo Alto City Library",
+            bc_subdomain="paloalto",
+            branch_map=PACL_BRANCH_NAMES,
+        )
+
+
 # ---------------------------------------------------------------------------
 # Convenience
 # ---------------------------------------------------------------------------
 
 def all_library_scrapers() -> list[BaseScraper]:
-    return [SJPLScraper(), SCCLScraper()]
+    return [SJPLScraper(), SCCLScraper(), PACLScraper()]
