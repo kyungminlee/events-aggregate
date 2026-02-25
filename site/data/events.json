@@ -1,0 +1,437 @@
+{
+  "updated_at": "2026-02-25T07:56:19.240916+00:00",
+  "total": 22,
+  "kids_total": 22,
+  "library_total": 15,
+  "sources": [
+    "Menlo Park",
+    "San José Public Library",
+    "Santa Clara County Library"
+  ],
+  "errors": [],
+  "events": [
+    {
+      "id": "68582d8da824",
+      "title": "Global Language Storytime: Spanish",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260225-Global-Spanish",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-25",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us for a special storytime featuring stories, songs and fun in Spanish!",
+      "categories": [
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/kids-listening-to-storytime.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "e3412048f3d8",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-25",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "7d6b6533af53",
+      "title": "*Virtual* ESL Idioms",
+      "url": "https://sjpl.bibliocommons.com/events/689249f0ff905b2a674bbd7d",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "10:15",
+      "time_end": "11:15",
+      "location": null,
+      "description": "If you’re interested in building your English skills to sounds like a native speaker, join us to learn idioms and why they are so important to your English language learning. Idioms may seem complicated at first, but they can actually be a lot of fun to learn. \n  An idiom is an expression, word, or phrase that has a&nbsp;figurative meaning.  The meaning of idioms is NOT obvious from the individual words.&nbsp;Idioms&nbsp;are word combinations that have a different figurative meaning than the&nbs",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "7b99e1c8806e",
+      "title": "Drop-in Chess Play",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
+      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
+      "categories": [
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "fdb8e9a1e252",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "4aa993085f8d",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-27",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "ebf4f661fce7",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-27",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "35b864bd44ef",
+      "title": "Family Board Games",
+      "url": "https://sccl.bibliocommons.com/events/693369252bee0c370064574f",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-02-27",
+      "date_end": "2026-02-27",
+      "time_start": "15:00",
+      "time_end": "16:30",
+      "location": "Gilroy — 1st Floor, Burrow\n1°piso, Madriguera",
+      "description": "🎲 Family Board Games Afternoon&nbsp;  \n Bring the whole family for an afternoon of fun, laughter, and friendly competition! From classics like Battleship and Connect 4 to exciting new favorites, we’ve got games for all ages and skill levels. Happening on the 4th Friday of each month.&nbsp;  Drop in, grab a game, and let the fun begin!      🎲 &nbsp;Tarde de Juegos de Mesa en Familia      ¡Trae a toda la familia para una tarde de diversión, risas y competencia amistosa! Desde clásicos como Candy L",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "25925498b2f3",
+      "title": "Teens Reach at Seven Trees Library",
+      "url": "https://sjpl.bibliocommons.com/events/698e4a8e81b67dfe32a60b63",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-27",
+      "date_end": "2026-02-27",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "08",
+      "description": "Teens Reach is the youth council for the San José Public Library for ages 13 to 18, providing a key way for young adults to build their leadership skills by developing and participating in library activities, as well as becoming library advisors and advocates. \n Seven Tree's Teens Reach group meets monthly on the last Friday with socializing and fun from 4 to 5 p.m.       \n   February 27th:  In Person   March 27th : Virtual   April 24th : In Person   May 29th : Virtual   June-July : Summer Break",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "0334066d22de",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "5daceda86138",
+      "title": "One-On-One Tech Help",
+      "url": "https://sjpl.bibliocommons.com/events/693331718b29ea2800c2b528",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-28",
+      "date_end": "2026-02-28",
+      "time_start": "10:00",
+      "time_end": "12:00",
+      "location": "19 — Internet Cafe",
+      "description": "Do you need help using a computer? Want to set up an email account? Stop by the Santa Teresa Branch Library for a session with our experienced volunteer! They can assist you with basic tech issues, such as:  \n  Setting up an email account, composing & sending emails, using email attachments   Web searches and basic data entry   Learning the basics of Microsoft Word and Excel and web-based productivity software such as Google docs   Using the library's pay-for-print and photocopy machines  Downlo",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "93fd6062998a",
+      "title": "Clases de Ingles para Hispanos: Nivel Cero",
+      "url": "https://sjpl.bibliocommons.com/events/695fe0d46724c63d00eaf0fd",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-10",
+      "date_end": "2026-03-10",
+      "time_start": "17:00",
+      "time_end": "18:30",
+      "location": "24",
+      "description": "¿Quieres mejorar tu vocabulario en inglés, aprender gramática, y hacer amigos? Te invitamos a participar en esta clase de inglés nivel cero dirigida por la voluntaria Michelle en la Biblioteca Bascom. \n  \n Días de clases son los Martes y Jueves&nbsp;con excepción de los días:  \n  17 de&nbsp;Febrero - Lunar New Year  31 de Marzo- Cesar Chavez Day  \n Ultimo día de clases: 4 de Junio \n   ¡Inscríbete ahora, espacio es limitado!     \n   Gratis. Se proporcionará el material educativo. \n  Para más info",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "7f7052662554",
+      "title": "TeenHQ Poster Printing",
+      "url": "https://sjpl.bibliocommons.com/events/690a9f713cbc052f00833649",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-11",
+      "date_end": "2026-03-11",
+      "time_start": "16:00",
+      "time_end": "17:30",
+      "location": "00 — TeenHQ, Mezzanine",
+      "description": "Wanna make that idea into a piece of wall art? Create a poster size print using TeenHQ MakerSpace’s HP DesignJet Studio, 36” Printer. Each participant can create one 24”x36” poster to take home per month.&nbsp; \n  For images found online, ensure they are \"large\" enough for good print quality. Look for images that are at a minimum of 2,000 x 2,000 px.  Create a collage of images or add effects on Canva. Be sure your canvas size is 24in x 36in.  \n This program is free. No pre-registration required",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "45b4478aa7d0",
+      "title": "Finding Marian Abel at Los Altos  Library",
+      "url": "https://sccl.bibliocommons.com/events/69839baad2bbe265eb2c31e8",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-03-12",
+      "date_end": "2026-03-12",
+      "time_start": "19:00",
+      "time_end": "20:00",
+      "location": "Los Altos — Orchard Room",
+      "description": "Join longtime library commissioner Pierre Bedard and LAHS' Gustav Herhne for a special book club celebrating Marian Abel’s History of the Los Altos Library (1914-1964). The history, written in 1972, explores the library’s first 50 years. Register and get a PDF of her work so you can prepare for the book club. Marian Abel loved Los Altos. Let's celebrate our history and look forward to the next fifty years!    For accessibility accommodations (ex. ASL), please fill out the online form at sccld.or",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "951c8bbf239a",
+      "title": "Adult Book Discussion: Yellow Face by R.F. Kuang",
+      "url": "https://sccl.bibliocommons.com/events/698e4c028d5e2d09335ecfea",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-03-19",
+      "date_end": "2026-03-19",
+      "time_start": "19:00",
+      "time_end": "20:30",
+      "location": "Cupertino — Room 201B",
+      "description": "In March, the Cupertino Book Discussion Group will talk about R.F. Kuang's novel  Yellowface, (2023) A satirical but sharp critique of both the publishing industry and the racism of both publishers and the reading public.&nbsp; \n Struggling novelist June Hayward is celebrating her fellow Yale alumna&nbsp;Athena Liu's lucrative new movie deal&nbsp; when Athena&nbsp;chokes to death in a freak accident. June, desperately jealous&nbsp;of Athena's tremendous literary success,&nbsp;steals the&nbsp;mos",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "374a156a98f7",
+      "title": "ESL Classes with Evergreen Valley College (EVC) - ESL 502: Listening & Speaking 1",
+      "url": "https://sjpl.bibliocommons.com/events/69167e62a18afa0c612b19e6",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-24",
+      "date_end": "2026-03-24",
+      "time_start": "10:30",
+      "time_end": "12:00",
+      "location": "12",
+      "description": "Develop your English language skills by practicing speaking, listening, reading, writing, vocabulary, pronunciation, and grammar.  \n Do you want to build your English language skills and your confidence? The   Edenvale Branch Library  , in collaboration with  Evergreen Valley College (EVC) , offers you the opportunity to register today!&nbsp;This beginning non-credit ESL course is  FREE!  \n  ESL 502 Listening & Speaking 1  \n  What will you learn in this class?  This is&nbsp;a non-credit high-beg",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "b86af649f9a4",
+      "title": "Itty Bitty Jamboree",
+      "url": "https://sccl.bibliocommons.com/events/695846a7111b9da65caa32db",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-04-03",
+      "date_end": "2026-04-03",
+      "time_start": "12:00",
+      "time_end": "13:00",
+      "location": "Morgan Hill — Children's Activity Room",
+      "description": "Adults and their babies (0 to&nbsp;12 months old) join us for short, fun stories, rhymes, fingerplays, and songs. \n Itty-Bitty Jamboree is 30 minutes followed by  Stay & Play time.   For accessibility accommodations (ex. ASL), please fill out the online form at sccld.org/accessibility 7+ days prior to the event. If you need assistance with the form, speak with a staff member at your local library, call (408) 540-3945, or email us at ask@lib.sccgov.org.",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "c87fbbdacdf4",
+      "title": "Family Storytime",
+      "url": "https://sccl.bibliocommons.com/events/6917aaa5dff9d93e00d015bf",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-04-04",
+      "date_end": "2026-04-04",
+      "time_start": "11:00",
+      "time_end": "11:30",
+      "location": "Milpitas — Activity Room",
+      "description": "Join us on&nbsp;Saturday mornings for Family Storytime.&nbsp;This thirty-minute&nbsp;story time features lots of movement, singing, and action. Early literacy focus is on picture books, flannel board stories and fingerplays and an early introduction to group dynamics and socialization.&nbsp;  For accessibility accommodations (ex. ASL), please fill out the online form at sccld.org/accessibility 7+days prior to the event. If you need assistance with the form, speak with a staff member at your loca",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "b4a90bf051ff",
+      "title": "LEGO Club for Grades K - 8",
+      "url": "https://sccl.bibliocommons.com/events/69165795c313c23700e200e3",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-04-06",
+      "date_end": "2026-04-06",
+      "time_start": "15:30",
+      "time_end": "16:30",
+      "location": "Milpitas — Activity Room",
+      "description": "Join us for an hour of fun building with LEGOs. Children will use their creativity and engineering skills to free build anything they can imagine. \n This is a drop-in program. No registration needed. Space is limited and children will be asked to wait outside if capacity is reached.  Younger siblings and parents are asked to wait outside.  \n      For accessibility accommodations (ex. ASL), please fill out the online form at sccld.org/accessibility 7+days prior to the event. If you need assistanc",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "6aa7f89ce54c",
+      "title": "Itty Bitty Jamboree",
+      "url": "https://sccl.bibliocommons.com/events/695846a7111b9da65caa32de",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-04-24",
+      "date_end": "2026-04-24",
+      "time_start": "12:00",
+      "time_end": "13:00",
+      "location": "Morgan Hill — Children's Activity Room",
+      "description": "Adults and their babies (0 to&nbsp;12 months old) join us for short, fun stories, rhymes, fingerplays, and songs. \n Itty-Bitty Jamboree is 30 minutes followed by  Stay & Play time.   For accessibility accommodations (ex. ASL), please fill out the online form at sccld.org/accessibility 7+ days prior to the event. If you need assistance with the form, speak with a staff member at your local library, call (408) 540-3945, or email us at ask@lib.sccgov.org.",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "1845610e78ae",
+      "title": "Knit-Alongs at Cupertino Library",
+      "url": "https://sccl.bibliocommons.com/events/69309193caa2e62f001e8ba8",
+      "source": "Santa Clara County Library",
+      "source_type": "library",
+      "date_start": "2026-04-24",
+      "date_end": "2026-04-24",
+      "time_start": "14:30",
+      "time_end": "16:00",
+      "location": "Cupertino — Room 201A",
+      "description": "Starting Time: 2:30 pm Ending Time: 4:00 pm   Community Room 201A &nbsp; On the first Friday of each month we will meet in Room 201B  \n      Cupertino&nbsp;Library Knit Alongs continue in 2026!.&nbsp; All adult knitters and crocheters are welcome. No registration or sign up required.&nbsp;&nbsp;We're always happy to meet someone new, so please feel free to join us.&nbsp; Meet new friends,&nbsp;start a new project, or finish an old one.&nbsp;   *Please note,&nbsp;This is mostly a social group for",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "d0b9e4ebd0b4",
+      "title": "Friday Fun",
+      "url": "https://sjpl.bibliocommons.com/events/690e9a3d9b8793410094b82e",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-24",
+      "date_end": "2026-04-24",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "01 — Community Room",
+      "description": "Join us every Friday at the Willow Glen Branch Library&nbsp;for a fun activity for kids. Activities may include arts & crafts, special performances or workshops, and board or video games. \n Note: 2nd Friday of every month is free play with&nbsp;Legos®!  \n All supplies will be provided.    \n  Free. No registration required.     ADA Accommodation Requests",
+      "categories": [
+        "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    }
+  ]
+}

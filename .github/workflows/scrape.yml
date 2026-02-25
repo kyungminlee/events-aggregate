@@ -1,0 +1,71 @@
+name: Scrape Events & Deploy
+
+on:
+  schedule:
+    # 8:00 AM Pacific Time daily (15:00 UTC, accounting for PST/PDT)
+    - cron: "0 15 * * *"
+  workflow_dispatch:   # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scrapers
+        run: python run_scrapers.py --days 60
+        # Continue even if some scrapers fail (non-zero exit from partial errors)
+        continue-on-error: false
+
+      - name: Show results
+        run: |
+          echo "=== events.json summary ==="
+          python -c "
+          import json
+          with open('site/data/events.json') as f:
+              d = json.load(f)
+          print(f'Total events: {d[\"total\"]}')
+          print(f'Kids/family:  {d[\"kids_total\"]}')
+          print(f'Library:      {d[\"library_total\"]}')
+          print(f'Sources: {d[\"sources\"]}')
+          if d['errors']:
+              print(f'Errors ({len(d[\"errors\"])}):')
+              for e in d['errors']:
+                  print(f'  - {e[\"source\"]}: {e[\"error\"]}')
+          "
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "site"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
