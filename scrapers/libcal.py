@@ -2,184 +2,198 @@
 
 LibCal is used by many public libraries for event calendars.
 
-API:
-  GET https://{subdomain}.libcal.com/ajax/calendar/list
+iCal Feed (used instead of the AJAX JSON API):
+  URL: https://{subdomain}.libcal.com/ical_subscribe.php?src=p&cid={cal_id}&aud={ids}
+  Format: RFC 5545 iCalendar (VCALENDAR / VEVENT blocks)
   Params:
-    c        = calendar ID (integer)
-    date     = YYYY-MM-DD (start date; returns events from this date forward)
-    audience = numeric audience ID (optional filter)
-    page     = 1..N
-    perpage  = results per page (default 24)
-  Response: {"total_results": N, "perpage": N, "status": 200, "results": [...]}
+    src  = p (public)
+    cid  = calendar ID (integer)
+    aud  = comma-separated audience IDs to filter (e.g. "351,734,880,352,439")
 
-  Each event (flat structure):
-    id, title, url
-    startdt, enddt  — "YYYY-MM-DD HH:MM:SS"
-    start, end      — "HH:MM am/pm" (human-readable time)
-    location        — string (may also be in locations[0].name)
-    locations       — [{id, name, map, ...}]
-    shortdesc       — plain-text truncated description
-    description     — full HTML description
-    audiences       — [{id, name, color}]
-    categories_arr  — [{cat_id, name, color}]
-    featured_image  — URL string or ""
-    online_event    — boolean
+  iCal VEVENT fields used:
+    DTSTART, DTEND  — UTC timestamps ("YYYYMMDDTHHMMSSZ") or local ("YYYYMMDDTHHMMSS")
+    SUMMARY         — event title
+    DESCRIPTION     — plain text description (newlines escaped as \\n)
+    LOCATION        — venue / room name
+    CATEGORIES      — comma-separated category names
+    UID             — stable unique ID ("LibCal-{cid}-{event_id}")
+    URL             — canonical event page
+
+  Audience IDs for Mountain View Public Library (kids/family):
+    351  Babies
+    734  Children
+    880  Parents
+    352  Preschoolers
+    439  Tweens
+
+Note: The AJAX JSON API (/ajax/calendar/list) uses 'date' as an *exact date*
+filter, not a start-date — making it unsuitable for fetching a date range.
+The iCal feed returns all upcoming events in a single request.
 """
 
 from __future__ import annotations
 
 import logging
-import math
-from datetime import date, datetime
+import re
+from datetime import datetime, timezone
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 from .base import BaseScraper, Event, make_id
 
 logger = logging.getLogger(__name__)
 
-# ---------------------------------------------------------------------------
-# Kids-relevant audience IDs on LibCal (Mountain View Public Library verified)
-# ---------------------------------------------------------------------------
-_KIDS_AUDIENCE_IDS = [
-    734,    # Children
-    5695,   # Families
-    193,    # Teens
-    351,    # Babies
-    352,    # Preschoolers
-    880,    # Parents
-    10658,  # Toddlers
-    439,    # Tweens
-]
+# Default kids/family audience IDs (Mountain View Public Library verified)
+_DEFAULT_AUD = "351,734,880,352,439"
 
 
 class LibCalScraper(BaseScraper):
     """
     Generic scraper for LibCal-hosted library event calendars.
+    Fetches events via the iCal subscription feed.
 
     Args:
-        source_name: Display name shown in the UI.
-        subdomain:   LibCal subdomain (e.g. "mountainview").
-        cal_id:      LibCal calendar ID (integer).
+        source_name:  Display name shown in the UI.
+        subdomain:    LibCal subdomain (e.g. "mountainview").
+        cal_id:       LibCal calendar ID (integer).
+        audience_ids: Comma-separated audience ID string for the iCal URL.
     """
 
-    def __init__(self, source_name: str, subdomain: str, cal_id: int):
+    def __init__(self, source_name: str, subdomain: str, cal_id: int,
+                 audience_ids: str = _DEFAULT_AUD):
         super().__init__(source_name, "library")
         self.base_url = f"https://{subdomain}.libcal.com"
         self.cal_id = cal_id
-        self._api_url = f"{self.base_url}/ajax/calendar/list"
+        self.ical_url = (
+            f"{self.base_url}/ical_subscribe.php"
+            f"?src=p&cid={cal_id}&aud={audience_ids}"
+        )
 
     def fetch_events(self, days_ahead: int = 60) -> list[Event]:
         start_date, end_date = self.date_range(days_ahead)
+        pacific = ZoneInfo("America/Los_Angeles")
+
+        try:
+            resp = self.get(self.ical_url)
+            raw_items = self._parse_ical(resp.text)
+        except Exception as exc:
+            logger.warning(f"[{self.source_name}] iCal fetch failed: {exc}")
+            return []
+
         events: list[Event] = []
-        seen: set[int] = set()  # LibCal event IDs are integers
+        seen: set[str] = set()
 
-        for aud_id in _KIDS_AUDIENCE_IDS:
-            page = 1
-            while True:
-                params = {
-                    "c": self.cal_id,
-                    "date": start_date.isoformat(),
-                    "audience": aud_id,
-                    "page": page,
-                    "perpage": 24,
-                }
-                try:
-                    data = self.get_json(self._api_url, params=params)
-                    results = data.get("results") or []
-                    if not results:
-                        break
-                    for item in results:
-                        ev = self._parse_event(item)
-                        if ev is None:
-                            continue
-                        # Skip events beyond the requested window
-                        if ev.date_start > end_date.isoformat():
-                            continue
-                        raw_id = item.get("id")
-                        if raw_id in seen:
-                            continue
-                        seen.add(raw_id)
-                        events.append(ev)
-
-                    total = data.get("total_results", 0)
-                    per_page = data.get("perpage", 24) or 24
-                    total_pages = math.ceil(total / per_page) if total else 1
-                    if page >= total_pages:
-                        break
-                    page += 1
-                except Exception as exc:
-                    logger.warning(
-                        f"[{self.source_name}] audience={aud_id} page={page} failed: {exc}"
-                    )
-                    break
+        for item in raw_items:
+            ev = self._parse_vevent(item, pacific)
+            if ev is None:
+                continue
+            if ev.date_start < start_date.isoformat() or ev.date_start > end_date.isoformat():
+                continue
+            if ev.id not in seen:
+                seen.add(ev.id)
+                events.append(ev)
 
         logger.info(f"[{self.source_name}] {len(events)} events fetched")
         return events
 
-    def _parse_event(self, item: dict) -> Optional[Event]:
+    @staticmethod
+    def _parse_ical(text: str) -> list[dict[str, str]]:
+        """Parse iCal text into a list of VEVENT property dicts.
+
+        Handles RFC 5545 line folding (CRLF + whitespace continuation)
+        and common text escape sequences (\\n, \\,).
+        """
+        # Unfold folded lines
+        text = re.sub(r'\r?\n[ \t]', '', text)
+        vevents: list[dict[str, str]] = []
+        current: Optional[dict[str, str]] = None
+
+        for line in text.splitlines():
+            if line == 'BEGIN:VEVENT':
+                current = {}
+            elif line == 'END:VEVENT':
+                if current is not None:
+                    vevents.append(current)
+                    current = None
+            elif current is not None and ':' in line:
+                # Strip property parameters (e.g. DTSTART;TZID=...: → DTSTART)
+                key_part, _, value = line.partition(':')
+                key = key_part.split(';')[0].upper()
+                # Unescape iCal text: \\n → newline, \\, → comma
+                value = value.replace('\\n', '\n').replace('\\,', ',')
+                current[key] = value
+
+        return vevents
+
+    @staticmethod
+    def _parse_ical_dt(dtstr: str, pacific: ZoneInfo) -> datetime:
+        """Parse an iCal datetime string into Pacific local time."""
+        dtstr = dtstr.strip()
+        if dtstr.endswith('Z'):
+            dt = datetime.strptime(dtstr, '%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc)
+        elif 'T' in dtstr:
+            dt = datetime.strptime(dtstr, '%Y%m%dT%H%M%S').replace(tzinfo=pacific)
+        else:
+            # All-day event: YYYYMMDD
+            return datetime.strptime(dtstr, '%Y%m%d').replace(tzinfo=pacific)
+        return dt.astimezone(pacific)
+
+    def _parse_vevent(self, item: dict[str, str], pacific: ZoneInfo) -> Optional[Event]:
         try:
-            title = (item.get("title") or "").strip()
+            title = (item.get('SUMMARY') or '').strip()
             if not title:
                 return None
 
-            # Dates: "YYYY-MM-DD HH:MM:SS"
-            startdt = item.get("startdt") or ""
-            enddt = item.get("enddt") or ""
-            dt_start = datetime.strptime(startdt, "%Y-%m-%d %H:%M:%S")
-            date_str = dt_start.strftime("%Y-%m-%d")
-            time_str = dt_start.strftime("%H:%M") if (dt_start.hour or dt_start.minute) else None
+            dtstart = item.get('DTSTART') or ''
+            if not dtstart:
+                return None
+
+            dt_start = self._parse_ical_dt(dtstart, pacific)
+            date_str = dt_start.strftime('%Y-%m-%d')
+            time_str = dt_start.strftime('%H:%M') if (dt_start.hour or dt_start.minute) else None
 
             date_end = time_end = None
-            if enddt:
-                dt_end = datetime.strptime(enddt, "%Y-%m-%d %H:%M:%S")
-                date_end = dt_end.strftime("%Y-%m-%d")
-                time_end = dt_end.strftime("%H:%M") if (dt_end.hour or dt_end.minute) else None
+            dtend = item.get('DTEND') or ''
+            if dtend:
+                dt_end = self._parse_ical_dt(dtend, pacific)
+                date_end = dt_end.strftime('%Y-%m-%d')
+                time_end = dt_end.strftime('%H:%M') if (dt_end.hour or dt_end.minute) else None
 
-            url = item.get("url") or self.base_url
+            url = (item.get('URL') or self.base_url).strip()
+            location = (item.get('LOCATION') or '').strip() or None
 
-            # Location: prefer locations array, fall back to location string
-            location = None
-            locs = item.get("locations") or []
-            if locs and locs[0].get("name"):
-                location = locs[0]["name"]
-            elif item.get("location"):
-                location = item["location"]
+            # Description is plain text (already unescaped); trim to 500 chars
+            desc = (item.get('DESCRIPTION') or '').strip()[:500] or None
 
-            # Description: use shortdesc (plain text) to avoid HTML
-            description = (item.get("shortdesc") or "").strip() or None
-
-            # Image
-            image_url = item.get("featured_image") or None
-            if image_url == "":
-                image_url = None
-
-            # Categories from audience and category names
-            categories = [a["name"] for a in (item.get("audiences") or []) if a.get("name")]
-            cat_names = [c["name"] for c in (item.get("categories_arr") or []) if c.get("name")]
-            categories.extend(cat_names)
+            # Categories: comma-separated in iCal
+            categories = [
+                c.strip()
+                for c in (item.get('CATEGORIES') or '').split(',')
+                if c.strip()
+            ]
 
             ev = Event(
                 id=make_id(self.source_name, title, date_str),
                 title=title,
                 url=url,
                 source=self.source_name,
-                source_type="library",
+                source_type='library',
                 date_start=date_str,
                 date_end=date_end,
                 time_start=time_str,
                 time_end=time_end,
                 location=location,
-                description=description,
+                description=desc,
                 categories=categories,
-                is_kids_event=True,  # already filtered by kids audience IDs
-                image_url=image_url,
+                is_kids_event=True,  # pre-filtered by kids audience IDs in iCal URL
             )
-            # Also run keyword check as a sanity pass (keeps is_kids_event=True)
-            ev = self.tag_kids(ev)
+            # Keyword check as a sanity pass (preserves is_kids_event=True)
+            self.tag_kids(ev)
             ev.is_kids_event = True
             return ev
+
         except Exception as exc:
-            logger.debug(f"[{self.source_name}] parse_event failed: {exc}")
+            logger.debug(f"[{self.source_name}] parse_vevent failed: {exc}")
             return None
 
 

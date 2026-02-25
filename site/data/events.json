@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-02-25T16:28:04.851357+00:00",
-  "total": 29,
-  "kids_total": 25,
-  "library_total": 22,
+  "updated_at": "2026-02-25T16:35:14.775618+00:00",
+  "total": 65,
+  "kids_total": 61,
+  "library_total": 58,
   "sources": [
     "Menlo Park",
     "Mountain View Public Library",
@@ -245,16 +245,13 @@
       "time_start": "10:30",
       "time_end": "11:15",
       "location": "1st Floor Program Room",
-      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is...",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
       "categories": [
-        "Babies",
-        "Children",
-        "Families",
         "Storytime"
       ],
       "is_kids_event": true,
       "is_free": null,
-      "image_url": "https://d68g328n4ug0e.cloudfront.net/data/feat_img/3989/8800/1738805385.png"
+      "image_url": null
     },
     {
       "id": "852249ecd45c",
@@ -267,18 +264,15 @@
       "time_start": "18:30",
       "time_end": "19:30",
       "location": "1st Floor Program Room",
-      "description": "It's an open invitation to a LEGO® building extravaganza! Everyone is encouraged to participate in the construction excitement.\n\n \n\nLEGOs® will be supplied\n\n \n\nJoin the building fun on three...",
+      "description": "It's an open invitation to a LEGO® building extravaganza! Everyone is encouraged to participate in the construction excitement.\n\n \n\nLEGOs® will be supplied\n\n \n\nJoin the building fun on three dates:\n\nWednesday, January 28\n\nWednesday, February 25\n\nWednesday, March 18",
       "categories": [
-        "Preschoolers",
-        "Tweens",
-        "Children",
         "Just For Fun (Adult)",
         "Make",
         "Learn & Explore"
       ],
       "is_kids_event": true,
       "is_free": null,
-      "image_url": "https://d68g328n4ug0e.cloudfront.net/data/feat_img/3989/8800/1767208476.png"
+      "image_url": null
     },
     {
       "id": "7b99e1c8806e",
@@ -322,6 +316,25 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "833d6fa48292",
+      "title": "Let's Create",
+      "url": "https://mountainview.libcal.com/event/15871471",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-26",
+      "date_end": "2026-02-26",
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "location": "1st Floor Program Room",
+      "description": "Drop in  for an afternoon of art and crafts that is self-directed, choice-driven, and celebrates the experience of discovery.  This program is for children ages 5 and up.\n\n \n\n\n\n\n\n \n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "4aa993085f8d",
       "title": "Storytime",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
@@ -359,6 +372,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "10eb36399c2d",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349857",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-27",
+      "date_end": "2026-02-27",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
     },
     {
       "id": "35b864bd44ef",
@@ -419,6 +451,44 @@
       "image_url": null
     },
     {
+      "id": "8c9941f7e27f",
+      "title": "Silicon Valley Reads Inspired Storytime",
+      "url": "https://mountainview.libcal.com/event/15610001",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-03",
+      "date_end": "2026-03-03",
+      "time_start": "10:30",
+      "time_end": "11:00",
+      "location": "Pioneer Park",
+      "description": "Bring a blanket and enjoy stories, songs, and rhymes with our Children's Librarians in Pioneer Park. Tuesdays at 10:30 a.m.\n\nAll ages welcome, no registration required. All events are weather permitting.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "ba9bba2aed59",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349836",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-04",
+      "date_end": "2026-03-04",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "dc22b14c78f8",
       "title": "Vintage Media Lab",
       "url": "https://paloalto.bibliocommons.com/events/6983d4791e64afd01e593c61",
@@ -432,6 +502,159 @@
       "description": "Preserve your old photographs, home movies, records and cassettes! \n How to Access \n  Check the  Vintage Media Lab  page. If appointments are still available for the month, click the Book@Mitchell Park button near the top of the page. Otherwise, check back on the first Monday of the month for another chance to sign up.  Each appointment includes a skilled volunteer or staff person to assist you. Appointments are limited to  a single two-hour  appointment&nbsp;per week per person.  Because space ",
       "categories": [
         "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "8251a2ca34e1",
+      "title": "Magical Bridge Storytime",
+      "url": "https://mountainview.libcal.com/event/15708272",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-05",
+      "date_end": "2026-03-05",
+      "time_start": "10:00",
+      "time_end": "10:30",
+      "location": "Offsite",
+      "description": "Stop by the Bookmobile for stories, songs, and rhymes in the heart of Rengstorff Park! Enjoy a fun-filled storytime at the Magical Bridge Playground, and take advantage of full library services available from 10:00–11:00 a.m.\n\nEvents are weather permitting.\nFind us at 201 S. Rengstorff Ave, Mountain View, CA 94040.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "a7cff16bea90",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349858",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-06",
+      "date_end": "2026-03-06",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "01fea857ccd9",
+      "title": "Pages and Paws Reading Buddy",
+      "url": "https://mountainview.libcal.com/event/15328703",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-06",
+      "date_end": "2026-03-06",
+      "time_start": "15:30",
+      "time_end": "16:30",
+      "location": "1st Floor Program Room",
+      "description": "Therapy reading dogs provide a comforting presence for children as they navigate the exciting realm of books.\n\nThis initiative aims to build confidence, enhance literacy skills and instill a lifelong love for reading.\n\nTherapy dogs plan to visit on the first Friday of each month, but review our calendar to confirm dates. Limited registration is intentional to allow readers rewarding one-on-one reading time with a therapy dog.\n\nThis month, up to three threapy dogs will be visiting. More details o",
+      "categories": [
+        "Read"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "bcf7c71d6370",
+      "title": "Storytime Around the World",
+      "url": "https://mountainview.libcal.com/event/16350007",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-09",
+      "date_end": "2026-03-09",
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "location": "1st Floor Program Room",
+      "description": "A special storytime series that celebrates a different culture from across the globe each session! The storytime will highlight unique traditions, customs, and communities, inviting children to explore the world through storytelling. Perfect for curious minds and young explorers, this program offers a fun and thoughtful way to learn about diverse cultures, with a few new words and lots of new perspectives.",
+      "categories": [
+        "Learn & Explore",
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "0bb59867f1da",
+      "title": "Winter Outdoor Storytime",
+      "url": "https://mountainview.libcal.com/event/15610002",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-10",
+      "date_end": "2026-03-10",
+      "time_start": "10:30",
+      "time_end": "11:00",
+      "location": "Pioneer Park",
+      "description": "Bring a blanket and enjoy stories, songs, and rhymes with our Children's Librarians in Pioneer Park. Tuesdays at 10:30 a.m.\n\nAll ages welcome, no registration required. All events are weather permitting.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "8663e18a674f",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349837",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-11",
+      "date_end": "2026-03-11",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "380eab05066d",
+      "title": "Bilingual Storytime: Mandarin/English",
+      "url": "https://mountainview.libcal.com/event/15946895",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-11",
+      "date_end": "2026-03-11",
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "location": "Children's Room",
+      "description": "Stories, rhymes and songs in Mandarin and English with Miss Renee in the Children's Room Octagon. For ages 2-5, no registration required.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "25e6cb2a3dab",
+      "title": "Let's Create",
+      "url": "https://mountainview.libcal.com/event/15871480",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-12",
+      "date_end": "2026-03-12",
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "location": "1st Floor Program Room",
+      "description": "Drop in  for an afternoon of art and crafts that is self-directed, choice-driven, and celebrates the experience of discovery.  This program is for children ages 5 and up.\n\n \n\n\n\n\n\n \n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
       ],
       "is_kids_event": true,
       "is_free": null,
@@ -457,6 +680,84 @@
       "image_url": null
     },
     {
+      "id": "3de1b057dc29",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349859",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-13",
+      "date_end": "2026-03-13",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "c60959d6e188",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349838",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-18",
+      "date_end": "2026-03-18",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "b187033496fd",
+      "title": "LEGO® Time",
+      "url": "https://mountainview.libcal.com/event/16090788",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-18",
+      "date_end": "2026-03-18",
+      "time_start": "18:30",
+      "time_end": "19:30",
+      "location": "1st Floor Program Room",
+      "description": "It's an open invitation to a LEGO® building extravaganza! Everyone is encouraged to participate in the construction excitement.\n\n \n\nLEGOs® will be supplied\n\n \n\nJoin the building fun on three dates:\n\nWednesday, January 28\n\nWednesday, February 25\n\nWednesday, March 18",
+      "categories": [
+        "Just For Fun (Adult)",
+        "Make",
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "d6cd342c0558",
+      "title": "Together a Forest Nature Exploration",
+      "url": "https://mountainview.libcal.com/event/15871496",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-19",
+      "date_end": "2026-03-19",
+      "time_start": "15:00",
+      "time_end": "16:00",
+      "location": "Pioneer Park",
+      "description": "Step outside the library and into Pioneer Park for a scavenger hunt inspired by Together a Forest. Participants will explore the park, follow prompts, and reflect on connection, observation, and time outdoors.\n\n \n\n \n\n\n\n \n\n\n\n\n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "951c8bbf239a",
       "title": "Adult Book Discussion: Yellow Face by R.F. Kuang",
       "url": "https://sccl.bibliocommons.com/events/698e4c028d5e2d09335ecfea",
@@ -470,6 +771,61 @@
       "description": "In March, the Cupertino Book Discussion Group will talk about R.F. Kuang's novel  Yellowface, (2023) A satirical but sharp critique of both the publishing industry and the racism of both publishers and the reading public.&nbsp; \n Struggling novelist June Hayward is celebrating her fellow Yale alumna&nbsp;Athena Liu's lucrative new movie deal&nbsp; when Athena&nbsp;chokes to death in a freak accident. June, desperately jealous&nbsp;of Athena's tremendous literary success,&nbsp;steals the&nbsp;mos",
       "categories": [
         "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "d34262442de8",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349860",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-20",
+      "date_end": "2026-03-20",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "6379acb42357",
+      "title": "Amplify: Japanese Calligraphy",
+      "url": "https://mountainview.libcal.com/event/16131720",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-21",
+      "date_end": "2026-03-21",
+      "time_start": "16:00",
+      "time_end": "17:30",
+      "location": "2nd Floor Program Room",
+      "description": "Discover the beauty and tradition of Japanese calligraphy in this hands-on program. Explore the history and cultural significance of calligraphy, learn how to make traditional sumi ink, and practice essential brush techniques through guided instruction and creative practice.\n\nAges 12 and up. \n\nThis event is part of Amplify: Teen Voices, a program for teens who want to share their interests and passions with an audience.",
+      "categories": [],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "53d6c6264ba8",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349839",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-25",
+      "date_end": "2026-03-25",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
       ],
       "is_kids_event": true,
       "is_free": null,
@@ -495,6 +851,44 @@
       "image_url": null
     },
     {
+      "id": "5e6990ee5170",
+      "title": "Let's Create",
+      "url": "https://mountainview.libcal.com/event/15871481",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-26",
+      "date_end": "2026-03-26",
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "location": "1st Floor Program Room",
+      "description": "Drop in  for an afternoon of art and crafts that is self-directed, choice-driven, and celebrates the experience of discovery.  This program is for children ages 5 and up.\n\n \n\n\n\n\n\n \n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "18113050b484",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349861",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-03-27",
+      "date_end": "2026-03-27",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "bc7aaa80f939",
       "title": "Family Storytime",
       "url": "https://paloalto.bibliocommons.com/events/690957b33cbc052f00830c23",
@@ -514,6 +908,63 @@
       "image_url": null
     },
     {
+      "id": "032d6d2a4518",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349840",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-01",
+      "date_end": "2026-04-01",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "bd638fdd6c4f",
+      "title": "Magical Bridge Storytime",
+      "url": "https://mountainview.libcal.com/event/15708273",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-02",
+      "date_end": "2026-04-02",
+      "time_start": "10:00",
+      "time_end": "10:30",
+      "location": "Offsite",
+      "description": "Stop by the Bookmobile for stories, songs, and rhymes in the heart of Rengstorff Park! Enjoy a fun-filled storytime at the Magical Bridge Playground, and take advantage of full library services available from 10:00–11:00 a.m.\n\nEvents are weather permitting.\nFind us at 201 S. Rengstorff Ave, Mountain View, CA 94040.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "d7172c146b18",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349862",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-03",
+      "date_end": "2026-04-03",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "b86af649f9a4",
       "title": "Itty Bitty Jamboree",
       "url": "https://sccl.bibliocommons.com/events/695846a7111b9da65caa32db",
@@ -527,6 +978,25 @@
       "description": "Adults and their babies (0 to&nbsp;12 months old) join us for short, fun stories, rhymes, fingerplays, and songs. \n Itty-Bitty Jamboree is 30 minutes followed by  Stay & Play time.   For accessibility accommodations (ex. ASL), please fill out the online form at sccld.org/accessibility 7+ days prior to the event. If you need assistance with the form, speak with a staff member at your local library, call (408) 540-3945, or email us at ask@lib.sccgov.org.",
       "categories": [
         "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "442f01a56332",
+      "title": "Pages and Paws Reading Buddy",
+      "url": "https://mountainview.libcal.com/event/15328704",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-03",
+      "date_end": "2026-04-03",
+      "time_start": "15:30",
+      "time_end": "16:30",
+      "location": "1st Floor Program Room",
+      "description": "Therapy reading dogs provide a comforting presence for children as they navigate the exciting realm of books.\n\nThis initiative aims to build confidence, enhance literacy skills and instill a lifelong love for reading.\n\nTherapy dogs plan to visit on the first Friday of each month, but review our calendar to confirm dates. Limited registration is intentional to allow readers rewarding one-on-one reading time with a therapy dog.\n\nThis month, up to three threapy dogs will be visiting. More details o",
+      "categories": [
+        "Read"
       ],
       "is_kids_event": true,
       "is_free": null,
@@ -571,6 +1041,198 @@
       "image_url": null
     },
     {
+      "id": "a11f330f5aa2",
+      "title": "Storytime Around the World",
+      "url": "https://mountainview.libcal.com/event/16350008",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-06",
+      "date_end": "2026-04-06",
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "location": "1st Floor Program Room",
+      "description": "A special storytime series that celebrates a different culture from across the globe each session! The storytime will highlight unique traditions, customs, and communities, inviting children to explore the world through storytelling. Perfect for curious minds and young explorers, this program offers a fun and thoughtful way to learn about diverse cultures, with a few new words and lots of new perspectives.",
+      "categories": [
+        "Learn & Explore",
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "31bc09d6a7ed",
+      "title": "Spring Outdoor Storytime",
+      "url": "https://mountainview.libcal.com/event/16302956",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-07",
+      "date_end": "2026-04-07",
+      "time_start": "10:30",
+      "time_end": "11:00",
+      "location": "Pioneer Park",
+      "description": "Bring a blanket and enjoy stories, songs, and rhymes with our Children's Librarians in Pioneer Park. Tuesdays at 10:30 a.m.\n\nAll ages welcome, no registration required. All events are weather permitting.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "59d513742211",
+      "title": "Baby Storytime",
+      "url": "https://mountainview.libcal.com/event/16349841",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-08",
+      "date_end": "2026-04-08",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "f9ac5e609731",
+      "title": "Let's Create",
+      "url": "https://mountainview.libcal.com/event/15871485",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-09",
+      "date_end": "2026-04-09",
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "location": "1st Floor Program Room",
+      "description": "Drop in  for an afternoon of art and crafts that is self-directed, choice-driven, and celebrates the experience of discovery.  This program is for children ages 5 and up.\n\n \n\n\n\n\n\n \n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "11ebb7c76c98",
+      "title": "Baby Storytime: Rerun",
+      "url": "https://mountainview.libcal.com/event/16349863",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-10",
+      "date_end": "2026-04-10",
+      "time_start": "10:30",
+      "time_end": "11:15",
+      "location": "1st Floor Program Room",
+      "description": "Did you miss Wednesday's Baby Storytime? Come on Friday! We'll redo our musical storytime for infants, babies, and new toddlers with a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months. \n\nAssisted Listening Devices available upon request.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "9f3919d63b4c",
+      "title": "Spring Outdoor Storytime",
+      "url": "https://mountainview.libcal.com/event/16302957",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-14",
+      "date_end": "2026-04-14",
+      "time_start": "10:30",
+      "time_end": "11:00",
+      "location": "Pioneer Park",
+      "description": "Bring a blanket and enjoy stories, songs, and rhymes with our Children's Librarians in Pioneer Park. Tuesdays at 10:30 a.m.\n\nAll ages welcome, no registration required. All events are weather permitting.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "299beab670e6",
+      "title": "Dogbotic Sound Petting Zoo",
+      "url": "https://mountainview.libcal.com/event/16110167",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-19",
+      "date_end": "2026-04-19",
+      "time_start": "14:00",
+      "time_end": "16:00",
+      "location": "1st Floor Program Room",
+      "description": "Registration is recommended. Walk-ins are also welcome. \n\nJoin us on a journey to experiment with sound alongside Dogbotic! Dogbotic is a Bay-Area based audio laboratory where creative-driven inquiry meets inquiry-driven creativity. Dogbotic experiments with sound and creativity in ways you haven't encountered before!\n\nDogbotic will host a sound petting zoo where you can explore and play with 10-12 unique, handmade instruments and learn the basics on how these circuits and sound objects work. Co",
+      "categories": [
+        "Just For Fun (Adult)",
+        "Musical Performances"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "db56f86085cf",
+      "title": "Spring Outdoor Storytime",
+      "url": "https://mountainview.libcal.com/event/16302958",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-21",
+      "date_end": "2026-04-21",
+      "time_start": "10:30",
+      "time_end": "11:00",
+      "location": "Pioneer Park",
+      "description": "Bring a blanket and enjoy stories, songs, and rhymes with our Children's Librarians in Pioneer Park. Tuesdays at 10:30 a.m.\n\nAll ages welcome, no registration required. All events are weather permitting.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "843c8ce1c308",
+      "title": "Bilingual Storytime: Mandarin/English",
+      "url": "https://mountainview.libcal.com/event/15946896",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-22",
+      "date_end": "2026-04-22",
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "location": "Children's Room",
+      "description": "Stories, rhymes and songs in Mandarin and English with Miss Renee in the Children's Room Octagon. For ages 2-5, no registration required.",
+      "categories": [
+        "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "7aee8c71bef7",
+      "title": "Let's Create",
+      "url": "https://mountainview.libcal.com/event/15871484",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-23",
+      "date_end": "2026-04-23",
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "location": "1st Floor Program Room",
+      "description": "Drop in  for an afternoon of art and crafts that is self-directed, choice-driven, and celebrates the experience of discovery.  This program is for children ages 5 and up.\n\n \n\n\n\n\n\n \n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "6aa7f89ce54c",
       "title": "Itty Bitty Jamboree",
       "url": "https://sccl.bibliocommons.com/events/695846a7111b9da65caa32de",
@@ -603,6 +1265,26 @@
       "description": "Starting Time: 2:30 pm Ending Time: 4:00 pm   Community Room 201A &nbsp; On the first Friday of each month we will meet in Room 201B  \n      Cupertino&nbsp;Library Knit Alongs continue in 2026!.&nbsp; All adult knitters and crocheters are welcome. No registration or sign up required.&nbsp;&nbsp;We're always happy to meet someone new, so please feel free to join us.&nbsp; Meet new friends,&nbsp;start a new project, or finish an old one.&nbsp;   *Please note,&nbsp;This is mostly a social group for",
       "categories": [
         "KID"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "d66730ce1e3e",
+      "title": "Amplify: Research Symposium",
+      "url": "https://mountainview.libcal.com/event/15821612",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-25",
+      "date_end": "2026-04-25",
+      "time_start": "15:00",
+      "time_end": "16:00",
+      "location": "1st Floor Program Room",
+      "description": "Monta Vista High School's Interdisciplinary Research Project Design class presents a showcase of student-led projects. From environmental research to mental health initiatives, these projects highlight students’ creativity and commitment to making a positive impact locally and globally. Learn about the innovative ideas young researchers have turned into meaningful change.",
+      "categories": [
+        "Learn & Explore",
+        "Science & History"
       ],
       "is_kids_event": true,
       "is_free": null,
