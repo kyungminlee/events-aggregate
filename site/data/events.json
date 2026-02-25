@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-02-25T15:49:04.590377+00:00",
-  "total": 28,
-  "kids_total": 28,
-  "library_total": 21,
+  "updated_at": "2026-02-25T16:28:04.851357+00:00",
+  "total": 29,
+  "kids_total": 25,
+  "library_total": 22,
   "sources": [
     "Menlo Park",
     "Mountain View Public Library",
@@ -12,6 +12,31 @@
   ],
   "errors": [],
   "events": [
+    {
+      "id": "8ddc6e43dd58",
+      "title": "1:1 Tech Mentor Appointment",
+      "url": "https://sjpl.bibliocommons.com/events/69547769f2fd5a97c34e6bbd",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": null,
+      "time_end": "23:59",
+      "location": "Seven Trees — 2nd floor",
+      "description": "Free.&nbsp; By appointment only.&nbsp;&nbsp;      Call for availability.&nbsp; Same day booking not always possible.  Offered&nbsp;in  English,&nbsp;Español,  or  Tiếng Việt.   Would you like to find out more about computers? Learn at your own pace!   What We Do:   \n  Intro to computer basics  Account or device setup  Intro to&nbsp;Microsoft Office  Job search & resume help  Navigating/organizing email  And more!  \n Contact Seven Trees&nbsp;by phone  (408) 808-3056  or email at   tiffany.lam@sjl",
+      "categories": [
+        "Family Learning Centers",
+        "Computer Help",
+        "Adults, ages 18+",
+        "Seniors, ages 65+",
+        "English",
+        "Spanish",
+        "Vietnamese"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/5668077ed1d538bcaa3191190a74fab9/1-on-1TechAsst.(H%E1%BB%97Tr%E1%BB%A3K%E1%BB%B9Thu%E1%BA%ADtC%C3%A1Nh%C3%A2n).png"
+    },
     {
       "id": "68582d8da824",
       "title": "Global Language Storytime: Spanish",
@@ -30,6 +55,79 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/kids-listening-to-storytime.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "491ab0920ef9",
+      "title": "Love Letters to the Library: Create Your Own Coloring Valentine!",
+      "url": "https://sjpl.bibliocommons.com/events/69792d4876261f2800671ad9",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": null,
+      "time_end": "23:59",
+      "location": "Bascom — Children's Area (near the children's fiction section)",
+      "description": "Help fill our library with love, all month long!  In honor of National Library's Month, drop by our&nbsp;children's area this month to pick up a special Valentine themed template.&nbsp;Children can color their masterpiece and write what they love most about the library! They can then deposit their creation&nbsp;in our special Valentine Letter Box.&nbsp;   Free!  All coloring supplies and templates provided.&nbsp; \n  Ages:  Perfect for toddlers through elementary schoolers. \n   ADA Accommodation ",
+      "categories": [
+        "Valentine's Day",
+        "Celebrations & Festivities",
+        "Crafts & Hobbies",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "Young Children, ages 0-5",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/adbf53914324ed8201a8ea8cd9620b12/childholdingvalentineheartsmallerres.jpg"
+    },
+    {
+      "id": "ec3f9c8b40f6",
+      "title": "Paper Chains of Kindness",
+      "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dc6",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": null,
+      "time_end": "23:59",
+      "location": "King Library",
+      "description": "Join us for a creative and heartwarming art activity where every link counts! Write a message of kindness, gratitude, or encouragement on a colorful strip of paper, then add it to our growing community chain. Together, we’ll build a beautiful visual reminder of how small acts of kindness connect us all. All ages welcome—come share your creativity and help our chain grow! \n Free. No registration is required. \n \n  This program is developed to align with  the Early Education Quality Standards . Thi",
+      "categories": [
+        "Silicon Valley Reads",
+        "Storytime",
+        "Adults, ages 18+",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "Seniors, ages 65+",
+        "Teens, ages 12-18",
+        "Young Children, ages 0-5",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
+    },
+    {
+      "id": "7c3f1c4661d2",
+      "title": "Read-A-Thon (Partnership with Cambrian Educational Foundation)",
+      "url": "https://sjpl.bibliocommons.com/events/697d06394dacf581ff77f35c",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": null,
+      "time_end": "23:59",
+      "location": "Cambrian",
+      "description": "Cambrian School District Students:&nbsp; pick up or download your reading materials from February 1 through February 28 for the District-wide Read-A-Thon, which is being run by our Partner, Cambrian Educational Foundation. \n The student who reads the most in their grade and school (Bagby Elementary, Fammatre Elementary, Farnham Charter&nbsp;Elementary, Sartorette Charter Elementary, Steindorf STEAM, and Price Charter Middle School)&nbsp;will win a special prize for reading excellence from the Ca",
+      "categories": [
+        "Books & Authors",
+        "Kids, ages 5-10",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/8ac12bf9945157cb9bf28777cbda2743/CopyofRead_a_thonRectangularLogo2.jpg"
     },
     {
       "id": "e3412048f3d8",
@@ -51,23 +149,90 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
-      "id": "7d6b6533af53",
-      "title": "*Virtual* ESL Idioms",
-      "url": "https://sjpl.bibliocommons.com/events/689249f0ff905b2a674bbd7d",
+      "id": "f12df538d0f4",
+      "title": "*Virtual* English Language Learners (ELL) Conversation Club",
+      "url": "https://sjpl.bibliocommons.com/events/6984cf6acbf1533ca53626d8",
       "source": "San José Public Library",
       "source_type": "library",
       "date_start": "2026-02-25",
       "date_end": "2026-02-25",
-      "time_start": "10:15",
-      "time_end": "11:15",
+      "time_start": "09:00",
+      "time_end": "10:00",
       "location": null,
-      "description": "If you’re interested in building your English skills to sounds like a native speaker, join us to learn idioms and why they are so important to your English language learning. Idioms may seem complicated at first, but they can actually be a lot of fun to learn. \n  An idiom is an expression, word, or phrase that has a&nbsp;figurative meaning.  The meaning of idioms is NOT obvious from the individual words.&nbsp;Idioms&nbsp;are word combinations that have a different figurative meaning than the&nbs",
+      "description": "Are you ready to push your fluency skills to the next level? If you’re an intermediate or advanced English learner seeking to progress your speaking skills and engage in meaningful conversations, this class is for you. In our weekly class, you have the opportunity to participate in structured, guided conversations that enhance your speaking skills and build your confidence. Topics will include current events, lifestyles, and culture. You’ll engage in diverse conversations that enrich your vocabu",
       "categories": [
-        "KID"
+        "Learn English",
+        "Adults, ages 18+",
+        "Seniors, ages 65+",
+        "English"
       ],
-      "is_kids_event": true,
+      "is_kids_event": false,
       "is_free": null,
-      "image_url": null
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ccaa549012b07fb5d439250d0ae41f93/esl-writing-class-ba-1280.jpg"
+    },
+    {
+      "id": "92a2cc347c8f",
+      "title": "Peer Support for MyConnectSV",
+      "url": "https://sjpl.bibliocommons.com/events/6966aa1191e4576f847c5ae2",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "09:30",
+      "time_end": "12:00",
+      "location": "King Library — 3rd Floor",
+      "description": "Meet with peer support workers&nbsp;who can help you log in and use MyConnectSV, an online tool that supports you on your housing journey by providing a way to message your care team, the ability to update and protect your personal information, access resources, and more! \n  If you're ready to use MyConnectSV, visit our dedicated MyConnectSV computer stations during our drop-in hours!  \n    ADA Accommodation Requests",
+      "categories": [
+        "Community Resources & Support Groups",
+        "Adults, ages 18+",
+        "Seniors, ages 65+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/18484175ea8a6e794a49487102275325/MyConnectSVWhiteTagline.png"
+    },
+    {
+      "id": "08cab96d771e",
+      "title": "ELL Morning Conversation Club",
+      "url": "https://sjpl.bibliocommons.com/events/690e9c60886bb73600b9c7ea",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "location": "Santa Teresa — Group Study Room A",
+      "description": "This program is in-person at Santa Teresa Branch Library.  \n English Language Learners&nbsp;(ELL) Conversation Clubs create a welcoming and respectful environment for adult learners of English to practice their English conversation skills. Clubs meet weekly with a trained facilitator courtesy of Santa Teresa Branch Library.&nbsp;&nbsp;   No Registration Required, Materials Will Be Provided \n  ADA Accommodation Requests",
+      "categories": [
+        "Learn English",
+        "Adults, ages 18+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ccaa549012b07fb5d439250d0ae41f93/esl-writing-class-ba-1280.jpg"
+    },
+    {
+      "id": "fa581c041619",
+      "title": "Virtual Job Search & Resume Program",
+      "url": "https://sjpl.bibliocommons.com/events/693ca3d36724c63d00e6b479",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "10:00",
+      "time_end": "11:00",
+      "location": null,
+      "description": "Meet one-on-one with an experienced volunteer to create or update a resume, search and start applying for a new job on Zoom.&nbsp;Sessions are 20 minutes. Be prepared to share a current resume, any job history, list of skills, and/or education with the volunteer. Resumes can be reviewed in advance if emailed to   Brian.Parkman    @sjlibrary.org   by 3:00 PM on the Tuesday before your session.  \n\n\n\n  Registration Information    Registration ends&nbsp;20 hours before the event.     Please register",
+      "categories": [
+        "Career & Business",
+        "Adults, ages 18+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e141bce95473d8aea2119c1fbe51f5f2/job-seekers-1400.jpg"
     },
     {
       "id": "7a1785928d44",
@@ -215,25 +380,6 @@
       "image_url": null
     },
     {
-      "id": "25925498b2f3",
-      "title": "Teens Reach at Seven Trees Library",
-      "url": "https://sjpl.bibliocommons.com/events/698e4a8e81b67dfe32a60b63",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-27",
-      "date_end": "2026-02-27",
-      "time_start": "16:00",
-      "time_end": "17:00",
-      "location": "08",
-      "description": "Teens Reach is the youth council for the San José Public Library for ages 13 to 18, providing a key way for young adults to build their leadership skills by developing and participating in library activities, as well as becoming library advisors and advocates. \n Seven Tree's Teens Reach group meets monthly on the last Friday with socializing and fun from 4 to 5 p.m.       \n   February 27th:  In Person   March 27th : Virtual   April 24th : In Person   May 29th : Virtual   June-July : Summer Break",
-      "categories": [
-        "KID"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
       "id": "0334066d22de",
       "title": "Storytime",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
@@ -273,25 +419,6 @@
       "image_url": null
     },
     {
-      "id": "5daceda86138",
-      "title": "One-On-One Tech Help",
-      "url": "https://sjpl.bibliocommons.com/events/693331718b29ea2800c2b528",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-28",
-      "date_end": "2026-02-28",
-      "time_start": "10:00",
-      "time_end": "12:00",
-      "location": "19 — Internet Cafe",
-      "description": "Do you need help using a computer? Want to set up an email account? Stop by the Santa Teresa Branch Library for a session with our experienced volunteer! They can assist you with basic tech issues, such as:  \n  Setting up an email account, composing & sending emails, using email attachments   Web searches and basic data entry   Learning the basics of Microsoft Word and Excel and web-based productivity software such as Google docs   Using the library's pay-for-print and photocopy machines  Downlo",
-      "categories": [
-        "KID"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
       "id": "dc22b14c78f8",
       "title": "Vintage Media Lab",
       "url": "https://paloalto.bibliocommons.com/events/6983d4791e64afd01e593c61",
@@ -303,44 +430,6 @@
       "time_end": "15:00",
       "location": "Mitchell Park Library",
       "description": "Preserve your old photographs, home movies, records and cassettes! \n How to Access \n  Check the  Vintage Media Lab  page. If appointments are still available for the month, click the Book@Mitchell Park button near the top of the page. Otherwise, check back on the first Monday of the month for another chance to sign up.  Each appointment includes a skilled volunteer or staff person to assist you. Appointments are limited to  a single two-hour  appointment&nbsp;per week per person.  Because space ",
-      "categories": [
-        "KID"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
-      "id": "93fd6062998a",
-      "title": "Clases de Ingles para Hispanos: Nivel Cero",
-      "url": "https://sjpl.bibliocommons.com/events/695fe0d46724c63d00eaf0fd",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-03-10",
-      "date_end": "2026-03-10",
-      "time_start": "17:00",
-      "time_end": "18:30",
-      "location": "24",
-      "description": "¿Quieres mejorar tu vocabulario en inglés, aprender gramática, y hacer amigos? Te invitamos a participar en esta clase de inglés nivel cero dirigida por la voluntaria Michelle en la Biblioteca Bascom. \n  \n Días de clases son los Martes y Jueves&nbsp;con excepción de los días:  \n  17 de&nbsp;Febrero - Lunar New Year  31 de Marzo- Cesar Chavez Day  \n Ultimo día de clases: 4 de Junio \n   ¡Inscríbete ahora, espacio es limitado!     \n   Gratis. Se proporcionará el material educativo. \n  Para más info",
-      "categories": [
-        "KID"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
-      "id": "7f7052662554",
-      "title": "TeenHQ Poster Printing",
-      "url": "https://sjpl.bibliocommons.com/events/690a9f713cbc052f00833649",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-03-11",
-      "date_end": "2026-03-11",
-      "time_start": "16:00",
-      "time_end": "17:30",
-      "location": "00 — TeenHQ, Mezzanine",
-      "description": "Wanna make that idea into a piece of wall art? Create a poster size print using TeenHQ MakerSpace’s HP DesignJet Studio, 36” Printer. Each participant can create one 24”x36” poster to take home per month.&nbsp; \n  For images found online, ensure they are \"large\" enough for good print quality. Look for images that are at a minimum of 2,000 x 2,000 px.  Create a collage of images or add effects on Canva. Be sure your canvas size is 24in x 36in.  \n This program is free. No pre-registration required",
       "categories": [
         "KID"
       ],
@@ -379,25 +468,6 @@
       "time_end": "20:30",
       "location": "Cupertino — Room 201B",
       "description": "In March, the Cupertino Book Discussion Group will talk about R.F. Kuang's novel  Yellowface, (2023) A satirical but sharp critique of both the publishing industry and the racism of both publishers and the reading public.&nbsp; \n Struggling novelist June Hayward is celebrating her fellow Yale alumna&nbsp;Athena Liu's lucrative new movie deal&nbsp; when Athena&nbsp;chokes to death in a freak accident. June, desperately jealous&nbsp;of Athena's tremendous literary success,&nbsp;steals the&nbsp;mos",
-      "categories": [
-        "KID"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
-      "id": "374a156a98f7",
-      "title": "ESL Classes with Evergreen Valley College (EVC) - ESL 502: Listening & Speaking 1",
-      "url": "https://sjpl.bibliocommons.com/events/69167e62a18afa0c612b19e6",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-03-24",
-      "date_end": "2026-03-24",
-      "time_start": "10:30",
-      "time_end": "12:00",
-      "location": "12",
-      "description": "Develop your English language skills by practicing speaking, listening, reading, writing, vocabulary, pronunciation, and grammar.  \n Do you want to build your English language skills and your confidence? The   Edenvale Branch Library  , in collaboration with  Evergreen Valley College (EVC) , offers you the opportunity to register today!&nbsp;This beginning non-credit ESL course is  FREE!  \n  ESL 502 Listening & Speaking 1  \n  What will you learn in this class?  This is&nbsp;a non-credit high-beg",
       "categories": [
         "KID"
       ],
@@ -531,25 +601,6 @@
       "time_end": "16:00",
       "location": "Cupertino — Room 201A",
       "description": "Starting Time: 2:30 pm Ending Time: 4:00 pm   Community Room 201A &nbsp; On the first Friday of each month we will meet in Room 201B  \n      Cupertino&nbsp;Library Knit Alongs continue in 2026!.&nbsp; All adult knitters and crocheters are welcome. No registration or sign up required.&nbsp;&nbsp;We're always happy to meet someone new, so please feel free to join us.&nbsp; Meet new friends,&nbsp;start a new project, or finish an old one.&nbsp;   *Please note,&nbsp;This is mostly a social group for",
-      "categories": [
-        "KID"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
-      "id": "d0b9e4ebd0b4",
-      "title": "Friday Fun",
-      "url": "https://sjpl.bibliocommons.com/events/690e9a3d9b8793410094b82e",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-04-24",
-      "date_end": "2026-04-24",
-      "time_start": "16:00",
-      "time_end": "17:00",
-      "location": "01 — Community Room",
-      "description": "Join us every Friday at the Willow Glen Branch Library&nbsp;for a fun activity for kids. Activities may include arts & crafts, special performances or workshops, and board or video games. \n Note: 2nd Friday of every month is free play with&nbsp;Legos®!  \n All supplies will be provided.    \n  Free. No registration required.     ADA Accommodation Requests",
       "categories": [
         "KID"
       ],

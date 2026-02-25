@@ -4,8 +4,9 @@ Sources:
   - Santa Clara County Library (SCCL) — BiblioCommons JSON API
     Covers branches: Sunnyvale, Campbell, Cupertino, Gilroy, Los Altos,
     Milpitas, Monte Sereno, Morgan Hill, Saratoga
-  - San Jose Public Library (SJPL) — BiblioCommons JSON API
-    (sjpl.org/events is a BiblioCommons site — same API pattern as SCCL)
+  - San Jose Public Library (SJPL) — BiblioCommons RSS feed
+    https://gateway.bibliocommons.com/v2/libraries/sjpl/rss/events
+    (RSS returns more events and richer data than the JSON API)
   - Palo Alto City Library (PACL) — BiblioCommons JSON API
     Branches: Downtown, Mitchell Park, Children's Library
 
@@ -22,15 +23,23 @@ BiblioCommons API (verified):
     id, key, series_id,
     definition: { start, end, title, description, branch_location_id,
                   location_details, audience_ids, ... }
+
+BiblioCommons RSS (SJPL):
+  GET https://gateway.bibliocommons.com/v2/libraries/sjpl/rss/events
+  Namespace: xmlns:bc="http://bibliocommons.com/rss/1.0/modules/event/"
+  Fields: bc:start_date (UTC ISO), bc:start_date_local (YYYY-MM-DD),
+          bc:location/bc:name (branch), bc:location/bc:location_details (room),
+          bc:is_cancelled, category (audience text), enclosure (image)
 """
 
 from __future__ import annotations
 
 import logging
 import re
-from datetime import date
+import xml.etree.ElementTree as ET
+from datetime import datetime
 from typing import Optional
-from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 from .base import BaseScraper, Event, make_id
 
@@ -50,17 +59,6 @@ SCCL_BRANCH_NAMES: dict[str, str] = {
     "MH": "Morgan Hill",
     "GI": "Gilroy",
     "SA": "Saratoga",
-}
-
-SJPL_BRANCH_NAMES: dict[str, str] = {
-    # San José Public Library branch codes (approximate)
-    "BER": "Berryessa", "CAM": "Cambrian", "EAS": "East San José",
-    "EVI": "Evergreen", "HIM": "Hillview", "LIT": "Literacy",
-    "MAG": "Magistrate", "MIL": "Milpitas", "NEW": "Nuevas Fronteras",
-    "NOR": "Northwest", "POI": "Point", "ROC": "Rose Garden",
-    "SMN": "San Martin", "SNO": "Snell", "SRR": "Santee",
-    "TUL": "Tully", "VIN": "Vineland", "WES": "West Valley",
-    "WHI": "Willow Glen", "ZAN": "Zanker",
 }
 
 PACL_BRANCH_NAMES: dict[str, str] = {
@@ -210,14 +208,138 @@ class SCCLScraper(BiblioCommonsScraper):
         )
 
 
-class SJPLScraper(BiblioCommonsScraper):
-    """San José Public Library."""
+class SJPLScraper(BaseScraper):
+    """San José Public Library — RSS feed.
+
+    Uses the BiblioCommons RSS feed which returns more events and richer data
+    than the JSON API endpoint.
+    """
+
+    RSS_URL = "https://gateway.bibliocommons.com/v2/libraries/sjpl/rss/events"
+    BC_NS = "http://bibliocommons.com/rss/1.0/modules/event/"
+    _KIDS_CATEGORIES = frozenset({
+        "young children", "kids", "pre-teens", "teens",
+        "families", "family", "children", "youth",
+    })
+
     def __init__(self):
-        super().__init__(
-            source_name="San José Public Library",
-            bc_subdomain="sjpl",
-            branch_map=SJPL_BRANCH_NAMES,
-        )
+        super().__init__("San José Public Library", "library")
+
+    def _bc(self, element, tag: str) -> Optional[str]:
+        """Return the text of a bc:-namespaced child element."""
+        child = element.find(f"{{{self.BC_NS}}}{tag}")
+        return child.text if child is not None else None
+
+    def fetch_events(self, days_ahead: int = 60) -> list[Event]:
+        try:
+            resp = self.get(self.RSS_URL)
+            root = ET.fromstring(resp.content)
+        except Exception as exc:
+            logger.warning(f"[{self.source_name}] RSS fetch failed: {exc}")
+            return []
+
+        start_date, end_date = self.date_range(days_ahead)
+        events: list[Event] = []
+        seen: set[str] = set()
+
+        for item in root.findall(".//item"):
+            ev = self._parse_item(item)
+            if ev is None:
+                continue
+            if ev.date_start < start_date.isoformat() or ev.date_start > end_date.isoformat():
+                continue
+            if ev.id not in seen:
+                seen.add(ev.id)
+                events.append(ev)
+
+        logger.info(f"[{self.source_name}] {len(events)} events fetched")
+        return events
+
+    def _parse_item(self, item) -> Optional[Event]:
+        try:
+            title = (item.findtext("title") or "").strip()
+            if not title:
+                return None
+
+            # Skip cancelled events
+            if (self._bc(item, "is_cancelled") or "false").lower() == "true":
+                return None
+
+            url = (item.findtext("link") or "").strip()
+
+            # Dates: use local date fields; fall back to parsing UTC timestamps.
+            # bc:start_date_local can be "YYYY-MM-DD" or "YYYY-MM-DDTHH:MM" — take first 10 chars.
+            pacific = ZoneInfo("America/Los_Angeles")
+            _sdl = self._bc(item, "start_date_local")
+            _edl = self._bc(item, "end_date_local")
+            date_start_local = _sdl[:10] if _sdl else None
+            date_end_local = _edl[:10] if _edl else None
+            time_start = time_end = None
+
+            start_utc = self._bc(item, "start_date")
+            if start_utc:
+                dt = datetime.fromisoformat(start_utc).astimezone(pacific)
+                if not date_start_local:
+                    date_start_local = dt.strftime("%Y-%m-%d")
+                if dt.hour or dt.minute:
+                    time_start = dt.strftime("%H:%M")
+
+            end_utc = self._bc(item, "end_date")
+            if end_utc:
+                dt = datetime.fromisoformat(end_utc).astimezone(pacific)
+                if not date_end_local:
+                    date_end_local = dt.strftime("%Y-%m-%d")
+                if dt.hour or dt.minute:
+                    time_end = dt.strftime("%H:%M")
+
+            if not date_start_local:
+                return None
+
+            # Location: branch name + optional room
+            bc_loc = item.find(f"{{{self.BC_NS}}}location")
+            location = None
+            if bc_loc is not None:
+                branch = (bc_loc.findtext(f"{{{self.BC_NS}}}name") or "").strip() or None
+                room = (bc_loc.findtext(f"{{{self.BC_NS}}}location_details") or "").strip() or None
+                location = f"{branch} — {room}" if (branch and room) else branch or room
+
+            # Description (HTML CDATA → strip tags)
+            raw_desc = (item.findtext("description") or "").strip()
+            desc = re.sub(r"<[^>]+>", " ", raw_desc).strip()[:500] or None
+
+            # Audience categories
+            categories = [c.text.strip() for c in item.findall("category") if c.text]
+
+            # Image
+            enclosure = item.find("enclosure")
+            image_url = enclosure.get("url") if enclosure is not None else None
+
+            ev = Event(
+                id=make_id(self.source_name, title, date_start_local),
+                title=title,
+                url=url,
+                source=self.source_name,
+                source_type="library",
+                date_start=date_start_local,
+                date_end=date_end_local,
+                time_start=time_start,
+                time_end=time_end,
+                location=location,
+                description=desc,
+                categories=categories,
+                image_url=image_url,
+            )
+
+            # Kids detection: audience categories + keyword fallback
+            cats_lower = {c.lower() for c in categories}
+            ev.is_kids_event = bool(cats_lower & self._KIDS_CATEGORIES)
+            if not ev.is_kids_event:
+                self.tag_kids(ev)
+            return ev
+
+        except Exception as exc:
+            logger.debug(f"[{self.source_name}] parse_item failed: {exc}")
+            return None
 
 
 class PACLScraper(BiblioCommonsScraper):
