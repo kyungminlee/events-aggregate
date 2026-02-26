@@ -4,6 +4,7 @@
 // State
 // ---------------------------------------------------------------------------
 let allEvents = [];
+let selectedSources = new Set(); // empty = "all sources"
 
 // ---------------------------------------------------------------------------
 // DOM refs
@@ -17,16 +18,66 @@ const grid       = $("events-grid");
 const noResults  = $("no-results");
 const cardTpl    = $("card-tpl");
 
-const searchInput    = $("search");
-const filterKids     = $("filter-kids");
-const filterLibrary  = $("filter-library");
-const filterCity     = $("filter-city");
-const filterDateFrom = $("filter-date-from");
-const filterDateTo   = $("filter-date-to");
-const resetBtn       = $("reset-filters");
-const resultCount    = $("result-count");
-const metaUpdated    = $("meta-updated");
-const metaCounts     = $("meta-counts");
+const searchInput       = $("search");
+const filterKids        = $("filter-kids");
+const filterLibrary     = $("filter-library");
+const filterDateFrom    = $("filter-date-from");
+const filterDateTo      = $("filter-date-to");
+const resetBtn          = $("reset-filters");
+const resultCount       = $("result-count");
+const metaUpdated       = $("meta-updated");
+const metaCounts        = $("meta-counts");
+const sourceFilterWrap  = $("source-filter-wrap");
+const sourceFilterBtn   = $("source-filter-btn");
+const sourceFilterPanel = $("source-filter-panel");
+const sourceFilterLabel = $("source-filter-label");
+
+// ---------------------------------------------------------------------------
+// Source filter dropdown
+// ---------------------------------------------------------------------------
+function updateSourceLabel() {
+  if (selectedSources.size === 0) {
+    sourceFilterLabel.textContent = "All sources";
+  } else {
+    sourceFilterLabel.textContent = `${selectedSources.size} source${selectedSources.size > 1 ? "s" : ""}`;
+  }
+}
+
+function buildSourceCheckboxes(sources) {
+  sourceFilterPanel.innerHTML = "";
+  sources.forEach((src) => {
+    const label = document.createElement("label");
+    label.className = "flex items-center gap-2 cursor-pointer text-sm text-slate-700 hover:text-slate-900 py-0.5";
+
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.value = src;
+    cb.className = "rounded border-slate-300 text-sky-500 focus:ring-sky-400";
+    cb.addEventListener("change", () => {
+      if (cb.checked) selectedSources.add(src);
+      else selectedSources.delete(src);
+      updateSourceLabel();
+      render();
+    });
+
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(src));
+    sourceFilterPanel.appendChild(label);
+  });
+}
+
+// Toggle panel open/close
+sourceFilterBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  sourceFilterPanel.classList.toggle("hidden");
+});
+
+// Close when clicking outside
+document.addEventListener("click", (e) => {
+  if (!sourceFilterWrap.contains(e.target)) {
+    sourceFilterPanel.classList.add("hidden");
+  }
+});
 
 // ---------------------------------------------------------------------------
 // Load data
@@ -44,14 +95,9 @@ async function loadEvents() {
     metaUpdated.textContent = `Updated: ${updated.toLocaleDateString("en-US", { month:"short", day:"numeric", year:"numeric" })}`;
     metaCounts.textContent = `${data.total} events · ${data.kids_total} kids/family · ${data.library_total} library`;
 
-    // Populate city dropdown
+    // Build source checkboxes
     const sources = [...new Set(allEvents.map((e) => e.source))].sort();
-    sources.forEach((src) => {
-      const opt = document.createElement("option");
-      opt.value = src;
-      opt.textContent = src;
-      filterCity.appendChild(opt);
-    });
+    buildSourceCheckboxes(sources);
 
     loading.classList.add("hidden");
     grid.classList.remove("hidden");
@@ -68,19 +114,18 @@ async function loadEvents() {
 // Filter
 // ---------------------------------------------------------------------------
 function getFiltered() {
-  const q         = searchInput.value.trim().toLowerCase();
-  const kidsOnly  = filterKids.checked;
-  const libOnly   = filterLibrary.checked;
-  const cityVal   = filterCity.value;
-  const dateFrom  = filterDateFrom.value;   // "YYYY-MM-DD" or ""
-  const dateTo    = filterDateTo.value;
+  const q        = searchInput.value.trim().toLowerCase();
+  const kidsOnly = filterKids.checked;
+  const libOnly  = filterLibrary.checked;
+  const dateFrom = filterDateFrom.value;
+  const dateTo   = filterDateTo.value;
 
   return allEvents.filter((ev) => {
-    if (kidsOnly  && !ev.is_kids_event)                 return false;
-    if (libOnly   && ev.source_type !== "library")      return false;
-    if (cityVal   && ev.source !== cityVal)             return false;
-    if (dateFrom  && ev.date_start < dateFrom)          return false;
-    if (dateTo    && ev.date_start > dateTo)            return false;
+    if (kidsOnly && !ev.is_kids_event)                          return false;
+    if (libOnly  && ev.source_type !== "library")               return false;
+    if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
+    if (dateFrom && ev.date_start < dateFrom)                   return false;
+    if (dateTo   && ev.date_start > dateTo)                     return false;
     if (q) {
       const haystack = `${ev.title} ${ev.description || ""} ${ev.source} ${(ev.categories || []).join(" ")}`.toLowerCase();
       if (!haystack.includes(q)) return false;
@@ -111,7 +156,6 @@ function makeCard(ev) {
   const node = cardTpl.content.cloneNode(true);
   const article = node.querySelector("article");
 
-  // Stagger animation
   article.style.animationDelay = "0ms";
 
   const q = (sel) => node.querySelector(sel);
@@ -177,7 +221,6 @@ function render() {
     return;
   }
 
-  // Render in chunks to avoid long frame
   const CHUNK = 30;
   let i = 0;
   function renderChunk() {
@@ -195,19 +238,23 @@ function render() {
 // ---------------------------------------------------------------------------
 // Event listeners
 // ---------------------------------------------------------------------------
-[searchInput, filterKids, filterLibrary, filterCity, filterDateFrom, filterDateTo].forEach(
+[searchInput, filterDateFrom, filterDateTo].forEach(
   (el) => el.addEventListener("input", render)
 );
-// checkbox change fires "change", not "input"
 [filterKids, filterLibrary].forEach((el) => el.addEventListener("change", render));
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
   filterLibrary.checked = false;
-  filterCity.value      = "";
   filterDateFrom.value  = "";
   filterDateTo.value    = "";
+  // Uncheck all source checkboxes
+  selectedSources.clear();
+  sourceFilterPanel.querySelectorAll("input[type=checkbox]").forEach((cb) => {
+    cb.checked = false;
+  });
+  updateSourceLabel();
   render();
 });
 

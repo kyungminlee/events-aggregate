@@ -61,12 +61,15 @@
         <span class="text-sm font-medium text-slate-700">📚 Library events only</span>
       </label>
 
-      <!-- City filter -->
-      <div class="relative">
-        <select id="filter-city" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm appearance-none pr-7 focus:outline-none focus:ring-2 focus:ring-sky-400 bg-white">
-          <option value="">All sources</option>
-        </select>
-        <span class="pointer-events-none absolute right-2 top-2 text-slate-400 text-xs">▾</span>
+      <!-- Source filter -->
+      <div class="relative" id="source-filter-wrap">
+        <button id="source-filter-btn" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 flex items-center gap-1.5 hover:border-slate-400">
+          <span id="source-filter-label">All sources</span>
+          <span class="text-slate-400 text-xs">▾</span>
+        </button>
+        <div id="source-filter-panel" class="hidden absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg z-20 p-3 w-64 flex flex-col gap-1.5">
+          <!-- checkboxes injected by JS -->
+        </div>
       </div>
 
       <!-- Date range -->

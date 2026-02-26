@@ -5,9 +5,24 @@
 // ---------------------------------------------------------------------------
 let allEvents = [];
 const now = new Date();
+
+// Month view state
 let currentYear  = now.getFullYear();
 let currentMonth = now.getMonth();   // 0-based
-let selectedDate = null;
+
+// Two-week view state
+function getWeekStart(d) {
+  const s = new Date(d);
+  s.setDate(s.getDate() - s.getDay()); // back to Sunday
+  s.setHours(0, 0, 0, 0);
+  return s;
+}
+let twoWeekStart = getWeekStart(now);
+
+// Shared state
+let currentView    = "month";   // "month" | "2week"
+let selectedDate   = null;
+let selectedSources = new Set(); // empty = "all sources"
 
 // ---------------------------------------------------------------------------
 // DOM refs
@@ -19,20 +34,67 @@ const errorMsg    = $("error-msg");
 const errorText   = $("error-text");
 const calWrapper  = $("cal-wrapper");
 const calGrid     = $("cal-grid");
-const monthTitle  = $("month-title");
+const calTitle    = $("cal-title");
 const dayPanel    = $("day-panel");
 const dayTitle    = $("day-title");
 const dayEvents   = $("day-events");
 const dayNoEvents = $("day-no-events");
 
-const searchInput   = $("search");
-const filterKids    = $("filter-kids");
-const filterLibrary = $("filter-library");
-const filterSource  = $("filter-source");
-const resetBtn      = $("reset-filters");
-const resultCount   = $("result-count");
-const metaUpdated   = $("meta-updated");
-const metaCounts    = $("meta-counts");
+const searchInput       = $("search");
+const filterKids        = $("filter-kids");
+const filterLibrary     = $("filter-library");
+const resetBtn          = $("reset-filters");
+const resultCount       = $("result-count");
+const metaUpdated       = $("meta-updated");
+const metaCounts        = $("meta-counts");
+const sourceFilterWrap  = $("source-filter-wrap");
+const sourceFilterBtn   = $("source-filter-btn");
+const sourceFilterPanel = $("source-filter-panel");
+const sourceFilterLabel = $("source-filter-label");
+
+const viewMonthBtn  = $("view-month");
+const view2WeekBtn  = $("view-2week");
+
+// ---------------------------------------------------------------------------
+// Source filter dropdown
+// ---------------------------------------------------------------------------
+function updateSourceLabel() {
+  sourceFilterLabel.textContent = selectedSources.size === 0
+    ? "All sources"
+    : `${selectedSources.size} source${selectedSources.size > 1 ? "s" : ""}`;
+}
+
+function buildSourceCheckboxes(sources) {
+  sourceFilterPanel.innerHTML = "";
+  sources.forEach(src => {
+    const label = document.createElement("label");
+    label.className = "flex items-center gap-2 cursor-pointer text-sm text-slate-700 hover:text-slate-900 py-0.5";
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.value = src;
+    cb.className = "rounded border-slate-300 text-sky-500 focus:ring-sky-400";
+    cb.addEventListener("change", () => {
+      if (cb.checked) selectedSources.add(src);
+      else selectedSources.delete(src);
+      updateSourceLabel();
+      render();
+    });
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(src));
+    sourceFilterPanel.appendChild(label);
+  });
+}
+
+sourceFilterBtn.addEventListener("click", e => {
+  e.stopPropagation();
+  sourceFilterPanel.classList.toggle("hidden");
+});
+
+document.addEventListener("click", e => {
+  if (!sourceFilterWrap.contains(e.target)) {
+    sourceFilterPanel.classList.add("hidden");
+  }
+});
 
 // ---------------------------------------------------------------------------
 // Load events.json
@@ -53,14 +115,9 @@ async function loadEvents() {
     metaCounts.textContent =
       `${data.total} events · ${data.kids_total} kids/family · ${data.library_total} library`;
 
-    // Populate source dropdown
+    // Build source checkboxes
     const sources = [...new Set(allEvents.map(e => e.source))].sort();
-    sources.forEach(src => {
-      const opt = document.createElement("option");
-      opt.value = src;
-      opt.textContent = src;
-      filterSource.appendChild(opt);
-    });
+    buildSourceCheckboxes(sources);
 
     loading.classList.add("hidden");
     calWrapper.classList.remove("hidden");
@@ -79,12 +136,11 @@ function getFiltered() {
   const q        = searchInput.value.trim().toLowerCase();
   const kidsOnly = filterKids.checked;
   const libOnly  = filterLibrary.checked;
-  const srcVal   = filterSource.value;
 
   return allEvents.filter(ev => {
-    if (kidsOnly && !ev.is_kids_event)            return false;
-    if (libOnly  && ev.source_type !== "library") return false;
-    if (srcVal   && ev.source !== srcVal)         return false;
+    if (kidsOnly && !ev.is_kids_event)                                    return false;
+    if (libOnly  && ev.source_type !== "library")                         return false;
+    if (selectedSources.size > 0 && !selectedSources.has(ev.source))     return false;
     if (q) {
       const hay = `${ev.title} ${ev.description || ""} ${ev.source} ${(ev.categories || []).join(" ")}`.toLowerCase();
       if (!hay.includes(q)) return false;
@@ -99,17 +155,72 @@ function getFiltered() {
 function render() {
   const filtered = getFiltered();
   resultCount.textContent = filtered.length + " event" + (filtered.length !== 1 ? "s" : "");
-  renderCalendar(filtered);
+
+  if (currentView === "month") {
+    renderMonth(filtered);
+  } else {
+    renderTwoWeek(filtered);
+  }
+
   if (selectedDate) {
     renderDayPanel(selectedDate, filtered.filter(ev => ev.date_start === selectedDate));
   }
 }
 
 // ---------------------------------------------------------------------------
-// Calendar grid
+// Shared cell builder
 // ---------------------------------------------------------------------------
-function renderCalendar(filtered) {
-  // Group events by date string
+function buildDayCell(dateStr, evs, dayNumber, isToday, maxChips) {
+  const isSel = dateStr === selectedDate;
+
+  const cell = document.createElement("div");
+  cell.className = [
+    "border-r border-b border-slate-200 p-1 cursor-pointer transition-colors relative",
+    isToday ? "bg-sky-50"  : "bg-white hover:bg-slate-50",
+    isSel   ? "ring-2 ring-inset ring-sky-400" : "",
+  ].filter(Boolean).join(" ");
+  cell.dataset.date = dateStr;
+
+  // Day number circle
+  const dayNum = document.createElement("div");
+  dayNum.className = [
+    "text-xs font-semibold mb-1 w-6 h-6 flex items-center justify-center rounded-full select-none",
+    isToday ? "bg-sky-500 text-white" : "text-slate-500",
+  ].join(" ");
+  dayNum.textContent = dayNumber;
+  cell.appendChild(dayNum);
+
+  // Event chips
+  evs.slice(0, maxChips).forEach(ev => {
+    const chip = document.createElement("div");
+    chip.className = "cal-chip " + (ev.source_type === "library" ? "cal-chip-lib" : "cal-chip-city");
+    chip.title = ev.title;
+    const txt = document.createElement("span");
+    txt.className = "cal-chip-text";
+    txt.textContent = ev.title;
+    chip.appendChild(txt);
+    cell.appendChild(chip);
+  });
+  if (evs.length > maxChips) {
+    const more = document.createElement("div");
+    more.className = "text-[10px] text-slate-400 pl-1";
+    more.textContent = `+${evs.length - maxChips} more`;
+    cell.appendChild(more);
+  }
+
+  cell.addEventListener("click", () => {
+    selectedDate = dateStr;
+    render();
+    setTimeout(() => dayPanel.scrollIntoView({ behavior: "smooth", block: "nearest" }), 30);
+  });
+
+  return cell;
+}
+
+// ---------------------------------------------------------------------------
+// Month view
+// ---------------------------------------------------------------------------
+function renderMonth(filtered) {
   const byDate = {};
   filtered.forEach(ev => {
     (byDate[ev.date_start] = byDate[ev.date_start] || []).push(ev);
@@ -117,11 +228,11 @@ function renderCalendar(filtered) {
 
   const pad      = n => String(n).padStart(2, "0");
   const today    = now.toISOString().slice(0, 10);
-  const firstDay = new Date(currentYear, currentMonth, 1).getDay();   // 0=Sun
+  const firstDay = new Date(currentYear, currentMonth, 1).getDay();
   const lastDay  = new Date(currentYear, currentMonth + 1, 0).getDate();
   const monthStr = `${currentYear}-${pad(currentMonth + 1)}`;
 
-  monthTitle.textContent = new Date(currentYear, currentMonth, 1)
+  calTitle.textContent = new Date(currentYear, currentMonth, 1)
     .toLocaleDateString("en-US", { month: "long", year: "numeric" });
 
   calGrid.innerHTML = "";
@@ -135,57 +246,14 @@ function renderCalendar(filtered) {
 
   // Day cells
   for (let day = 1; day <= lastDay; day++) {
-    const dateStr  = `${monthStr}-${pad(day)}`;
-    const evs      = byDate[dateStr] || [];
-    const isToday  = dateStr === today;
-    const isSel    = dateStr === selectedDate;
-
-    const cell = document.createElement("div");
-    cell.className = [
-      "border-r border-b border-slate-200 p-1 min-h-[90px] cursor-pointer transition-colors relative",
-      isToday ? "bg-sky-50"  : "bg-white hover:bg-slate-50",
-      isSel   ? "ring-2 ring-inset ring-sky-400" : "",
-    ].filter(Boolean).join(" ");
-    cell.dataset.date = dateStr;
-
-    // Day number circle
-    const dayNum = document.createElement("div");
-    dayNum.className = [
-      "text-xs font-semibold mb-1 w-6 h-6 flex items-center justify-center rounded-full select-none",
-      isToday ? "bg-sky-500 text-white" : "text-slate-500",
-    ].join(" ");
-    dayNum.textContent = day;
-    cell.appendChild(dayNum);
-
-    // Event chips (up to 3, then "+N more")
-    const MAX_CHIPS = 3;
-    evs.slice(0, MAX_CHIPS).forEach(ev => {
-      const chip = document.createElement("div");
-      chip.className = "cal-chip " + (ev.source_type === "library" ? "cal-chip-lib" : "cal-chip-city");
-      chip.title = ev.title;
-      const txt = document.createElement("span");
-      txt.className = "cal-chip-text";
-      txt.textContent = ev.title;
-      chip.appendChild(txt);
-      cell.appendChild(chip);
-    });
-    if (evs.length > MAX_CHIPS) {
-      const more = document.createElement("div");
-      more.className = "text-[10px] text-slate-400 pl-1";
-      more.textContent = `+${evs.length - MAX_CHIPS} more`;
-      cell.appendChild(more);
-    }
-
-    cell.addEventListener("click", () => {
-      selectedDate = dateStr;
-      render();
-      setTimeout(() => dayPanel.scrollIntoView({ behavior: "smooth", block: "nearest" }), 30);
-    });
-
+    const dateStr = `${monthStr}-${pad(day)}`;
+    const evs     = byDate[dateStr] || [];
+    const cell    = buildDayCell(dateStr, evs, day, dateStr === today, 3);
+    cell.style.minHeight = "90px";
     calGrid.appendChild(cell);
   }
 
-  // Fill trailing cells to complete the last row
+  // Trailing filler cells
   const totalCells = firstDay + lastDay;
   const remainder  = totalCells % 7;
   if (remainder !== 0) {
@@ -198,10 +266,41 @@ function renderCalendar(filtered) {
 }
 
 // ---------------------------------------------------------------------------
+// Two-week view
+// ---------------------------------------------------------------------------
+function renderTwoWeek(filtered) {
+  const byDate = {};
+  filtered.forEach(ev => {
+    (byDate[ev.date_start] = byDate[ev.date_start] || []).push(ev);
+  });
+
+  const pad   = n => String(n).padStart(2, "0");
+  const today = now.toISOString().slice(0, 10);
+
+  // Title: "Feb 22 – Mar 7, 2026"
+  const endDate = new Date(twoWeekStart);
+  endDate.setDate(endDate.getDate() + 13);
+  const fmtShort = d => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  calTitle.textContent =
+    `${fmtShort(twoWeekStart)} – ${fmtShort(endDate)}, ${endDate.getFullYear()}`;
+
+  calGrid.innerHTML = "";
+
+  for (let i = 0; i < 14; i++) {
+    const d = new Date(twoWeekStart);
+    d.setDate(d.getDate() + i);
+    const dateStr = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    const evs     = byDate[dateStr] || [];
+    const cell    = buildDayCell(dateStr, evs, d.getDate(), dateStr === today, 8);
+    cell.style.minHeight = "180px";
+    calGrid.appendChild(cell);
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Day panel
 // ---------------------------------------------------------------------------
 function renderDayPanel(dateStr, evs) {
-  // Parse as local date to avoid off-by-one from UTC
   const [y, m, d] = dateStr.split("-").map(Number);
   dayTitle.textContent = new Date(y, m - 1, d).toLocaleDateString("en-US", {
     weekday: "long", month: "long", day: "numeric", year: "numeric",
@@ -220,7 +319,7 @@ function renderDayPanel(dateStr, evs) {
 }
 
 // ---------------------------------------------------------------------------
-// Event card builder (mirrors app.js style)
+// Event card builder
 // ---------------------------------------------------------------------------
 function fmtTime(t) {
   const [h, m] = t.split(":").map(Number);
@@ -231,7 +330,6 @@ function makeCard(ev) {
   const card = document.createElement("article");
   card.className = "event-card bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow";
 
-  // Optional image
   if (ev.image_url) {
     const wrap = document.createElement("div");
     wrap.className = "relative h-36 bg-slate-100 overflow-hidden";
@@ -247,7 +345,6 @@ function makeCard(ev) {
   const body = document.createElement("div");
   body.className = "p-4 flex flex-col flex-1 gap-2";
 
-  // Title + kids badge
   const titleRow = document.createElement("div");
   titleRow.className = "flex items-start justify-between gap-2";
   const title = document.createElement("h2");
@@ -262,7 +359,6 @@ function makeCard(ev) {
   }
   body.appendChild(titleRow);
 
-  // Time
   if (ev.time_start) {
     const timeEl = document.createElement("div");
     timeEl.className = "text-sky-600 text-xs font-medium";
@@ -270,7 +366,6 @@ function makeCard(ev) {
     body.appendChild(timeEl);
   }
 
-  // Location
   if (ev.location) {
     const loc = document.createElement("div");
     loc.className = "text-slate-500 text-xs truncate";
@@ -278,7 +373,6 @@ function makeCard(ev) {
     body.appendChild(loc);
   }
 
-  // Description
   if (ev.description) {
     const desc = document.createElement("p");
     desc.className = "text-slate-600 text-xs line-clamp-3 flex-1";
@@ -286,7 +380,6 @@ function makeCard(ev) {
     body.appendChild(desc);
   }
 
-  // Footer: source badge + link
   const footer = document.createElement("div");
   footer.className = "flex items-center justify-between mt-1";
   const srcBadge = document.createElement("span");
@@ -303,7 +396,6 @@ function makeCard(ev) {
   footer.appendChild(link);
   body.appendChild(footer);
 
-  // Category tags
   if (ev.categories && ev.categories.length) {
     const cats = document.createElement("div");
     cats.className = "flex flex-wrap gap-1";
@@ -321,19 +413,29 @@ function makeCard(ev) {
 }
 
 // ---------------------------------------------------------------------------
-// Month navigation
+// Navigation
 // ---------------------------------------------------------------------------
-$("prev-month").addEventListener("click", () => {
-  currentMonth--;
-  if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+$("prev-btn").addEventListener("click", () => {
+  if (currentView === "month") {
+    currentMonth--;
+    if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+  } else {
+    twoWeekStart = new Date(twoWeekStart);
+    twoWeekStart.setDate(twoWeekStart.getDate() - 14);
+  }
   selectedDate = null;
   dayPanel.classList.add("hidden");
   render();
 });
 
-$("next-month").addEventListener("click", () => {
-  currentMonth++;
-  if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+$("next-btn").addEventListener("click", () => {
+  if (currentView === "month") {
+    currentMonth++;
+    if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+  } else {
+    twoWeekStart = new Date(twoWeekStart);
+    twoWeekStart.setDate(twoWeekStart.getDate() + 14);
+  }
   selectedDate = null;
   dayPanel.classList.add("hidden");
   render();
@@ -342,6 +444,7 @@ $("next-month").addEventListener("click", () => {
 $("today-btn").addEventListener("click", () => {
   currentYear  = now.getFullYear();
   currentMonth = now.getMonth();
+  twoWeekStart = getWeekStart(now);
   selectedDate = null;
   dayPanel.classList.add("hidden");
   render();
@@ -354,18 +457,44 @@ $("close-panel").addEventListener("click", () => {
 });
 
 // ---------------------------------------------------------------------------
+// View toggle
+// ---------------------------------------------------------------------------
+viewMonthBtn.addEventListener("click", () => {
+  if (currentView === "month") return;
+  currentView = "month";
+  viewMonthBtn.classList.add("active");
+  view2WeekBtn.classList.remove("active");
+  selectedDate = null;
+  dayPanel.classList.add("hidden");
+  render();
+});
+
+view2WeekBtn.addEventListener("click", () => {
+  if (currentView === "2week") return;
+  currentView = "2week";
+  // Snap two-week window so it includes today or the currently displayed month
+  twoWeekStart = getWeekStart(now);
+  view2WeekBtn.classList.add("active");
+  viewMonthBtn.classList.remove("active");
+  selectedDate = null;
+  dayPanel.classList.add("hidden");
+  render();
+});
+
+// ---------------------------------------------------------------------------
 // Filter listeners
 // ---------------------------------------------------------------------------
-searchInput.addEventListener("input",   render);
-filterKids.addEventListener("change",   render);
+searchInput.addEventListener("input",    render);
+filterKids.addEventListener("change",    render);
 filterLibrary.addEventListener("change", render);
-filterSource.addEventListener("change", render);
 
 resetBtn.addEventListener("click", () => {
-  searchInput.value    = "";
-  filterKids.checked   = true;
+  searchInput.value     = "";
+  filterKids.checked    = false;
   filterLibrary.checked = false;
-  filterSource.value   = "";
+  selectedSources.clear();
+  sourceFilterPanel.querySelectorAll("input[type=checkbox]").forEach(cb => { cb.checked = false; });
+  updateSourceLabel();
   render();
 });
 

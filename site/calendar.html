@@ -27,6 +27,10 @@
       .cal-chip-text { display: none; }
       .cal-chip { width: 8px; height: 8px; border-radius: 50%; padding: 0; display: inline-block; margin-right: 2px; }
     }
+    /* View toggle button states */
+    .view-tab { transition: background 0.15s, color 0.15s; }
+    .view-tab.active { background: white; color: #0369a1; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .view-tab:not(.active) { color: #64748b; }
   </style>
 </head>
 <body class="bg-slate-50 min-h-screen">
@@ -63,7 +67,7 @@
 
       <!-- Kids toggle -->
       <label class="flex items-center gap-2 cursor-pointer select-none">
-        <input type="checkbox" id="filter-kids" checked class="sr-only peer" />
+        <input type="checkbox" id="filter-kids" class="sr-only peer" />
         <div class="toggle-pill peer-checked:bg-violet-500"><div class="toggle-knob"></div></div>
         <span class="text-sm font-medium text-slate-700">👧 Kids &amp; Family only</span>
       </label>
@@ -76,11 +80,14 @@
       </label>
 
       <!-- Source filter -->
-      <div class="relative">
-        <select id="filter-source" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm appearance-none pr-7 focus:outline-none focus:ring-2 focus:ring-sky-400 bg-white">
-          <option value="">All sources</option>
-        </select>
-        <span class="pointer-events-none absolute right-2 top-2 text-slate-400 text-xs">▾</span>
+      <div class="relative" id="source-filter-wrap">
+        <button id="source-filter-btn" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 flex items-center gap-1.5 hover:border-slate-400">
+          <span id="source-filter-label">All sources</span>
+          <span class="text-slate-400 text-xs">▾</span>
+        </button>
+        <div id="source-filter-panel" class="hidden absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg z-20 p-3 w-64 flex flex-col gap-1.5">
+          <!-- checkboxes injected by JS -->
+        </div>
       </div>
 
       <!-- Reset -->
@@ -105,16 +112,24 @@
 
     <div id="cal-wrapper" class="hidden">
 
-      <!-- Month navigation -->
-      <div class="flex items-center justify-between mb-4">
-        <button id="prev-month"
+      <!-- Navigation row: prev / title+today / next  +  view toggle -->
+      <div class="flex items-center justify-between mb-4 gap-2">
+        <button id="prev-btn"
           class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-200 text-slate-600 text-xl font-bold transition-colors">‹</button>
-        <div class="flex items-center gap-3">
-          <h2 id="month-title" class="text-xl font-bold text-slate-800 min-w-[180px] text-center"></h2>
+
+        <div class="flex items-center gap-3 flex-1 justify-center flex-wrap">
+          <h2 id="cal-title" class="text-xl font-bold text-slate-800 min-w-[180px] text-center"></h2>
           <button id="today-btn"
             class="text-xs px-3 py-1 rounded-full border border-slate-300 text-slate-600 hover:bg-slate-100 transition-colors">Today</button>
         </div>
-        <button id="next-month"
+
+        <!-- View toggle: Month | 2 Weeks -->
+        <div class="flex items-center gap-1 bg-slate-100 rounded-lg p-0.5 shrink-0">
+          <button id="view-month" class="view-tab active px-3 py-1 text-xs font-medium rounded-md">Month</button>
+          <button id="view-2week" class="view-tab px-3 py-1 text-xs font-medium rounded-md">2 Weeks</button>
+        </div>
+
+        <button id="next-btn"
           class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-200 text-slate-600 text-xl font-bold transition-colors">›</button>
       </div>
 
@@ -147,6 +162,6 @@
     </div>
   </main>
 
-  <script src="calendar.js?v=1"></script>
+  <script src="calendar.js?v=2"></script>
 </body>
 </html>
