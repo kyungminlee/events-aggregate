@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-02-25T16:35:14.775618+00:00",
-  "total": 65,
-  "kids_total": 61,
-  "library_total": 58,
+  "updated_at": "2026-02-26T02:58:12.206092+00:00",
+  "total": 78,
+  "kids_total": 64,
+  "library_total": 60,
   "sources": [
     "Menlo Park",
     "Mountain View Public Library",
+    "Palo Alto",
     "Palo Alto City Library",
     "San José Public Library",
     "Santa Clara County Library"
@@ -36,25 +37,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/5668077ed1d538bcaa3191190a74fab9/1-on-1TechAsst.(H%E1%BB%97Tr%E1%BB%A3K%E1%BB%B9Thu%E1%BA%ADtC%C3%A1Nh%C3%A2n).png"
-    },
-    {
-      "id": "68582d8da824",
-      "title": "Global Language Storytime: Spanish",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260225-Global-Spanish",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-25",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "Join us for a special storytime featuring stories, songs and fun in Spanish!",
-      "categories": [
-        "Events for children"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/kids-listening-to-storytime.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "491ab0920ef9",
@@ -109,6 +91,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
+      "id": "36e23159a72d",
+      "title": "Planning & Transportation Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Planning-Transportation-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-25",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Planning and Transportation Commission Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/planning-and-transportation-commission/ptc-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "7c3f1c4661d2",
       "title": "Read-A-Thon (Partnership with Cambrian Educational Foundation)",
       "url": "https://sjpl.bibliocommons.com/events/697d06394dacf581ff77f35c",
@@ -130,111 +131,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/8ac12bf9945157cb9bf28777cbda2743/CopyofRead_a_thonRectangularLogo2.jpg"
     },
     {
-      "id": "e3412048f3d8",
-      "title": "Teen Media Wednesdays",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-25",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
-      "description": "Teens, we are now watching movies AND playing video games at the library!",
-      "categories": [
-        "Events for teens"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "f12df538d0f4",
-      "title": "*Virtual* English Language Learners (ELL) Conversation Club",
-      "url": "https://sjpl.bibliocommons.com/events/6984cf6acbf1533ca53626d8",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": "09:00",
-      "time_end": "10:00",
-      "location": null,
-      "description": "Are you ready to push your fluency skills to the next level? If you’re an intermediate or advanced English learner seeking to progress your speaking skills and engage in meaningful conversations, this class is for you. In our weekly class, you have the opportunity to participate in structured, guided conversations that enhance your speaking skills and build your confidence. Topics will include current events, lifestyles, and culture. You’ll engage in diverse conversations that enrich your vocabu",
-      "categories": [
-        "Learn English",
-        "Adults, ages 18+",
-        "Seniors, ages 65+",
-        "English"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ccaa549012b07fb5d439250d0ae41f93/esl-writing-class-ba-1280.jpg"
-    },
-    {
-      "id": "92a2cc347c8f",
-      "title": "Peer Support for MyConnectSV",
-      "url": "https://sjpl.bibliocommons.com/events/6966aa1191e4576f847c5ae2",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": "09:30",
-      "time_end": "12:00",
-      "location": "King Library — 3rd Floor",
-      "description": "Meet with peer support workers&nbsp;who can help you log in and use MyConnectSV, an online tool that supports you on your housing journey by providing a way to message your care team, the ability to update and protect your personal information, access resources, and more! \n  If you're ready to use MyConnectSV, visit our dedicated MyConnectSV computer stations during our drop-in hours!  \n    ADA Accommodation Requests",
-      "categories": [
-        "Community Resources & Support Groups",
-        "Adults, ages 18+",
-        "Seniors, ages 65+",
-        "English"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/18484175ea8a6e794a49487102275325/MyConnectSVWhiteTagline.png"
-    },
-    {
-      "id": "08cab96d771e",
-      "title": "ELL Morning Conversation Club",
-      "url": "https://sjpl.bibliocommons.com/events/690e9c60886bb73600b9c7ea",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": "10:00",
-      "time_end": "11:00",
-      "location": "Santa Teresa — Group Study Room A",
-      "description": "This program is in-person at Santa Teresa Branch Library.  \n English Language Learners&nbsp;(ELL) Conversation Clubs create a welcoming and respectful environment for adult learners of English to practice their English conversation skills. Clubs meet weekly with a trained facilitator courtesy of Santa Teresa Branch Library.&nbsp;&nbsp;   No Registration Required, Materials Will Be Provided \n  ADA Accommodation Requests",
-      "categories": [
-        "Learn English",
-        "Adults, ages 18+",
-        "English"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ccaa549012b07fb5d439250d0ae41f93/esl-writing-class-ba-1280.jpg"
-    },
-    {
-      "id": "fa581c041619",
-      "title": "Virtual Job Search & Resume Program",
-      "url": "https://sjpl.bibliocommons.com/events/693ca3d36724c63d00e6b479",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": "10:00",
-      "time_end": "11:00",
-      "location": null,
-      "description": "Meet one-on-one with an experienced volunteer to create or update a resume, search and start applying for a new job on Zoom.&nbsp;Sessions are 20 minutes. Be prepared to share a current resume, any job history, list of skills, and/or education with the volunteer. Resumes can be reviewed in advance if emailed to   Brian.Parkman    @sjlibrary.org   by 3:00 PM on the Tuesday before your session.  \n\n\n\n  Registration Information    Registration ends&nbsp;20 hours before the event.     Please register",
-      "categories": [
-        "Career & Business",
-        "Adults, ages 18+",
-        "English"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e141bce95473d8aea2119c1fbe51f5f2/job-seekers-1400.jpg"
-    },
-    {
       "id": "7a1785928d44",
       "title": "Baby Storytime",
       "url": "https://mountainview.libcal.com/event/16349835",
@@ -254,6 +150,51 @@
       "image_url": null
     },
     {
+      "id": "201560c2e206",
+      "title": "(Virtual) Silicon Valley Reads Book Discussion: Iona Iverson's Rules for Commuting",
+      "url": "https://sjpl.bibliocommons.com/events/695596064a9fd98b7f74fdcd",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "location": null,
+      "description": "Join us to discuss&nbsp;the novel&nbsp; \"Iona Iverson's Rules for Commuting\" by Clare Pooley ,&nbsp;a heartwarming story that proves the most rigid social contract—never talk to strangers—is meant to be broken.&nbsp;   Iona Iverson, an eccentric advice columnist, lives by an ironclad rule: ignore everyone on her daily train ride, whom she knows only by self-assigned nicknames like \"Smart-But-Sexist-Manspreader.\" But when a fellow commuter suddenly chokes, a single, life-saving act of interventio",
+      "categories": [
+        "Silicon Valley Reads",
+        "Books & Authors",
+        "Adults, ages 18+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/94cd3aea56b74528d421898ffe2fb57a/RulesofCommuting.png"
+    },
+    {
+      "id": "82f3bacdfb47",
+      "title": "SPECIAL Silicon Valley Reads Edition:  (Virtual) Cambrian and Pearl Mystery Book Club",
+      "url": "https://sjpl.bibliocommons.com/events/6946e8c32c65973d00139e0d",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "18:00",
+      "time_end": "19:00",
+      "location": null,
+      "description": "This month we will be discussing&nbsp;   Iona Iverson's Rules for Commuting  by  Clare Pooley      Iona Iverson lives by an ironclad rule: ignore everyone on her daily train ride. But when a fellow commuter suddenly chokes, a single, life-saving act of intervention shatters Iona's carefully constructed isolation & transforms a train car of strangers into a true community.   Registration is required to receive a link and password. Deadline to sign-up will be 1 hour before the program begins.  \n T",
+      "categories": [
+        "Silicon Valley Reads",
+        "Books & Authors",
+        "Adults, ages 18+",
+        "Seniors, ages 65+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/0017b74c8062581cde09bee2661dc45a/Iona.jpg"
+    },
+    {
       "id": "852249ecd45c",
       "title": "LEGO® Time",
       "url": "https://mountainview.libcal.com/event/16090787",
@@ -266,13 +207,115 @@
       "location": "1st Floor Program Room",
       "description": "It's an open invitation to a LEGO® building extravaganza! Everyone is encouraged to participate in the construction excitement.\n\n \n\nLEGOs® will be supplied\n\n \n\nJoin the building fun on three dates:\n\nWednesday, January 28\n\nWednesday, February 25\n\nWednesday, March 18",
       "categories": [
-        "Just For Fun (Adult)",
-        "Make",
-        "Learn & Explore"
+        "Just for Fun (Youth)",
+        "Learn & Explore",
+        "Make"
       ],
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "4b3356c75a91",
+      "title": "Reading on the Avenue Book Club",
+      "url": "https://sjpl.bibliocommons.com/events/68d6c3d2291e343dacd92214",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-25",
+      "date_end": "2026-02-25",
+      "time_start": "19:00",
+      "time_end": "20:00",
+      "location": "Willow Glen — Community Room",
+      "description": "The Reading on the Avenue Book Club meets on the fourth Wednesday of the month at 7 PM.  \n Newcomers welcome!   2026 Book Selections:   \n   January (non-fiction) :&nbsp;  A Woman of No Importance   : The Untold Story of an American Spy Who Helped Win WWII&nbsp;  by Sonia Purnell    February (fiction):&nbsp;   Yellowface &nbsp; by R. F. Kuang     March (classic fiction) :  The Scapegoat  by Daphne Du Maurier  (title available through LINK+)    April (non-fiction):&nbsp;   Who Is Government?   &nb",
+      "categories": [
+        "Books & Authors",
+        "Adults, ages 18+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd0f037f8c6975f5c0d01f0bf17c29dd/Screenshot2025-09-25161958.png"
+    },
+    {
+      "id": "ee6fd69ce25c",
+      "title": "3D Printing On Demand",
+      "url": "https://sjpl.bibliocommons.com/events/68e84cfba7774f33d769259a",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-26",
+      "date_end": "2026-02-26",
+      "time_start": null,
+      "time_end": "23:59",
+      "location": "Vineland — Correspondence online and pickup in person",
+      "description": "Want to get something printed on our 3D printer? \n Participants can choose a design from  Thingiverse , or provide their own design. Designs must be in an .stl file format and able to be emailed. We estimate that 3D prints will be ready for pickup within 7 days of submission. Designs are considered printable if able to load and save on a  Creality K1C , but the program lead has final say. All prints must take less than 1 hr 30 min (estimated 60 grams of filament). All prints are free and must me",
+      "categories": [
+        "Crafts & Hobbies",
+        "STEAM",
+        "Adults, ages 18+",
+        "Seniors, ages 65+",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
+    },
+    {
+      "id": "84ce5d995e8c",
+      "title": "City/School Liaison Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/022626-CitySchool-Liaison-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": null,
+      "description": "Watch and participate in the City/School Liaison Committee Meeting as the committee discusses topics related to our Palo Alto schools.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/cslc-7pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "2cb36398eeec",
+      "title": "City/School Transportation Safety Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/CitySchool-Transportation-Safety-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": null,
+      "description": "The City/School Transportation Safety Committee is composed of Palo Alto Council of PTAs appointed Parent Transportation Safety Representatives, City of Palo Alto staff and Palo Alto Unified School District staff.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/safe-routes-to-schools/safe-routes-to-school-links/cops.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "4dbc5609a3f8",
+      "title": "Documentary: UNAFF presents How to Build a Library",
+      "url": "https://www.paloalto.gov/Events-Directory/Library/Documentary-UNAFF-presents-How-to-Build-a-Library",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Rinconada Library, 1213 Newell Rd., Palo Alto, CA 94303",
+      "description": "Join us for a screening of How to Build a Library, a documentary about two Nairobi women who transformed a colonial-era library into a vibrant cultural hub.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/how-to-build-a-library.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7b99e1c8806e",
@@ -296,6 +339,44 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "d65bae5c2442",
+      "title": "Emergency Services Volunteers Annual Kickoff Event 2026",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Emergency-Services/Emergency-Services-Volunteers-Annual-Kickoff-Community-Partnership-and-Keynote-Event-2026",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Junior Museum & Zoo / Lucy Stern Ballroom, 1451 Middlefield Rd, Palo Alto, CA 94301",
+      "description": "This annual event will provide a time to socialize with one another in a wonderful venue, recognize outstanding volunteer service among our members, and hear an entertaining keynote address.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/oes/citizen-corps-council-ccc/paloaltoccc.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "b66749fa9c05",
+      "title": "San Antonio Road Area Plan Community Advisory Group",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/San-Antonio-Road-Area-Plan-Community-Advisory-Group-3",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": null,
+      "description": "This meeting will include discussion of the Plan's transportation and mobility options.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/planning-amp-development-services/long-range-planning/area-plans-and-studies/san-antonio-rd-area-plan/sarap_cag-3_-image.jpeg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "fdb8e9a1e252",
       "title": "Storytime",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
@@ -314,6 +395,27 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "b8e7d1fd8de6",
+      "title": "eBook Help: For Seniors",
+      "url": "https://sjpl.bibliocommons.com/events/691f665d9be7c6685c291576",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-02-26",
+      "date_end": "2026-02-26",
+      "time_start": null,
+      "time_end": "23:59",
+      "location": "Vineland",
+      "description": "Do you need help downloading an ebook, or accessing digital content?  Get hands-on help with borrowing and downloading FREE library eBooks and eAudiobooks to your Kindle, Nook, iPad or smartphone. You are welcome to bring your own device to each session.&nbsp;We can also help you search for and use other awesome library eResources, like one of our many article databases or online tutorials to learn something new.  \n  This program is free.&nbsp;Pre-registration is required; drop-ins and same day ",
+      "categories": [
+        "Computer Help",
+        "Seniors, ages 65+",
+        "English"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/d433804db1692b52eaf5cb2730922805/TechHelp.jpg"
     },
     {
       "id": "833d6fa48292",
@@ -412,6 +514,85 @@
       "image_url": null
     },
     {
+      "id": "a82cf27c5d4f",
+      "title": "5th Annual Puzzle Hunt Ends Today!",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/5th-Annual-Puzzle-Hunt",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": null,
+      "description": "Throughout the month of February collaborate with friends and family to follow the clues around town and assemble answers to the final meta-puzzle!",
+      "categories": [
+        "Activities & Classes",
+        "Community Events"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/special-events/paloaltopuzzlehuntpromo2026enjoy.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "b0dec1e4fa30",
+      "title": "Discover Your Path: Career Exploration Event for Teens!",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Discover-Your-Path-Career-Exploration-Event-for-Teens",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Mitchell Park Community Center, 3700 Middlefield Road, Palo Alto, CA 94303",
+      "description": "This engaging and interactive event is designed for teens and young adults to explore diverse career opportunities, gain valuable skills, and connect with professionals from various industries.",
+      "categories": [
+        "Activities & Classes",
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/special-events/discover-your-path-event-flier.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "7e4b03a54faa",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "f27dcf8b3d32",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "0334066d22de",
       "title": "Storytime",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
@@ -432,6 +613,25 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "6af73411d220",
+      "title": "YANovCon: Young Adult Novelist Convention",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260228-YANovCon",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Belmont Library, 110 Alameda de las Pulgas, Belmont, CA,  94002",
+      "description": "Meet top authors at this year’s Young Adult Novelist Convention!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026-yanovcon-banner-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "c59529a53dea",
       "title": "Income Tax Preparation by Tax-Aid",
       "url": "https://paloalto.bibliocommons.com/events/6945f73ab5ff473000573ba8",
@@ -449,6 +649,46 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "831fff92b782",
+      "title": "Canine Companions @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Canine-Companions-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Join us to meet our favorite furry friends of Canine Companions! Welcome to all ages and abilities.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/canine-companions.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "8425cb4fd0b5",
+      "title": "Julia Robinson Math Festival @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Julia-Robinson-Math-Festival-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "The Julia Robinson Math Festival creates joyful, collaborative math experiences through hands-on games and puzzles that encourage creative problem-solving.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/math-fu-nfor-all.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "8c9941f7e27f",
@@ -940,6 +1180,25 @@
       "description": "Stop by the Bookmobile for stories, songs, and rhymes in the heart of Rengstorff Park! Enjoy a fun-filled storytime at the Magical Bridge Playground, and take advantage of full library services available from 10:00–11:00 a.m.\n\nEvents are weather permitting.\nFind us at 201 S. Rengstorff Ave, Mountain View, CA 94040.",
       "categories": [
         "Storytime"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": null
+    },
+    {
+      "id": "e61ba0bd732c",
+      "title": "Mountain View Patents",
+      "url": "https://mountainview.libcal.com/event/16024870",
+      "source": "Mountain View Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-02",
+      "date_end": "2026-04-02",
+      "time_start": "15:00",
+      "time_end": "16:30",
+      "location": "1st Floor Program Room",
+      "description": "In partnership with the Mountain View Historical Association, this hands-on STEAM program introduces kids to real patents created in Mountain View. Participants will rotate through stations to explore local patents, learn how patents work, and then design their own invention by creating a patent of their own.\n\n \n\n\n\n\n\n \n\n\n\n \n\nThis event is generously sponsored by the Friends of the Mountain View Library.",
+      "categories": [
+        "Learn & Explore"
       ],
       "is_kids_event": true,
       "is_free": null,
