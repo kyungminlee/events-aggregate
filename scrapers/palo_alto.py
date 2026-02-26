@@ -1,17 +1,14 @@
 """Scraper for City of Palo Alto events.
 
 Source:   https://www.paloalto.gov/Events-Directory
-          https://www.paloalto.gov/Home/Calendar
 Platform: Granicus OpenCities (server-side rendered ASP.NET)
 CDN:      Akamai — blocks Python requests; requires curl-cffi for Chrome TLS impersonation.
 
-Limitation: The Events-Directory listing paginates via JavaScript postback, so
-only the first ~10 server-rendered events per page are accessible without a
-headless browser. We scrape two pages (Events-Directory + Home/Calendar) to
-maximise the number of unique events visible without JS, then apply keyword
-filtering to retain kids/family events.
+Pagination: Same non-standard format as Menlo Park:
+  dlv_OC+CL+Public+Events+Listing=(pageindex=N)
+  (simple ?page=N is ignored server-side).
 
-HTML structure (same as Menlo Park):
+HTML structure:
   <article>
     <a href="https://www.paloalto.gov/Events-Directory/{category}/{slug}">
       <h2 class="list-item-title">Title</h2>
@@ -41,10 +38,7 @@ from .base import BaseScraper, Event, make_id
 logger = logging.getLogger(__name__)
 
 _BASE = "https://www.paloalto.gov"
-_PAGES = [
-    "/Events-Directory",
-    "/Home/Calendar",
-]
+_EVENTS_PATH = "/Events-Directory"
 
 
 class PaloAltoScraper(BaseScraper):
@@ -67,19 +61,24 @@ class PaloAltoScraper(BaseScraper):
         seen: set[str] = set()
         events: list[Event] = []
 
-        for path in _PAGES:
-            url = _BASE + path
+        for page in range(1, 20):
+            page_param = f"dlv_OC+CL+Public+Events+Listing=(pageindex={page})"
+            url = f"{_BASE}{_EVENTS_PATH}?{page_param}"
             try:
                 resp = self._cffi_get(url)
                 resp.raise_for_status()
                 page_events = self._parse_page(resp.text)
+                if not page_events:
+                    break
                 for ev in page_events:
-                    if ev.id not in seen:
-                        if ev.date_start >= start.isoformat() and ev.date_start <= end.isoformat():
-                            seen.add(ev.id)
-                            events.append(ev)
+                    if ev.id not in seen and start.isoformat() <= ev.date_start <= end.isoformat():
+                        seen.add(ev.id)
+                        events.append(ev)
+                if all(ev.date_start > end.isoformat() for ev in page_events):
+                    break
             except Exception as exc:
-                logger.warning(f"[Palo Alto] {path} failed: {exc}")
+                logger.warning(f"[Palo Alto] page {page} failed: {exc}")
+                break
 
         logger.info(f"[Palo Alto] {len(events)} events fetched")
         return events

@@ -3,6 +3,10 @@
 Source: https://www.menlopark.gov/Citywide-calendar
 Platform: Granicus OpenCities
 
+Pagination: The site uses a non-standard query parameter for paging:
+  dlv_OC+CL+Public+Events+Listing=(pageindex=N)
+  (simple ?page=N is ignored server-side).
+
 HTML structure (verified):
   Cards are bare <a href="/Government/.../Events/..."> elements (no article wrapper).
   Inside each card:
@@ -20,7 +24,7 @@ We fetch three category passes (children, families, teens) and merge.
 from __future__ import annotations
 
 import logging
-from urllib.parse import urljoin, urlencode
+from urllib.parse import urljoin
 
 from .base import BaseScraper, Event, make_id
 
@@ -29,8 +33,6 @@ logger = logging.getLogger(__name__)
 _BASE = "https://www.menlopark.gov"
 _EVENTS_PATH = "/Citywide-calendar"
 _KIDS_CATEGORIES = ["children", "families", "teens"]
-_ADDR_WORDS = ("Library", "Ave", "St.", "Blvd", "Dr.", "Rd.", "Room",
-               "Center", "Campus", "Menlo Park", "Atherton", "Terminal")
 
 
 class MenloParkScraper(BaseScraper):
@@ -43,22 +45,21 @@ class MenloParkScraper(BaseScraper):
         events: list[Event] = []
 
         for cat in _KIDS_CATEGORIES:
-            for page in range(1, 25):
-                params = {
-                    "page": page,
-                    "category": cat,
-                    "startDate": start.strftime("%m/%d/%Y"),
-                    "endDate": end.strftime("%m/%d/%Y"),
-                }
-                url = f"{_BASE}{_EVENTS_PATH}?{urlencode(params)}"
+            for page in range(1, 50):
+                # Granicus OpenCities uses a non-standard pagination param
+                page_param = f"dlv_OC+CL+Public+Events+Listing=(pageindex={page})"
+                url = f"{_BASE}{_EVENTS_PATH}?{page_param}&category={cat}"
                 try:
                     resp = self.get(url)
-                    page_events, has_next = self._parse_page(resp.text)
+                    page_events = self._parse_page(resp.text)
+                    if not page_events:
+                        break
                     for ev in page_events:
-                        if ev.id not in seen:
+                        if ev.id not in seen and start.isoformat() <= ev.date_start <= end.isoformat():
                             seen.add(ev.id)
                             events.append(ev)
-                    if not has_next:
+                    # Stop paging once all events are past our window
+                    if all(ev.date_start > end.isoformat() for ev in page_events):
                         break
                 except Exception as exc:
                     logger.warning(f"[Menlo Park] cat={cat} page={page} failed: {exc}")
@@ -67,7 +68,7 @@ class MenloParkScraper(BaseScraper):
         logger.info(f"[Menlo Park] {len(events)} events fetched")
         return events
 
-    def _parse_page(self, html: str) -> tuple[list[Event], bool]:
+    def _parse_page(self, html: str) -> list[Event]:
         soup = self.soup(html)
         events = []
 
@@ -79,9 +80,7 @@ class MenloParkScraper(BaseScraper):
             if ev:
                 events.append(ev)
 
-        next_link = soup.select_one('a[rel="next"], [aria-label="Next page"]')
-        has_next = next_link is not None and next_link.get("aria-disabled") != "true"
-        return events, has_next
+        return events
 
     def _parse_card(self, card) -> Event | None:
         try:

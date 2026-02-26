@@ -211,15 +211,23 @@ class SCCLScraper(BiblioCommonsScraper):
 class SJPLScraper(BaseScraper):
     """San José Public Library — RSS feed.
 
-    Uses the BiblioCommons RSS feed which returns more events and richer data
-    than the JSON API endpoint.
+    Uses the paginated BiblioCommons RSS feed. The RSS is chronological
+    (oldest first), so we paginate until all events exceed the end date.
+    SJPL has 37 branches and thousands of events; we filter to kids/family only.
+
+    Category names in RSS use the form "Kids, ages 5-10", "Teens, ages 12-18",
+    etc., so we use substring matching rather than exact set membership.
     """
 
     RSS_URL = "https://gateway.bibliocommons.com/v2/libraries/sjpl/rss/events"
     BC_NS = "http://bibliocommons.com/rss/1.0/modules/event/"
-    _KIDS_CATEGORIES = frozenset({
-        "young children", "kids", "pre-teens", "teens",
-        "families", "family", "children", "youth",
+    # Exact SJPL audience category names (lowercased) that indicate kids/family
+    _KIDS_AUDIENCE_CATS = frozenset({
+        "kids, ages 5-10",
+        "pre-teens, ages 10-12",
+        "teens, ages 12-18",
+        "young children, ages 0-5",
+        "families",
     })
 
     def __init__(self):
@@ -231,26 +239,38 @@ class SJPLScraper(BaseScraper):
         return child.text if child is not None else None
 
     def fetch_events(self, days_ahead: int = 60) -> list[Event]:
-        try:
-            resp = self.get(self.RSS_URL)
-            root = ET.fromstring(resp.content)
-        except Exception as exc:
-            logger.warning(f"[{self.source_name}] RSS fetch failed: {exc}")
-            return []
-
         start_date, end_date = self.date_range(days_ahead)
         events: list[Event] = []
         seen: set[str] = set()
 
-        for item in root.findall(".//item"):
-            ev = self._parse_item(item)
-            if ev is None:
-                continue
-            if ev.date_start < start_date.isoformat() or ev.date_start > end_date.isoformat():
-                continue
-            if ev.id not in seen:
-                seen.add(ev.id)
-                events.append(ev)
+        # The RSS feed is chronological (oldest first). Paginate until all
+        # events on the page are past our end date. 200 pages covers ~90 days.
+        for page in range(1, 200):
+            try:
+                resp = self.get(self.RSS_URL, params={"page": page})
+                root = ET.fromstring(resp.content)
+            except Exception as exc:
+                logger.warning(f"[{self.source_name}] page {page} failed: {exc}")
+                break
+
+            items = root.findall(".//item")
+            if not items:
+                break
+
+            page_events = [ev for item in items if (ev := self._parse_item(item)) is not None]
+            if not page_events:
+                break
+
+            for ev in page_events:
+                if not ev.is_kids_event:
+                    continue  # SJPL is too large to include all events
+                if ev.id not in seen and start_date.isoformat() <= ev.date_start <= end_date.isoformat():
+                    seen.add(ev.id)
+                    events.append(ev)
+
+            # Stop once all events on this page are past the window
+            if all(ev.date_start > end_date.isoformat() for ev in page_events):
+                break
 
         logger.info(f"[{self.source_name}] {len(events)} events fetched")
         return events
@@ -330,11 +350,11 @@ class SJPLScraper(BaseScraper):
                 image_url=image_url,
             )
 
-            # Kids detection: audience categories + keyword fallback
+            # Kids detection: match against exact SJPL audience category names.
+            # Don't use tag_kids() fallback — "Family Learning Centers" (a topic
+            # category) would trigger false positives via the "family" keyword.
             cats_lower = {c.lower() for c in categories}
-            ev.is_kids_event = bool(cats_lower & self._KIDS_CATEGORIES)
-            if not ev.is_kids_event:
-                self.tag_kids(ev)
+            ev.is_kids_event = bool(cats_lower & self._KIDS_AUDIENCE_CATS)
             return ev
 
         except Exception as exc:
