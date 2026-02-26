@@ -203,7 +203,7 @@ function render() {
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
-  filterKids.checked    = true;
+  filterKids.checked    = false;
   filterLibrary.checked = false;
   filterCity.value      = "";
   filterDateFrom.value  = "";

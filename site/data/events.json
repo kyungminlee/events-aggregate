@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-02-26T04:00:06.538690+00:00",
-  "total": 1912,
-  "kids_total": 1849,
-  "library_total": 1813,
+  "updated_at": "2026-02-26T08:24:58.882769+00:00",
+  "total": 1973,
+  "kids_total": 1866,
+  "library_total": 1827,
   "sources": [
     "Menlo Park",
     "Mountain View Public Library",
@@ -13,138 +13,6 @@
   ],
   "errors": [],
   "events": [
-    {
-      "id": "491ab0920ef9",
-      "title": "Love Letters to the Library: Create Your Own Coloring Valentine!",
-      "url": "https://sjpl.bibliocommons.com/events/69792d4876261f2800671ad9",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": null,
-      "time_end": "23:59",
-      "location": "Bascom — Children's Area (near the children's fiction section)",
-      "description": "Help fill our library with love, all month long!  In honor of National Library's Month, drop by our&nbsp;children's area this month to pick up a special Valentine themed template.&nbsp;Children can color their masterpiece and write what they love most about the library! They can then deposit their creation&nbsp;in our special Valentine Letter Box.&nbsp;   Free!  All coloring supplies and templates provided.&nbsp; \n  Ages:  Perfect for toddlers through elementary schoolers. \n   ADA Accommodation ",
-      "categories": [
-        "Valentine's Day",
-        "Celebrations & Festivities",
-        "Crafts & Hobbies",
-        "Kids, ages 5-10",
-        "Pre-Teens, ages 10-12",
-        "Young Children, ages 0-5",
-        "English"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/adbf53914324ed8201a8ea8cd9620b12/childholdingvalentineheartsmallerres.jpg"
-    },
-    {
-      "id": "ec3f9c8b40f6",
-      "title": "Paper Chains of Kindness",
-      "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dc6",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": null,
-      "time_end": "23:59",
-      "location": "King Library",
-      "description": "Join us for a creative and heartwarming art activity where every link counts! Write a message of kindness, gratitude, or encouragement on a colorful strip of paper, then add it to our growing community chain. Together, we’ll build a beautiful visual reminder of how small acts of kindness connect us all. All ages welcome—come share your creativity and help our chain grow! \n Free. No registration is required. \n \n  This program is developed to align with  the Early Education Quality Standards . Thi",
-      "categories": [
-        "Silicon Valley Reads",
-        "Storytime",
-        "Adults, ages 18+",
-        "Kids, ages 5-10",
-        "Pre-Teens, ages 10-12",
-        "Seniors, ages 65+",
-        "Teens, ages 12-18",
-        "Young Children, ages 0-5",
-        "English"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
-    },
-    {
-      "id": "36e23159a72d",
-      "title": "Planning & Transportation Commission Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Planning-Transportation-Commission-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-02-25",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Tune in to the Planning and Transportation Commission Meeting held in Council Chambers and virtually via Zoom.",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/planning-and-transportation-commission/ptc-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "7c3f1c4661d2",
-      "title": "Read-A-Thon (Partnership with Cambrian Educational Foundation)",
-      "url": "https://sjpl.bibliocommons.com/events/697d06394dacf581ff77f35c",
-      "source": "San José Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": null,
-      "time_end": "23:59",
-      "location": "Cambrian",
-      "description": "Cambrian School District Students:&nbsp; pick up or download your reading materials from February 1 through February 28 for the District-wide Read-A-Thon, which is being run by our Partner, Cambrian Educational Foundation. \n The student who reads the most in their grade and school (Bagby Elementary, Fammatre Elementary, Farnham Charter&nbsp;Elementary, Sartorette Charter Elementary, Steindorf STEAM, and Price Charter Middle School)&nbsp;will win a special prize for reading excellence from the Ca",
-      "categories": [
-        "Books & Authors",
-        "Kids, ages 5-10",
-        "English"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/8ac12bf9945157cb9bf28777cbda2743/CopyofRead_a_thonRectangularLogo2.jpg"
-    },
-    {
-      "id": "7a1785928d44",
-      "title": "Baby Storytime",
-      "url": "https://mountainview.libcal.com/event/16349835",
-      "source": "Mountain View Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": "10:30",
-      "time_end": "11:15",
-      "location": "1st Floor Program Room",
-      "description": "A musical storytime for infants, babies, and new toddlers with books, baby bounces, and dancing! After storytime, we will host a brief Stay & Play for grownups to connect and mingle. This program is designed for ages 0-18 months.\n\nAssisted Listening Devices available upon request.",
-      "categories": [
-        "Storytime"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
-    {
-      "id": "852249ecd45c",
-      "title": "LEGO® Time",
-      "url": "https://mountainview.libcal.com/event/16090787",
-      "source": "Mountain View Public Library",
-      "source_type": "library",
-      "date_start": "2026-02-25",
-      "date_end": "2026-02-25",
-      "time_start": "18:30",
-      "time_end": "19:30",
-      "location": "1st Floor Program Room",
-      "description": "It's an open invitation to a LEGO® building extravaganza! Everyone is encouraged to participate in the construction excitement.\n\n \n\nLEGOs® will be supplied\n\n \n\nJoin the building fun on three dates:\n\nWednesday, January 28\n\nWednesday, February 25\n\nWednesday, March 18",
-      "categories": [
-        "Just for Fun (Youth)",
-        "Learn & Explore",
-        "Make"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": null
-    },
     {
       "id": "ee6fd69ce25c",
       "title": "3D Printing On Demand",
@@ -187,25 +55,6 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/cslc-7pm.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "2cb36398eeec",
-      "title": "City/School Transportation Safety Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/CitySchool-Transportation-Safety-Committee-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-02-26",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "The City/School Transportation Safety Committee is composed of Palo Alto Council of PTAs appointed Parent Transportation Safety Representatives, City of Palo Alto staff and Palo Alto Unified School District staff.",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/safe-routes-to-schools/safe-routes-to-school-links/cops.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4dbc5609a3f8",
@@ -376,6 +225,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "3f2bf3b322d5",
+      "title": "City/School Transportation Safety Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/CitySchool-Transportation-Safety-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": null,
+      "description": "The City/School Transportation Safety Committee is composed of Palo Alto Council of PTAs appointed Parent Transportation Safety Representatives, City of Palo Alto staff and Palo Alto Unified School District staff.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/safe-routes-to-schools/safe-routes-to-school-links/cops.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "ae9e14b67387",
@@ -1957,25 +1825,6 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
-      "id": "f27dcf8b3d32",
-      "title": "Household Hazardous Waste Station Open",
-      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-02-28",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
-      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
-      "categories": [
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "96f44540755b",
       "title": "Library Makes",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
@@ -2108,6 +1957,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026-yanovcon-banner-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "3b867551eab3",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7721be274c6b",
@@ -3286,26 +3154,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
-      "id": "f98e222c5f9e",
-      "title": "Bridges in Music @ Magical Bridge",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Bridges-in-Music-Magical-Bridge",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-01",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
-      "description": "Bridges in Music is a youth musician program hosted by Magical Bridge Foundation that brings teen-led performances and hands-on workshops to the playground.",
-      "categories": [
-        "City Sponsored Events",
-        "Community Events"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/bridges-in-music.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "fe3d3e5f5727",
       "title": "California Book Group: The Girls in the Picture",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260301-CA-Book-Group-Girls-Picture",
@@ -3323,86 +3171,6 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03_01-ca-book-girls-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "831fff92b782",
-      "title": "Canine Companions @ Magical Bridge",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Canine-Companions-Magical-Bridge",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-01",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
-      "description": "Join us to meet our favorite furry friends of Canine Companions! Welcome to all ages and abilities.",
-      "categories": [
-        "City Sponsored Events",
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/canine-companions.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "8425cb4fd0b5",
-      "title": "Julia Robinson Math Festival @ Magical Bridge",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Julia-Robinson-Math-Festival-Magical-Bridge",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-01",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
-      "description": "The Julia Robinson Math Festival creates joyful, collaborative math experiences through hands-on games and puzzles that encourage creative problem-solving.",
-      "categories": [
-        "City Sponsored Events",
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/math-fu-nfor-all.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "713228751378",
-      "title": "Magical Bridge Community Partner Day",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Magical-Bridge-Community-Partner-Day",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-01",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
-      "description": "Connect and create together on the playground! Join us on the first Sunday of each month for a celebration of local nonprofits, small businesses, and community groups.",
-      "categories": [
-        "City Sponsored Events",
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-partner-day.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "f14044155515",
-      "title": "Mini Music Lessons for Kids @ Magical Bridge",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Mini-Music-Lessons-for-Kids-Magical-Bridge",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-01",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
-      "description": "Join us for Magical Bridge Music, a youth-led program designed to inspire young learners to explore music in a safe, inclusive, and joyful way. This engaging experience is led by a group of passionate high school students from The Nueva School who love music and want to share it with the community.",
-      "categories": [
-        "City Sponsored Events",
-        "Community Events"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/mini-music-for-kids.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7e9a3e794409",
@@ -3430,6 +3198,66 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
+    },
+    {
+      "id": "84411bc8804b",
+      "title": "Canine Companions @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Canine-Companions-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Join us to meet our favorite furry friends of Canine Companions! Welcome to all ages and abilities.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/canine-companions.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "841ddb0cf7ab",
+      "title": "Julia Robinson Math Festival @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Julia-Robinson-Math-Festival-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "The Julia Robinson Math Festival creates joyful, collaborative math experiences through hands-on games and puzzles that encourage creative problem-solving.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/math-fu-nfor-all.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "e292e348742a",
+      "title": "Magical Bridge Community Partner Day",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Magical-Bridge-Community-Partner-Day",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Connect and create together on the playground! Join us on the first Sunday of each month for a celebration of local nonprofits, small businesses, and community groups.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-partner-day.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3d62d0de2a42",
@@ -3638,6 +3466,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b52c1b648cea7b76de293c7fa686c7f0/LegoClub.jpg"
     },
     {
+      "id": "7ac407ff47c3",
+      "title": "Mini Music Lessons for Kids @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Mini-Music-Lessons-for-Kids-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": "13:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Join us for Magical Bridge Music, a youth-led program designed to inspire young learners to explore music in a safe, inclusive, and joyful way. This engaging experience is led by a group of passionate high school students from The Nueva School who love music and want to share it with the community.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/mini-music-for-kids.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "33f2fc9eb17a",
       "title": "Reading to Children with Vivian",
       "url": "https://sjpl.bibliocommons.com/events/68e555e1dd8f020663850fd0",
@@ -3728,6 +3576,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/0f207db903d6bf3402aba77433f4068e/boardgames.jpg"
+    },
+    {
+      "id": "b55c643b5894",
+      "title": "Bridges in Music @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Bridges-in-Music-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-01",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Bridges in Music is a youth musician program hosted by Magical Bridge Foundation that brings teen-led performances and hands-on workshops to the playground.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/bridges-in-music.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "df87a34c7035",
@@ -3906,25 +3774,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f9bc6226e134d07e784d3a3c5ae7c916/Screenshot2025-06-29085632.png"
-    },
-    {
-      "id": "f3e9249a9dae",
-      "title": "City Council Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-02",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "91b420a429da",
@@ -4346,6 +4195,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/136ee7ce2e19cd6c5f17fecc6135a0ea/RBimageforwebsite.jpg"
+    },
+    {
+      "id": "4c37bc9e6f18",
+      "title": "City Council Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-02",
+      "date_end": null,
+      "time_start": "17:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "1a47c0aa9830",
@@ -5426,44 +5294,6 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-tabletop-gaming-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
-      "id": "c91b99c67568",
-      "title": "Utilities Advisory Commission (UAC) Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Utilities/Utilities-Advisory-Commission",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-04",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "The Utilities Advisory Commission (UAC) is charged with providing advice on acquisition and development of electric, gas and water resources; joint action projects with other public or private entities which involve electric, gas or water resources; environmental implications of electric, gas or water utility projects, conservation and demand management.",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": null
-    },
-    {
-      "id": "d92685479a6c",
-      "title": "Year of Letters",
-      "url": "https://www.paloalto.gov/Events-Directory/Library/Year-of-Letters",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-04",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Rinconada Library, 1213 Newell Rd., Palo Alto, CA 94303",
-      "description": "Drop in to decorate cards or write letters at the library!",
-      "categories": [
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/2025letters.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "141ef81ae9b8",
       "title": "Asistencia para Búsqueda de Trabajo",
       "url": "https://sjpl.bibliocommons.com/events/698e38c23cc3e0c9ecb8e4a1",
@@ -6122,6 +5952,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "b00b100fbe3b",
+      "title": "Year of Letters",
+      "url": "https://www.paloalto.gov/Events-Directory/Library/Year-of-Letters",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-04",
+      "date_end": null,
+      "time_start": "16:30",
+      "time_end": null,
+      "location": "Rinconada Library, 1213 Newell Rd., Palo Alto, CA 94303",
+      "description": "Drop in to decorate cards or write letters at the library!",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/2025letters.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "84bbefb3ef7f",
       "title": "Tiny Talkers: Public Speaking, Speech & Debate Workshop",
       "url": "https://sjpl.bibliocommons.com/events/698e4c043cc3e0c9ecb8ea07",
@@ -6232,6 +6081,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f655b16d35e3a52478d6f17eb1d241a9/pexels-cup-of-couple-8015688.jpg"
     },
     {
+      "id": "74ac7ffdec75",
+      "title": "Utilities Advisory Commission (UAC) Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Utilities/Utilities-Advisory-Commission",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-04",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "The Utilities Advisory Commission (UAC) is charged with providing advice on acquisition and development of electric, gas and water resources; joint action projects with other public or private entities which involve electric, gas or water resources; environmental implications of electric, gas or water utility projects, conservation and demand management.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "d2299b8b256d",
       "title": "3D Printing On Demand",
       "url": "https://sjpl.bibliocommons.com/events/68e84cfba7774f33d769259b",
@@ -6254,25 +6122,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
-    },
-    {
-      "id": "72da55d32aae",
-      "title": "Architectural Review Board Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Architectural-Review-Board-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-05",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Tune in to the Architectural Review Board Meeting held in Council Chambers and virtually via Zoom.",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/architectural-review-board/arb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "78cd27580c46",
@@ -6338,6 +6187,25 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/2/planning-amp-development-services/long-range-planning/area-plans-and-studies/san-antonio-rd-area-plan/sarap_cw2_-image.jpeg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "e1336d83aea1",
+      "title": "Architectural Review Board Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Architectural-Review-Board-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-05",
+      "date_end": null,
+      "time_start": "08:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Architectural Review Board Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/architectural-review-board/arb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "83bd95c7c550",
@@ -7129,25 +6997,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e43e5ed9154fa45616a7bb476529bc5d/Final%20TeensReach%20Logo_white_jpg.jpg"
     },
     {
-      "id": "56cbef218602",
-      "title": "Climate Action & Sustainability Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Climate-Action-Sustainability-Committee-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-06",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA 94301",
-      "description": "Come and participate in the Climate Action & Sustainability Committee Meeting. Our committee will be discussing sustainability, making progress towards reducing carbon impacts, greenhouse gas (GHG) emissions, and resource consumption.",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/special/cacs-2pm.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "b31f8fc7647c",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dcf",
@@ -7286,6 +7135,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/2bbc14aeb3d6f5fb1f3883ec627648fa/BbayLapsit.jpg"
     },
     {
+      "id": "2c1b88d1cd07",
+      "title": "Climate Action & Sustainability Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Climate-Action-Sustainability-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-06",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA 94301",
+      "description": "Come and participate in the Climate Action & Sustainability Committee Meeting. Our committee will be discussing sustainability, making progress towards reducing carbon impacts, greenhouse gas (GHG) emissions, and resource consumption.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/special/cacs-2pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "1de66519f56e",
       "title": "First Friday Tea",
       "url": "https://sjpl.bibliocommons.com/events/690e9cb6886bb73600b9c826",
@@ -7349,6 +7217,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/4ac082034e4762c0b5d507eeb6324ac4/crafts.jpg"
+    },
+    {
+      "id": "418981a8e943",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-06",
+      "date_end": null,
+      "time_start": "15:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "8a62c509631a",
@@ -7758,6 +7645,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
+    },
+    {
+      "id": "64dc28492177",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-07",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "237b7aeaa7a8",
@@ -9967,6 +9873,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/2b3ccf3a357d2c867c11153d84ddef62/BannerSmall.jpg"
     },
     {
+      "id": "40286fd95246",
+      "title": "City Council Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-09",
+      "date_end": null,
+      "time_start": "17:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "46bd0f260eb6",
       "title": "Family Storytime + Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/69332d816724c63d00e56e68",
@@ -10052,25 +9977,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
-    },
-    {
-      "id": "2213f74755dd",
-      "title": "Policy and Services Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Policy-and-Services-Committee-Meeting-2026",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-10",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Come and participate in the Policy and Services Committee Meeting. Our Committee will be discussing administrative procedures and policy matters.",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/policy-and-services-6pm.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "11fd7898eabf",
@@ -10934,6 +10840,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
+      "id": "6ebc699d514f",
+      "title": "Policy and Services Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Policy-and-Services-Committee-Meeting-2026",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-10",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Come and participate in the Policy and Services Committee Meeting. Our Committee will be discussing administrative procedures and policy matters.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/policy-and-services-6pm.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "54bf0e89dc4c",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dd4",
@@ -11732,6 +11657,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f655b16d35e3a52478d6f17eb1d241a9/pexels-cup-of-couple-8015688.jpg"
     },
     {
+      "id": "52dd93bd6001",
+      "title": "Planning & Transportation Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Planning-Transportation-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-11",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Planning and Transportation Commission Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/planning-and-transportation-commission/ptc-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "380eab05066d",
       "title": "Bilingual Storytime: Mandarin/English",
       "url": "https://mountainview.libcal.com/event/15946895",
@@ -11773,44 +11717,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
-    },
-    {
-      "id": "879f6f05dc38",
-      "title": "Historic Resources Board Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Historic-Resources-Board-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-12",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Tune in to the Historic Resources Board Meeting held in Council Chambers and virtually via Zoom.",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/historic-resources-board/hrb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "102426932ac5",
-      "title": "Human Relations Commission Regular Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Human-Relations-Commission-Regular-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-12",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Tune in to the Human Relations Commission Regular Meeting held in Council Chambers and virtually via Zoom",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/hrc-6pm.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "b5d58afcb21d",
@@ -11857,6 +11763,25 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-manager/city-manager-initiatives/temp-churchill-closure-review/temporary-churchill-closure-listening-session.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "2eef3b5ab7d0",
+      "title": "Historic Resources Board Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Historic-Resources-Board-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-12",
+      "date_end": null,
+      "time_start": "08:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Historic Resources Board Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/historic-resources-board/hrb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "5f9e713af830",
@@ -12776,6 +12701,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
     },
     {
+      "id": "7cb86502fe3f",
+      "title": "Human Relations Commission Regular Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Human-Relations-Commission-Regular-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-12",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Human Relations Commission Regular Meeting held in Council Chambers and virtually via Zoom",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/hrc-6pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "45b4478aa7d0",
       "title": "Finding Marian Abel at Los Altos  Library",
       "url": "https://sccl.bibliocommons.com/events/69839baad2bbe265eb2c31e8",
@@ -13382,6 +13326,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
+    },
+    {
+      "id": "5ef2688b74f0",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-14",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "54c62d14b38f",
@@ -15628,6 +15591,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/136ee7ce2e19cd6c5f17fecc6135a0ea/RBimageforwebsite.jpg"
     },
     {
+      "id": "02ad6abb6978",
+      "title": "City Council Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-16",
+      "date_end": null,
+      "time_start": "17:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "c30ff3f26e8e",
       "title": "Family Storytime + Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/69332d816724c63d00e56e6a",
@@ -15647,25 +15629,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
-    },
-    {
-      "id": "e702d0baf69e",
-      "title": "Finance Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Finance-Committee-Meeting-3rd-Tues",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-17",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA",
-      "description": "Attend the Finance Committee Meeting as the committee discusses topics related to the budget and fiscal planning",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/fc-4pm.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "d0a8f059a85b",
@@ -16236,6 +16199,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ffc3a5ca585acf3a56cb67cdbad1a29e/Moasic.jpg"
     },
     {
+      "id": "aa963499e375",
+      "title": "Finance Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Finance-Committee-Meeting-3rd-Tues",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-17",
+      "date_end": null,
+      "time_start": "16:00",
+      "time_end": null,
+      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA",
+      "description": "Attend the Finance Committee Meeting as the committee discusses topics related to the budget and fiscal planning",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/fc-4pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "3cc0a561da0d",
       "title": "Homework Club",
       "url": "https://sjpl.bibliocommons.com/events/695477a8bbe7a1f3ba645476",
@@ -16611,25 +16593,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
-      "id": "3e04cadd8fd7",
-      "title": "Economic Development Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Economic-Development-Committee-Meeting-2026",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-18",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "250 Hamilton Ave., Palo Alto, CA 94301",
-      "description": "Attend the Economic Development Committee Meeting as the committee discusses topics related to business.",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/economicdevelopment.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "fb9328d0984a",
       "title": "Global Language Storytime: Mandarin",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260318-Global-Storytime-Mandarin",
@@ -16693,25 +16656,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
-    },
-    {
-      "id": "a1aa772b4f95",
-      "title": "Parking Policies Update Workshop",
-      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/Parking-Policies-Update-Workshop",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-18",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "250 Hamilton Ave. / 450 Bryant St., Palo Alto, CA 94301",
-      "description": "The City is working on updating its Residential Preferential Parking administrative guidelines and other downtown parking policies. Join one of two sessions to share your input about your experience parking in downtown to help guide policy updates.",
-      "categories": [
-        "Other City Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/parking/downtown-parking-experience-community-meeting-1.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "96e3db71bca2",
@@ -16841,6 +16785,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "93ef7384893c",
+      "title": "Parking Policies Update Workshop",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/Parking-Policies-Update-Workshop",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-18",
+      "date_end": null,
+      "time_start": "10:30",
+      "time_end": null,
+      "location": "250 Hamilton Ave. / 450 Bryant St., Palo Alto, CA 94301",
+      "description": "The City is working on updating its Residential Preferential Parking administrative guidelines and other downtown parking policies. Join one of two sessions to share your input about your experience parking in downtown to help guide policy updates.",
+      "categories": [
+        "Other City Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/parking/downtown-parking-experience-community-meeting-1.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "ae4702cfa825",
@@ -17333,6 +17296,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/402aaab0f211c1081eca318c545e7cc4/WackyWednesdays.png"
     },
     {
+      "id": "34c9300ac60c",
+      "title": "Economic Development Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Economic-Development-Committee-Meeting-2026",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-18",
+      "date_end": null,
+      "time_start": "16:15",
+      "time_end": null,
+      "location": "250 Hamilton Ave., Palo Alto, CA 94301",
+      "description": "Attend the Economic Development Committee Meeting as the committee discusses topics related to business.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/economicdevelopment.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "34d8bd3d7ac7",
       "title": "(Virtual) Math Club",
       "url": "https://sjpl.bibliocommons.com/events/689a53ee28109b6cd72f56ad",
@@ -17534,6 +17516,25 @@
       "image_url": null
     },
     {
+      "id": "7db96c8f0596",
+      "title": "Parking Policies Update Workshop",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/Parking-Policies-Update-Workshop",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-18",
+      "date_end": null,
+      "time_start": "18:30",
+      "time_end": null,
+      "location": "250 Hamilton Ave. / 450 Bryant St., Palo Alto, CA 94301",
+      "description": "The City is working on updating its Residential Preferential Parking administrative guidelines and other downtown parking policies. Join one of two sessions to share your input about your experience parking in downtown to help guide policy updates.",
+      "categories": [
+        "Other City Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/parking/downtown-parking-experience-community-meeting-1.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "2d94ef6c3da5",
       "title": "3D Printing On Demand",
       "url": "https://sjpl.bibliocommons.com/events/68e84cfba7774f33d769259d",
@@ -17556,25 +17557,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
-    },
-    {
-      "id": "670643955259",
-      "title": "City/School Liaison Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/CitySchool-Liaison-Committee-Meeting-2026",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-19",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Watch and participate in the City/School Liaison Committee Meeting as the committee discusses topics related to our Palo Alto schools.",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/cslc-7pm.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "2f7315f0035f",
@@ -17623,23 +17605,23 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
-      "id": "77c80bed74ee",
-      "title": "Public Art Commission Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Public-Art-Commission-Meeting",
+      "id": "0372ce0caac3",
+      "title": "Architectural Review Board Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Architectural-Review-Board-Meeting",
       "source": "Palo Alto",
       "source_type": "city",
       "date_start": "2026-03-19",
       "date_end": null,
-      "time_start": null,
+      "time_start": "08:30",
       "time_end": null,
       "location": null,
-      "description": "Tune in to the Public Art Commission Meeting held in Community Meeting Room and virtually via Zoom.",
+      "description": "Tune in to the Architectural Review Board Meeting held in Council Chambers and virtually via Zoom.",
       "categories": [
         "Boards & Commissions Meetings"
       ],
       "is_kids_event": false,
       "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/public-art-commission/pac-meeting-image.png?dimension=smallthumbnail&w=150&h=100"
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/architectural-review-board/arb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "89b63ee71dea",
@@ -18536,6 +18518,44 @@
       "image_url": null
     },
     {
+      "id": "850bcb268d75",
+      "title": "City/School Liaison Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/CitySchool-Liaison-Committee-Meeting-2026",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-19",
+      "date_end": null,
+      "time_start": "19:00",
+      "time_end": null,
+      "location": null,
+      "description": "Watch and participate in the City/School Liaison Committee Meeting as the committee discusses topics related to our Palo Alto schools.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/cslc-7pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "a660b38b396b",
+      "title": "Public Art Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Public-Art-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-19",
+      "date_end": null,
+      "time_start": "19:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Public Art Commission Meeting held in Community Meeting Room and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/public-art-commission/pac-meeting-image.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "d57a7e71f642",
       "title": "Third Thursdays with Poetry Center San Jose",
       "url": "https://sjpl.bibliocommons.com/events/693c82bd8b29ea2800c3f72c",
@@ -19118,25 +19138,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/4ad1557fae587b726b74cd3dcfac221b/BiblioEvents%20Image%20Indoor.png"
     },
     {
-      "id": "d4c758817907",
-      "title": "Compost Workshop",
-      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Compost-Workshop",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-21",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Lucie Stern Community Center, 1305 Middlefield Rd, Palo Alto, CA 94301",
-      "description": "Bring out your garden's inner jungle by adding compost. Learn how easy it is to make your own compost at one of these free workshops.",
-      "categories": [
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/compost-at-home/garden-jungle-picture.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "218462baa8d8",
       "title": "Middle Grade Book Group: The Cookie Crumbles",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260321-Middle-Grade-Alma-Cookie",
@@ -19183,6 +19184,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
+      "id": "6b074887c847",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "39a898ed0d90",
       "title": "1 on 1 Tech Assistance",
       "url": "https://sjpl.bibliocommons.com/events/68df10f8023ff328007ce86f",
@@ -19205,6 +19225,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/360c8dba1f811b4e3efbc6bc8dd56fc7/Volunteer%20Tech%20Mentors%20-%20Joy%20and%20Christie%202.jpg"
+    },
+    {
+      "id": "1dd26b9b143c",
+      "title": "Compost Workshop",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Compost-Workshop",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Lucie Stern Community Center, 1305 Middlefield Rd, Palo Alto, CA 94301",
+      "description": "Bring out your garden's inner jungle by adding compost. Learn how easy it is to make your own compost at one of these free workshops.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/compost-at-home/garden-jungle-picture.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "0add1a961c9e",
@@ -20397,25 +20436,6 @@
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
-      "id": "7d222d32615e",
-      "title": "Leisure Noon Origami",
-      "url": "https://www.paloalto.gov/Events-Directory/Library/Leisure-Noon-Origami",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-22",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Mitchell Park Library, 3700 Middlefield Rd., Palo Alto, CA 94303",
-      "description": "Discover the art of origami on Sunday afternoon at Mitchell Park Library.",
-      "categories": [
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/leisure-noon-origami.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "56e28b92958e",
       "title": "Magic Science Show",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260322-Magic-Science",
@@ -20526,6 +20546,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "0bebbd3d0a7e",
+      "title": "Leisure Noon Origami",
+      "url": "https://www.paloalto.gov/Events-Directory/Library/Leisure-Noon-Origami",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-22",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Mitchell Park Library, 3700 Middlefield Rd., Palo Alto, CA 94303",
+      "description": "Discover the art of origami on Sunday afternoon at Mitchell Park Library.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/leisure-noon-origami.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "a863be1b5c7b",
@@ -21558,25 +21597,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
-      "id": "abd6097fa696",
-      "title": "Parks and Recreation Commission Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Parks-and-Recreation-Commission-Meeting",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-24",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": null,
-      "description": "Parks and Recreation Commission Regular 4th Tuesday of the month meeting.",
-      "categories": [
-        "Boards & Commissions Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/parks-and-recreation-commission-2022/commissioner-photos/prc-meeting-image.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "d7c0c8efd11f",
       "title": "Asistencia para Búsqueda de Trabajo",
       "url": "https://sjpl.bibliocommons.com/events/698e38c23cc3e0c9ecb8e4af",
@@ -22371,6 +22391,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "0ccb7a48904b",
+      "title": "Parks and Recreation Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Parks-and-Recreation-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-24",
+      "date_end": null,
+      "time_start": "19:00",
+      "time_end": null,
+      "location": null,
+      "description": "Parks and Recreation Commission Regular 4th Tuesday of the month meeting.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/parks-and-recreation-commission-2022/commissioner-photos/prc-meeting-image.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "9a744c70a1f8",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84de2",
@@ -23147,6 +23186,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ae781b1f3f56cd648dc401afeec302f6/baby-lapsit-storytime-1400.jpg"
     },
     {
+      "id": "f3ffdae751f7",
+      "title": "Planning & Transportation Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Planning-Transportation-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-25",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Planning and Transportation Commission Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/planning-and-transportation-commission/ptc-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "29243b54492a",
       "title": "3D Printing On Demand",
       "url": "https://sjpl.bibliocommons.com/events/68e84cfba7774f33d769259e",
@@ -23220,6 +23278,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "5c4385f0be83",
+      "title": "City/School Transportation Safety Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/CitySchool-Transportation-Safety-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-26",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": null,
+      "description": "The City/School Transportation Safety Committee is composed of Palo Alto Council of PTAs appointed Parent Transportation Safety Representatives, City of Palo Alto staff and Palo Alto Unified School District staff.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/safe-routes-to-schools/safe-routes-to-school-links/cops.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "b1ca29d6ca0d",
@@ -24514,25 +24591,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
-      "id": "7eb1ad72b0ab",
-      "title": "Playhouse Series: The Ugly Duckling",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Ugly-Duckling",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-03-28",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
-      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
-      "categories": [
-        "Community Events"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "6a642d9dbae9",
       "title": "Second Annual Around the World in a Day Festival",
       "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Multicultural-Event",
@@ -24570,6 +24628,25 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/woman-holding-seeds-in-hand-to-plant-a-garden.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "c15643daad3d",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4cf2b94c4aa5",
@@ -24616,6 +24693,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
+    },
+    {
+      "id": "a31427516945",
+      "title": "Playhouse Series: The Ugly Duckling",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Ugly-Duckling",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "629fd23c0efc",
@@ -24975,6 +25071,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "8967b9045e81",
+      "title": "Playhouse Series: The Ugly Duckling",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Ugly-Duckling",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "187406b05ac6",
@@ -25550,14 +25665,14 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
-      "id": "3f67aeae97aa",
+      "id": "fa582d3e9040",
       "title": "Photography Meetup",
       "url": "https://www.paloalto.gov/Events-Directory/Library/Photography-Meetup",
       "source": "Palo Alto",
       "source_type": "city",
       "date_start": "2026-03-29",
       "date_end": null,
-      "time_start": null,
+      "time_start": "10:00",
       "time_end": null,
       "location": "Mitchell Park Library, 3700 Middlefield Rd., Palo Alto, CA 94303",
       "description": "Join us for a monthly meetup designed for intermediate and advanced photographers where we'll discuss techniques, tips, and other aspects of photography.",
@@ -25567,6 +25682,25 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/photo-1506434304575-afbb92660c28.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "2764e5bc4eb0",
+      "title": "Playhouse Series: The Ugly Duckling",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Ugly-Duckling",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-29",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "f43129ed3066",
@@ -25634,6 +25768,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2b8e3251f2f4c7623a8e1f0714d25be/Oneinmath.jpg"
+    },
+    {
+      "id": "3fbc951cd366",
+      "title": "Playhouse Series: The Ugly Duckling",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Ugly-Duckling",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-03-29",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "dd83f8a5a5c1",
@@ -27255,6 +27408,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "6384ca0515ca",
+      "title": "Year of Letters",
+      "url": "https://www.paloalto.gov/Events-Directory/Library/Year-of-Letters",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-01",
+      "date_end": null,
+      "time_start": "16:30",
+      "time_end": null,
+      "location": "Rinconada Library, 1213 Newell Rd., Palo Alto, CA 94303",
+      "description": "Drop in to decorate cards or write letters at the library!",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/2025letters.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "0b0dbffec006",
       "title": "(Virtual) Math Club",
       "url": "https://sjpl.bibliocommons.com/events/689a53ee28109b6cd72f56af",
@@ -27343,6 +27515,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f655b16d35e3a52478d6f17eb1d241a9/pexels-cup-of-couple-8015688.jpg"
     },
     {
+      "id": "524e6b7d1e78",
+      "title": "Utilities Advisory Commission (UAC) Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Utilities/Utilities-Advisory-Commission",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-01",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "The Utilities Advisory Commission (UAC) is charged with providing advice on acquisition and development of electric, gas and water resources; joint action projects with other public or private entities which involve electric, gas or water resources; environmental implications of electric, gas or water utility projects, conservation and demand management.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": null
+    },
+    {
       "id": "e2e28f7c5bcc",
       "title": "3D Printing On Demand",
       "url": "https://sjpl.bibliocommons.com/events/68e84cfba7774f33d769259f",
@@ -27367,23 +27558,23 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
     },
     {
-      "id": "16495954ffd6",
-      "title": "Pedestrian and Bicycle Advisory Committee (PABAC) Special Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/PABAC-Meeting-2026-Special-Meetings",
+      "id": "f6a4e3efa423",
+      "title": "Architectural Review Board Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Architectural-Review-Board-Meeting",
       "source": "Palo Alto",
       "source_type": "city",
       "date_start": "2026-04-02",
       "date_end": null,
-      "time_start": null,
+      "time_start": "08:30",
       "time_end": null,
-      "location": "Palo Alto Art Center - Auditorium, 1313 Newell Road, Palo Alto, CA 94303",
-      "description": "Pedestrian and Bicycle Advisory Committee (PABAC) holds meetings on the first Thursday of each month at 6:15 p.m.",
+      "location": null,
+      "description": "Tune in to the Architectural Review Board Meeting held in Council Chambers and virtually via Zoom.",
       "categories": [
         "Boards & Commissions Meetings"
       ],
       "is_kids_event": false,
       "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/palo-alto-bicycle-advisory-committee-meetings.png?dimension=smallthumbnail&w=150&h=100"
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/architectural-review-board/arb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "8f941bd790de",
@@ -28142,6 +28333,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e43e5ed9154fa45616a7bb476529bc5d/Final%20TeensReach%20Logo_white_jpg.jpg"
     },
     {
+      "id": "0bd28254afbf",
+      "title": "Pedestrian and Bicycle Advisory Committee (PABAC) Special Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/PABAC-Meeting-2026-Special-Meetings",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-02",
+      "date_end": null,
+      "time_start": "18:15",
+      "time_end": null,
+      "location": "Palo Alto Art Center - Auditorium, 1313 Newell Road, Palo Alto, CA 94303",
+      "description": "Pedestrian and Bicycle Advisory Committee (PABAC) holds meetings on the first Thursday of each month at 6:15 p.m.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/palo-alto-bicycle-advisory-committee-meetings.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "0a32a013853e",
       "title": "Parent-Child Classes with Santa Clara County Early Head Start",
       "url": "https://sjpl.bibliocommons.com/events/68d4386bf0083110204220d4",
@@ -28224,6 +28434,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/2bbc14aeb3d6f5fb1f3883ec627648fa/BbayLapsit.jpg"
     },
     {
+      "id": "89c82b757480",
+      "title": "Climate Action & Sustainability Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Climate-Action-Sustainability-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-03",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA 94301",
+      "description": "Come and participate in the Climate Action & Sustainability Committee Meeting. Our committee will be discussing sustainability, making progress towards reducing carbon impacts, greenhouse gas (GHG) emissions, and resource consumption.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/special/cacs-2pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "7cf0375e8792",
       "title": "First Friday Tea",
       "url": "https://sjpl.bibliocommons.com/events/690e9cb6886bb73600b9c827",
@@ -28287,6 +28516,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/4ac082034e4762c0b5d507eeb6324ac4/crafts.jpg"
+    },
+    {
+      "id": "30ca2682394e",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-03",
+      "date_end": null,
+      "time_start": "15:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "94a343f37b8b",
@@ -28678,6 +28926,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9462cd1bc8e366e32152c3bf79391f83/Zumbaforkids.jpg"
+    },
+    {
+      "id": "f43b7bbd5c38",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-04",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "f5af1d54822d",
@@ -29706,6 +29973,46 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/teen-led-lantern-festival-1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "53ccf317369d",
+      "title": "Canine Companions @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Canine-Companions-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-05",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Join us to meet our favorite furry friends of Canine Companions! Welcome to all ages and abilities.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/canine-companions.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "77037011d004",
+      "title": "Magical Bridge Community Partner Day",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Magical-Bridge-Community-Partner-Day",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-05",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Connect and create together on the playground! Join us on the first Sunday of each month for a celebration of local nonprofits, small businesses, and community groups.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-partner-day.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "120d5a2139af",
       "title": "English & Math Tutoring",
       "url": "https://sjpl.bibliocommons.com/events/697d05ff4dacf581ff77f31a",
@@ -29893,6 +30200,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b52c1b648cea7b76de293c7fa686c7f0/LegoClub.jpg"
     },
     {
+      "id": "9542f8622a76",
+      "title": "Mini Music Lessons for Kids @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Mini-Music-Lessons-for-Kids-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-05",
+      "date_end": null,
+      "time_start": "13:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Join us for Magical Bridge Music, a youth-led program designed to inspire young learners to explore music in a safe, inclusive, and joyful way. This engaging experience is led by a group of passionate high school students from The Nueva School who love music and want to share it with the community.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/mini-music-for-kids.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "da057b12e88f",
       "title": "Math Club",
       "url": "https://sjpl.bibliocommons.com/events/69657ab2c967cb4120817edf",
@@ -29937,6 +30264,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/0f207db903d6bf3402aba77433f4068e/boardgames.jpg"
+    },
+    {
+      "id": "cd16476cfbf0",
+      "title": "Bridges in Music @ Magical Bridge",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Bridges-in-Music-Magical-Bridge",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-05",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Magical Bridge Playground, 3700 Middlefield Rd, Palo Alto, CA 94306",
+      "description": "Bridges in Music is a youth musician program hosted by Magical Bridge Foundation that brings teen-led performances and hands-on workshops to the playground.",
+      "categories": [
+        "City Sponsored Events",
+        "Community Events"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/bridges-in-music.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "d7da7ba92650",
@@ -30529,6 +30876,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/a6a16d9489505c5b34ab26f64dd1e305/20220913_105534.jpg"
     },
     {
+      "id": "87e395383776",
+      "title": "City Council Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-06",
+      "date_end": null,
+      "time_start": "17:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "8fb26e2408df",
       "title": "Family Storytime + Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/69332d816724c63d00e56e70",
@@ -30568,25 +30934,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
-    },
-    {
-      "id": "249fec99a998",
-      "title": "Finance Committee Meeting",
-      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Finance-Committee-Meeting-1st-Tues",
-      "source": "Palo Alto",
-      "source_type": "city",
-      "date_start": "2026-04-07",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA",
-      "description": "Attend the Finance Committee Meeting as the committee discusses topics related to the budget and fiscal planning",
-      "categories": [
-        "City Council Meetings"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/fc-4pm.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4800422fe91f",
@@ -30949,6 +31296,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/2bb06680eaae74127a896706d8207a52/early-ed-1400.jpg.jpg"
+    },
+    {
+      "id": "687618fb5747",
+      "title": "Finance Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Finance-Committee-Meeting-1st-Tues",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-07",
+      "date_end": null,
+      "time_start": "16:00",
+      "time_end": null,
+      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA",
+      "description": "Attend the Finance Committee Meeting as the committee discusses topics related to the budget and fiscal planning",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/fc-4pm.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "b9e132edf616",
@@ -31767,6 +32133,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f655b16d35e3a52478d6f17eb1d241a9/pexels-cup-of-couple-8015688.jpg"
     },
     {
+      "id": "5a237f398750",
+      "title": "Planning & Transportation Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Planning-Transportation-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-08",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Planning and Transportation Commission Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/planning-and-transportation-commission/ptc-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "dc5b5d053642",
       "title": "3D Printing On Demand",
       "url": "https://sjpl.bibliocommons.com/events/68e84cfba7774f33d76925a0",
@@ -31789,6 +32174,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
+    },
+    {
+      "id": "dd68f43b1470",
+      "title": "Historic Resources Board Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Historic-Resources-Board-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-09",
+      "date_end": null,
+      "time_start": "08:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Historic Resources Board Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/historic-resources-board/hrb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c17c935dabf1",
@@ -32428,6 +32832,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
     },
     {
+      "id": "7dfbe5e31003",
+      "title": "Human Relations Commission Regular Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Human-Relations-Commission-Regular-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-09",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Human Relations Commission Regular Meeting held in Council Chambers and virtually via Zoom",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/hrc-6pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "15e475bc6fb5",
       "title": "Global Language Storytime: Japanese",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260410-Global-Language-Japanese",
@@ -32927,6 +33350,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/screenshot-2025-10-01-at-10.08.47 am.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "d13ac2e73836",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-11",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "ea818a089d48",
@@ -34703,6 +35145,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/a6a16d9489505c5b34ab26f64dd1e305/20220913_105534.jpg"
     },
     {
+      "id": "154f47d0e5ba",
+      "title": "City Council Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-13",
+      "date_end": null,
+      "time_start": "17:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "11de3e2ee4c4",
       "title": "Family Storytime + Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/69332d816724c63d00e56e72",
@@ -35419,6 +35880,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
+      "id": "586f4329b937",
+      "title": "Policy and Services Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Policy-and-Services-Committee-Meeting-2026",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-14",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": null,
+      "description": "Come and participate in the Policy and Services Committee Meeting. Our Committee will be discussing administrative procedures and policy matters.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/policy-and-services-6pm.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "60c63fd405eb",
       "title": "Create Native American Game Sticks",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20260415-Native-Game-Sticks",
@@ -36085,6 +36565,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/feac36cd58bd0637244f2ac17c85c572/filament2.jpg"
+    },
+    {
+      "id": "c53f520fd94c",
+      "title": "Architectural Review Board Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Planning-and-Development-Services/2026-Architectural-Review-Board-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-16",
+      "date_end": null,
+      "time_start": "08:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Architectural Review Board Meeting held in Council Chambers and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/agendas-minutes-reports/agendas-minutes/architectural-review-board/arb-thumbnail.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c65c50102204",
@@ -36786,6 +37285,44 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/a43242cda8b0a110573f24971d94d6eb/Childrenreadinginthedark.png"
     },
     {
+      "id": "767c0e284098",
+      "title": "City/School Liaison Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/CitySchool-Liaison-Committee-Meeting-2026",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-16",
+      "date_end": null,
+      "time_start": "19:00",
+      "time_end": null,
+      "location": null,
+      "description": "Watch and participate in the City/School Liaison Committee Meeting as the committee discusses topics related to our Palo Alto schools.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/cslc-7pm.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "5933bccd9976",
+      "title": "Public Art Commission Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Public-Art-Commission-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-16",
+      "date_end": null,
+      "time_start": "19:00",
+      "time_end": null,
+      "location": null,
+      "description": "Tune in to the Public Art Commission Meeting held in Community Meeting Room and virtually via Zoom.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/public-art-commission/pac-meeting-image.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "b04b5a650b8c",
       "title": "Third Thursdays with Poetry Center San Jose",
       "url": "https://sjpl.bibliocommons.com/events/693c82bd8b29ea2800c3f72d",
@@ -37168,6 +37705,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/60bb2948ed3e5b72f0e38bb179aaea28/used-books-1400.jpg"
+    },
+    {
+      "id": "d93bb4d9e60e",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-18",
+      "date_end": null,
+      "time_start": "09:00",
+      "time_end": null,
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "1e6a40d5c0be",
@@ -38942,6 +39498,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/a6a16d9489505c5b34ab26f64dd1e305/20220913_105534.jpg"
     },
     {
+      "id": "65ef279fbf49",
+      "title": "City Council Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/City-Council-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-20",
+      "date_end": null,
+      "time_start": "17:30",
+      "time_end": null,
+      "location": null,
+      "description": "Tune into this City Council meeting. Council will review several items listed on this meeting's agenda.",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/city-council-530.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "e8d2a9b3a3fe",
       "title": "Count - Play - Explore",
       "url": "https://sjpl.bibliocommons.com/events/6979132876261f2800670f88",
@@ -39410,6 +39985,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "e5af8b4e1982",
+      "title": "Finance Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/City-Clerk/2026/Finance-Committee-Meeting-3rd-Tues",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-21",
+      "date_end": null,
+      "time_start": "16:00",
+      "time_end": null,
+      "location": "Palo Alto City Hall, 250 Hamilton Avenue, Palo Alto, CA",
+      "description": "Attend the Finance Committee Meeting as the committee discusses topics related to the budget and fiscal planning",
+      "categories": [
+        "City Council Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/fc-4pm.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7a94123e27fd",
@@ -40331,6 +40925,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
     },
     {
+      "id": "ff21eae3b72d",
+      "title": "City/School Transportation Safety Committee Meeting",
+      "url": "https://www.paloalto.gov/Events-Directory/Office-of-Transportation/CitySchool-Transportation-Safety-Committee-Meeting",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-23",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": null,
+      "description": "The City/School Transportation Safety Committee is composed of Palo Alto Council of PTAs appointed Parent Transportation Safety Representatives, City of Palo Alto staff and Palo Alto Unified School District staff.",
+      "categories": [
+        "Boards & Commissions Meetings"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/transportation/safe-routes-to-schools/safe-routes-to-school-links/cops.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "843cd8437b71",
       "title": "INSIDERS: Activities at the Village Square Branch",
       "url": "https://sjpl.bibliocommons.com/events/68d6c3c797cf5a912eb0d200",
@@ -41046,6 +41659,29 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/043f64cb10affe93d229b9705e665448/Nintendo_Switch_Splatoon_2.jpg"
     },
     {
+      "id": "37cf3d8e8a94",
+      "title": "Cricut Open Lab",
+      "url": "https://sjpl.bibliocommons.com/events/6944505e8d33cc4900c6292e",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-24",
+      "date_end": "2026-04-24",
+      "time_start": "16:00",
+      "time_end": "16:45",
+      "location": "Vineland — Community Room",
+      "description": "The Cricut Open Lab is a 45-minute learning session on select Fridays with machines available to use. First-time users can learn what the Cricut machine is and how it works. You can also watch  these tutorial videos  ahead of time to get a better idea of how to use the Cricut machine and Design Space.&nbsp;For those who already have experience using Cricut, they are welcome to register to&nbsp;use a machine independently to cut out their designs. We will have Cricut machines (Explore/Air and Mak",
+      "categories": [
+        "Crafts & Hobbies",
+        "Adults, ages 18+",
+        "Seniors, ages 65+",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/d69112f89b82cab20320a80cd0acef73/pexels-mary-lisa-14064373.jpg"
+    },
+    {
       "id": "d0b9e4ebd0b4",
       "title": "Friday Fun",
       "url": "https://sjpl.bibliocommons.com/events/68e555cf3fb368ea0293f662",
@@ -41202,23 +41838,23 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9462cd1bc8e366e32152c3bf79391f83/Zumbaforkids.jpg"
     },
     {
-      "id": "97d8b66b0956",
-      "title": "Playhouse Series: The Princess and the Pea",
-      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
+      "id": "9f77a9c92aad",
+      "title": "Household Hazardous Waste Station Open",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
       "source": "Palo Alto",
       "source_type": "city",
       "date_start": "2026-04-25",
       "date_end": null,
-      "time_start": null,
+      "time_start": "09:00",
       "time_end": null,
-      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
-      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "location": "Household Hazardous Waste Station, 2501 Embarcadero Way,",
+      "description": "Dispose unwanted hazardous household products such as used or expired medication, paints, solvents, fuels, cleaners, pesticides and more.",
       "categories": [
         "Community Events"
       ],
       "is_kids_event": false,
       "is_free": null,
-      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/for-residents/household-hazardous-waste-v2.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "153f3aed7bf6",
@@ -41243,6 +41879,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/360c8dba1f811b4e3efbc6bc8dd56fc7/Volunteer%20Tech%20Mentors%20-%20Joy%20and%20Christie%202.jpg"
+    },
+    {
+      "id": "d77219bf9758",
+      "title": "Compost Workshop",
+      "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Compost-Workshop",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Lucie Stern Community Center, 1305 Middlefield Rd, Palo Alto, CA 94301",
+      "description": "Bring out your garden's inner jungle by adding compost. Learn how easy it is to make your own compost at one of these free workshops.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/compost-at-home/garden-jungle-picture.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "a854a268faa1",
@@ -41290,6 +41945,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/aeae529ebc072aa206ea9e54e10f2ca4/istockphoto-1190049314-612x612.jpg"
+    },
+    {
+      "id": "2b1c5c25d54b",
+      "title": "Playhouse Series: The Princess and the Pea",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "d26110e60580",
@@ -41650,6 +42324,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "b0669054e283",
+      "title": "Playhouse Series: The Princess and the Pea",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "15fceca87d51",
       "title": "Reading Buddies with Cristel",
       "url": "https://sjpl.bibliocommons.com/events/692f5eb5dfc16d3415e44c81",
@@ -41939,6 +42632,44 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/2/zero-waste/repair-café-stock-image.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "491e94963b06",
+      "title": "Photography Meetup",
+      "url": "https://www.paloalto.gov/Events-Directory/Library/Photography-Meetup",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-26",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Mitchell Park Library, 3700 Middlefield Rd., Palo Alto, CA 94303",
+      "description": "Join us for a monthly meetup designed for intermediate and advanced photographers where we'll discuss techniques, tips, and other aspects of photography.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/photo-1506434304575-afbb92660c28.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "13ff95a220e5",
+      "title": "Playhouse Series: The Princess and the Pea",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-26",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "fcfe1cde86b0",
       "title": "English & Math Tutoring",
       "url": "https://sjpl.bibliocommons.com/events/697d05ff4dacf581ff77f31d",
@@ -41961,6 +42692,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "ef336a364140",
+      "title": "Leisure Noon Origami",
+      "url": "https://www.paloalto.gov/Events-Directory/Library/Leisure-Noon-Origami",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-26",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Mitchell Park Library, 3700 Middlefield Rd., Palo Alto, CA 94303",
+      "description": "Discover the art of origami on Sunday afternoon at Mitchell Park Library.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/leisure-noon-origami.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "f44892f42232",
@@ -42005,6 +42755,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2b8e3251f2f4c7623a8e1f0714d25be/Oneinmath.jpg"
+    },
+    {
+      "id": "bb63ad5d7dd1",
+      "title": "Playhouse Series: The Princess and the Pea",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-26",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "eeae5b45e964",
@@ -42257,6 +43026,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7986c0335dcc9a2b08d9fa264fa7d771/reading_buddies.jpg"
     },
     {
+      "id": "6914096c5e78",
+      "title": "Playhouse Series: The Princess and the Pea",
+      "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
+      "source": "Palo Alto",
+      "source_type": "city",
+      "date_start": "2026-04-26",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Palo Alto Children's Theatre, 1305 Middlefield Road, Palo Alto, CA 94301",
+      "description": "With very simple sets and costumes, and lots of opportunities to get up and wiggle, this story-teller style theatre is perfect for young audience members, suggested ages two to six years old.",
+      "categories": [
+        "Community Events"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "dc1cc2609325",
       "title": "Reading to Children",
       "url": "https://sjpl.bibliocommons.com/events/698104eb377f55c8ec1747b2",
@@ -42411,6 +43199,424 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/46c49f01b581ae725bb8b60b64d13274/StorytimeBannerImage(1).jpg"
+    },
+    {
+      "id": "511978d9e7cb",
+      "title": "Sci-Fi Fantasy Book Group: Piranesi",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260427-Sci-FiFantasy-Piranesi",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-27",
+      "date_end": null,
+      "time_start": null,
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join our Science-Fiction & Fantasy Book Group online or in person to discuss Piranesi, by Susanna Clarke.",
+      "categories": [
+        "Events for teens",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/book-group-sci-fi-fantasy-reading-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "1e28df991430",
+      "title": "Asistencia para Búsqueda de Trabajo",
+      "url": "https://sjpl.bibliocommons.com/events/698e38c23cc3e0c9ecb8e4c2",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "10:00",
+      "time_end": "18:00",
+      "location": "Educational Park",
+      "description": "¿Necesitas ayuda para elaborar&nbsp;tu currículum? ¿Sabes dónde buscar&nbsp;oportunidades de empleo?   ¿Buscas un cambio de carrera?  \n Reúnete personalmente con el personal de la biblioteca para: \n  Crear tu resume y&nbsp;carta de presentación  Buscar oportunidades de empleo en&nbsp;sitios web  Llenar los formularios de solicitud de trabajo (verificación de historial, Formulario W-4, etc.).  Obtener información sobre&nbsp;técnicas de entrevista  Recibir apoyo en la inscripción del Curso de Mani",
+      "categories": [
+        "Family Learning Centers",
+        "Career & Business",
+        "Computer Help",
+        "Adults, ages 18+",
+        "Teens, ages 12-18",
+        "Spanish"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "82d00a4b5db4",
+      "title": "Music and Movement",
+      "url": "https://sjpl.bibliocommons.com/events/69586fb694297d3600a2ee06",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "11:00",
+      "time_end": "12:00",
+      "location": "Mt. Pleasant",
+      "description": "Music and Movement is designed to accommodate a mix of ages and invites the entire family to participate in early literacy activities through songs, rhymes, finger plays, and movement activities. Music and Movement is a fun and interactive experience for the whole family that promotes the joys of learning for all ages. This program is geared for children of all ages and their parents/caregivers!&nbsp;  \n  Free   \n  \n This program is developed to align with  the Early Education Quality Standards ",
+      "categories": [
+        "Storytime",
+        "Young Children, ages 0-5",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
+    },
+    {
+      "id": "ffe53989fe38",
+      "title": "Spring AP & Finals Study Hall",
+      "url": "https://sjpl.bibliocommons.com/events/697d01ed491b809c6f166efb",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "14:00",
+      "time_end": "17:30",
+      "location": "Almaden — Program Room",
+      "description": "Need a place to study?&nbsp;Almaden Library will open its Program Room as additional quiet study space for teens&nbsp;after school from 2:00 PM&nbsp;to 30 minutes before closing. This space will be available most weekdays&nbsp;from Monday, April 28 through Thursday, May 28,   except   Tuesdays, April 29, May 5 & May 19, and Fridays, May 1, 8 & 15. The library is closed for Memorial Day on Monday, May 25. During Finals week, May 26-28, the room will open at 1. \n Light refreshments provided.  \n   ",
+      "categories": [
+        "Academic Support & Homework Help",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e7733109d781f9be1170e26ef0b9cec3/library-3898648_1280(1).jpg"
+    },
+    {
+      "id": "b5e4e051691e",
+      "title": "Mathema Adventures: A D&D-Inspired Math Games Program for Kids",
+      "url": "https://sjpl.bibliocommons.com/events/69692a9591e4576f847cc289",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "15:00",
+      "time_end": "16:00",
+      "location": "Tully",
+      "description": "Are you interested in math? Do you want to improve your problem solving skills and understanding of math? Or do you enjoy math in general? Well, come join us in this Dungeons-&- Dragons-inspired interactive and immersive adventure to improve your math skills! Journey through the world of Mathema to learn math skills to be used in school, and to keep Mathema at peace! Recommended for kids in 1st to 5th grade.  \n No registration required.   ADA Accommodation Requests",
+      "categories": [
+        "Games & Family Entertainment",
+        "Kids, ages 5-10",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b8ac9ddcfe9608b75c51e01462ca3894/mathema.png"
+    },
+    {
+      "id": "748f4fca7972",
+      "title": "One-On-One Tech Help",
+      "url": "https://sjpl.bibliocommons.com/events/6917d7af0562322f00304a81",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "location": "Santa Teresa — Internet Cafe",
+      "description": "Do you need help using a computer? Want to set up an email account? Stop by the Santa Teresa Branch Library for a session with our experienced volunteer! They can assist you with basic tech issues, such as:  \n  Setting up an email account, composing & sending emails, using email attachments   Web searches and basic data entry   Learning the basics of Microsoft Word and Excel and web-based productivity software such as Google docs   Using the library's pay-for-print and photocopy machines  Downlo",
+      "categories": [
+        "Computer Help",
+        "Adults, ages 18+",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
+    },
+    {
+      "id": "6fa91d7819a3",
+      "title": "Reading to Children with Aysha",
+      "url": "https://sjpl.bibliocommons.com/events/68e049bd023ff328007d16f9",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "15:00",
+      "time_end": "16:00",
+      "location": "Cambrian — 2nd Floor, Children's Picture Book Area",
+      "description": "Participating in the Reading to Children program is a great way for children to develop their imagination and spark a love for books, reading and learning. Children will enjoy one-on-one or small group interaction with our volunteer. Kids are also welcome to practice reading to our volunteer.  \n  Reading to Children will take place in the Children's Area.&nbsp;  \n  ADA Accommodation Requests",
+      "categories": [
+        "Storytime",
+        "Kids, ages 5-10",
+        "Young Children, ages 0-5",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/2bb06680eaae74127a896706d8207a52/early-ed-1400.jpg.jpg"
+    },
+    {
+      "id": "f9e7b801ab96",
+      "title": "Game Zone",
+      "url": "https://sjpl.bibliocommons.com/events/684db87e85662d0819868f36",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "15:30",
+      "time_end": "16:30",
+      "location": "Hillview — Teen Room",
+      "description": "Are you an expert at video,&nbsp;board, and card games? Do you want to demonstrate your skills, or just want to learn the basics? Or maybe you'd like to sink the 8 ball at a game of pool? \n Join us in the Teen Room at the Hillview Branch Library if you want to play video, board, and&nbsp;card games, play some pool, or just hang out! \n  Free. No registration required.  \n  ADA Accommodation Requests",
+      "categories": [
+        "Games & Family Entertainment",
+        "Pre-Teens, ages 10-12",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c35ac12573ab61cd8c6b097b0ecd6745/Screenshot2025-10-20140547.png"
+    },
+    {
+      "id": "fedab8954f06",
+      "title": "Village Square Homework Club",
+      "url": "https://sjpl.bibliocommons.com/events/6896897916b09128003c67cf",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "15:30",
+      "time_end": "17:00",
+      "location": "Village Square — Community Room",
+      "description": "Need room to get homework done and work on class projects? Join as at the Village Square Homework Club. Basic school supplies and snacks are provided. Volunteers are available to help with homework assignments as well. Teens are also welcome to come and&nbsp;work on their school assignments.    ADA Accommodation Requests",
+      "categories": [
+        "Academic Support & Homework Help",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "5cc7030422cd",
+      "title": "Chess Club for Kids",
+      "url": "https://sjpl.bibliocommons.com/events/6931d4246f9261360009393a",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "Willow Glen — Community Room",
+      "description": "Come learn to play chess, or just play a game! This is an informal and welcoming program for kids up to age 12 and their families.  Chess Club meets every Monday.&nbsp;Please check the website event listing for possible date cancellations and library holidays.   ADA Accommodation Requests",
+      "categories": [
+        "Games & Family Entertainment",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/0bd7de64ced673a921b9f8841a5c63e4/th-1708917628.jpg"
+    },
+    {
+      "id": "258300d7ad87",
+      "title": "Make It Mondays",
+      "url": "https://sjpl.bibliocommons.com/events/693afc7d8b29ea2800c3c184",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "Seven Trees",
+      "description": "Join us every Monday for arts and crafts at the library! Each week will feature a different activity that focuses on building creativity, social-emotional, and school readiness skills through art. All supplies will be provided!    ADA Accommodation Requests",
+      "categories": [
+        "Crafts & Hobbies",
+        "Kids, ages 5-10",
+        "Young Children, ages 0-5",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/8cb717ddf63089461a88ecea237ea6b0/Mondays.png"
+    },
+    {
+      "id": "60a0a4206321",
+      "title": "One-On-One Reading Coach for Kids",
+      "url": "https://sjpl.bibliocommons.com/events/692738437eb3e43000262889",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "Cambrian — Children's Area Juvenile Graphic Novel Horseshoe Table",
+      "description": "Our One-on-One Reading Tutor for Kids&nbsp;provides students in grades K-3 with an opportunity to improve their reading skills by working one-on-one with a reading coach. Our reading coach&nbsp;creates a positive reading experience for beginning and developing readers and helps children build confidence as readers. Our reading coach will listen to children read and provide support in phonics, sight words, and comprehension. Students can bring their favorite book or choose from the available sele",
+      "categories": [
+        "Books & Authors",
+        "Kids, ages 5-10",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/6dee4a2f901c4bae42c62103b8d319e7/thumbnail.jpg"
+    },
+    {
+      "id": "9262c52ea9d9",
+      "title": "Reading Buddies",
+      "url": "https://sjpl.bibliocommons.com/events/69556500491b809c6f10344b",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "Joyce Ellington",
+      "description": "Reading Buddies provides students in grades K-3 with an opportunity to improve their reading skills by working one-on-one with a reading coach. Reading Buddies creates a positive reading experience for beginning and developing readers and helps children build confidence as readers. Our reading coach will listen to children read and provide support in reading and comprehension. Students can bring their favorite book or choose from the available selection at the Joyce Ellington Branch Library.&nbs",
+      "categories": [
+        "Academic Support & Homework Help",
+        "Kids, ages 5-10",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/8551bf3cec9df166a6dafd20f250a5e3/hand-4092627_1280.jpg"
+    },
+    {
+      "id": "8a291cac0e0d",
+      "title": "STEM Club",
+      "url": "https://sjpl.bibliocommons.com/events/689b7631ee7045528b826272",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "location": "King Library — Exploration Room, located on the Teen Mezzanine",
+      "description": "Drop in and join us every Monday from 4pm-5pm for an evening of STEM related family fun! This club is intended for ages 5-10, but all families are welcome.  \n  Free. No registration required.   \n\n \n  January 5  - Shadow Puppets \n  January 12  - Dinosaur Fossil Exploration \n  January 19  -   Cancelled   \n  January 26  -&nbsp;Hide in Plain Sight - Camouflage Investigation  \n \n  February 2  - Green Bean Exploration \n  February 9  - Sense Investigations  \n  February 16  -   Cancelled   \n  February 2",
+      "categories": [
+        "STEAM",
+        "Kids, ages 5-10",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/a64b0b1f35ceb3ed0694a683463b262f/RectangleImage-2025-09-03T104935.012.png"
+    },
+    {
+      "id": "6f3fc559317e",
+      "title": "Crochet Club",
+      "url": "https://sjpl.bibliocommons.com/events/69389c794be11d3d00d742dc",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:30",
+      "time_end": "18:00",
+      "location": "Tully",
+      "description": "All are welcome—from beginners to experienced enthusiasts. Bring your own project or start a new one as we refine our skills and discuss all things crochet. A volunteer is available to provide instructions, and offer advice to beginners. Tools and supplies are provided. The minimum age is six years old. \n  ADA Accommodation Requests",
+      "categories": [
+        "Crafts & Hobbies",
+        "Adults, ages 18+",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "Seniors, ages 65+",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/835cbf849016f0fe02b6d401b3424fcb/crochet-flat-circle-scaled.jpg"
+    },
+    {
+      "id": "c1d6188d6aab",
+      "title": "星期一下午:西游记 (读书会)",
+      "url": "https://sjpl.bibliocommons.com/events/6949892b6f926136000c3352",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "16:30",
+      "time_end": "17:30",
+      "location": "Calabazas — community room",
+      "description": "A book club dedicated to \"Journey to the West,\" the classic Chinese fiction. This club is designed for children who are fans of the story and is conducted entirely in Mandarin Chinese.&nbsp;The event is organized by dedicated teen volunteers from Lynbrook High School.  小朋友们，你们听说过《 西游记 》吗？ 这是中国最有名的神话故事之一，讲述了一段惊险又有趣的旅程。在这个故事里，有聪明勇敢的 孙悟空 、善良慈悲的唐僧、憨厚搞笑的 猪八戒 ，还有忠诚可靠的沙和尚。他们一路上经历了许多危险和考验，但靠着智慧和团结，成功完成了任务。这次旅程不仅是他们追寻经书的故事，更是一场关于勇气、坚持和成长的冒险！更多有关&nbsp;  美猴王系列丛书 .&nbsp;  \n  免费的亲子中文  活動.&nbsp;  座位数量有限.   门票",
+      "categories": [
+        "Books & Authors",
+        "Storytime",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "Teens, ages 12-18",
+        "Young Children, ages 0-5",
+        "Chinese"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/d1e2284324016f0e4e3de9b561ee5c11/%E8%A5%BF%E9%81%8A%E8%A8%98.png"
+    },
+    {
+      "id": "ade1e1dc49aa",
+      "title": "Cambrian Pokemon Club",
+      "url": "https://sjpl.bibliocommons.com/events/68e5558fa9855c28d7ab4a35",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "17:00",
+      "time_end": "18:00",
+      "location": "Cambrian — Community Room",
+      "description": "Join us to have fun playing Pokemon, trading cards, and learning strategies for improving your game!        \n  ADA Accommodation Requests",
+      "categories": [
+        "Games & Family Entertainment",
+        "Kids, ages 5-10",
+        "Pre-Teens, ages 10-12",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/a6a16d9489505c5b34ab26f64dd1e305/20220913_105534.jpg"
+    },
+    {
+      "id": "c07a4a0f6dae",
+      "title": "Family Storytime + Stay & Play",
+      "url": "https://sjpl.bibliocommons.com/events/69332d816724c63d00e56e76",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "17:30",
+      "time_end": "18:30",
+      "location": "Seven Trees — Children's Area",
+      "description": "Storytime is designed to accommodate a mix of ages and invites the entire family to participate in early literacy activities such as stories, songs, rhymes, fingerplays, and movement activities. Storytime is a fun and interactive experience for the whole family that promotes the joys of reading and learning for all ages. This program is geared for children of all ages and their parents/caregivers!&nbsp; \n After Storytime concludes, we invite you to Stay & Play! Until 6:30 pm the Storytime librar",
+      "categories": [
+        "Storytime",
+        "Young Children, ages 0-5",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "07814c02b913",
+      "title": "San José Youth Commission Meeting",
+      "url": "https://sjpl.bibliocommons.com/events/688907976d83b22800dad2f8",
+      "source": "San José Public Library",
+      "source_type": "library",
+      "date_start": "2026-04-27",
+      "date_end": "2026-04-27",
+      "time_start": "18:30",
+      "time_end": "20:30",
+      "location": "San José City Hall - Council Chambers",
+      "description": "Want to learn about local government and issues affecting youth in San Jose? Join us at the San Jose Youth Commission meeting!   \n This in-person event&nbsp;will consist of discussions about city policies, city department reports,&nbsp;Youth Commissioner district reports, and more.&nbsp;  The minutes and agendas are linked here   .  \n The Youth Commission meets on the 4th Monday of the month, beginning at 6:30 PM. The Youth Commission does not meet in the months of July or December.&nbsp; \n Meet",
+      "categories": [
+        "TeenHQ",
+        "Community Resources & Support Groups",
+        "Teens, ages 12-18",
+        "English"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/893ece547941d8ce725b073a2daed15c/AdobeExpress-file(7).jpg"
     }
   ]
 }

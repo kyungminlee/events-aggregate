@@ -22,14 +22,21 @@ HTML structure:
         <span class="list-item-block-desc">Description…</span>
       </p>
       <p class="list-item-address">Location address</p>   <!-- optional -->
+      <p class="published-on small-text">N more dates</p>  <!-- recurring events -->
       <p class="tagged-as-list">…category tags…</p>
     </a>
   </article>
+
+Recurring events: the listing shows only the first date; the detail page lists all
+occurrences in a <ul> where each <li> has the form:
+  "Saturday, March 28, 2026 | 10:00 AM - 11:00 AM"
 """
 
 from __future__ import annotations
 
+import dataclasses
 import logging
+import re
 from typing import Optional
 from urllib.parse import urljoin
 
@@ -67,15 +74,39 @@ class PaloAltoScraper(BaseScraper):
             try:
                 resp = self._cffi_get(url)
                 resp.raise_for_status()
-                page_events = self._parse_page(resp.text)
-                if not page_events:
+                page_items = self._parse_page(resp.text)
+                if not page_items:
                     break
-                for ev in page_events:
-                    if ev.id not in seen and start.isoformat() <= ev.date_start <= end.isoformat():
-                        seen.add(ev.id)
-                        events.append(ev)
-                if all(ev.date_start > end.isoformat() for ev in page_events):
+
+                for ev, detail_url in page_items:
+                    # Expand to all occurrence dates if the card showed "N more dates"
+                    if detail_url:
+                        occurrences = self._fetch_all_dates(detail_url)
+                        if not occurrences:
+                            # Detail page failed — fall back to first date from listing
+                            occurrences = [(ev.date_start, ev.time_start)]
+                    else:
+                        occurrences = [(ev.date_start, ev.time_start)]
+
+                    for date_str, time_str in occurrences:
+                        if start.isoformat() <= date_str <= end.isoformat():
+                            # Include time in ID key so same-day performances get distinct IDs
+                            id_key = f"{date_str}T{time_str}" if time_str else date_str
+                            new_ev = dataclasses.replace(
+                                ev,
+                                id=make_id("Palo Alto", ev.title, id_key),
+                                date_start=date_str,
+                                time_start=time_str,
+                            )
+                            if new_ev.id not in seen:
+                                seen.add(new_ev.id)
+                                events.append(new_ev)
+
+                # Stop paging when all first-occurrence dates are past the window
+                first_dates = [ev.date_start for ev, _ in page_items]
+                if all(d > end.isoformat() for d in first_dates):
                     break
+
             except Exception as exc:
                 logger.warning(f"[Palo Alto] page {page} failed: {exc}")
                 break
@@ -83,16 +114,50 @@ class PaloAltoScraper(BaseScraper):
         logger.info(f"[Palo Alto] {len(events)} events fetched")
         return events
 
-    def _parse_page(self, html: str) -> list[Event]:
-        soup = self.soup(html)
-        events = []
-        for article in soup.select("article"):
-            ev = self._parse_card(article)
-            if ev:
-                events.append(ev)
-        return events
+    def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None]]:
+        """Fetch event detail page; return list of (date_str, time_str) for all occurrences."""
+        try:
+            resp = self._cffi_get(detail_url)
+            resp.raise_for_status()
+        except Exception as exc:
+            logger.debug(f"[Palo Alto] detail page failed {detail_url}: {exc}")
+            return []
 
-    def _parse_card(self, card) -> Optional[Event]:
+        soup = self.soup(resp.text)
+        results = []
+
+        # Dates are in <ul><li> elements; each li has the form:
+        # "Saturday, March 28, 2026 | 10:00 AM - 11:00 AM"
+        for li in soup.select("ul li"):
+            text = li.get_text(" ", strip=True)
+            if not re.search(r"\d{4}", text) or "|" not in text:
+                continue
+            date_part, time_part = text.split("|", 1)
+            try:
+                from dateutil import parser as dp
+                dt = dp.parse(date_part.strip())
+                date_str = dt.strftime("%Y-%m-%d")
+                # Time range may be "10:00 AM - 11:00 AM" or "10:00 AM \n\t- 11:00 AM"
+                # Take only the start time (everything before the "-" separator)
+                t_start = re.split(r"\s*[-\u2013]\s*", time_part.strip())[0].strip()
+                dt_t = dp.parse(t_start)
+                time_str: str | None = dt_t.strftime("%H:%M") if (dt_t.hour or dt_t.minute) else None
+                results.append((date_str, time_str))
+            except Exception:
+                pass
+
+        return results
+
+    def _parse_page(self, html: str) -> list[tuple[Event, str | None]]:
+        soup = self.soup(html)
+        items = []
+        for article in soup.select("article"):
+            result = self._parse_card(article)
+            if result:
+                items.append(result)
+        return items
+
+    def _parse_card(self, card) -> Optional[tuple[Event, str | None]]:
         try:
             link = card.select_one("a[href]")
             if not link:
@@ -159,7 +224,18 @@ class PaloAltoScraper(BaseScraper):
                 categories=categories,
                 image_url=image_url,
             )
-            return self.tag_kids(ev)
+            ev = self.tag_kids(ev)
+
+            # Detect recurring events: "N more dates" paragraph
+            more_dates_el = card.select_one("p.published-on")
+            has_more = False
+            if more_dates_el:
+                text = more_dates_el.get_text(strip=True)
+                has_more = bool(re.search(r"\d+\s+more\s+date", text, re.I))
+            detail_url = url if has_more else None
+
+            return ev, detail_url
+
         except Exception as exc:
             logger.debug(f"[Palo Alto] parse_card failed: {exc}")
             return None
