@@ -22,6 +22,14 @@ HTML structure (one entry per event in the grid):
   </td>
 
 Cells with class "calendar_othermonthday" are adjacent-month filler rows — skipped.
+
+Event detail pages (/Home/Components/Calendar/Event/{id}/19?...) are statically rendered
+and provide description and location:
+  <div class="detail-content">…description…</div>
+  <ul class="detail-list">
+    <li><span class="detail-list-label">Location:</span>
+        <span class="detail-list-value">Sunnyvale Public Library, 665 W. Olive Ave…</span></li>
+  </ul>
 """
 
 from __future__ import annotations
@@ -77,8 +85,42 @@ class SunnyvaleScraper(BaseScraper):
             else:
                 cur_month += 1
 
+        # Enrich each event with description + location from its detail page
+        for ev in events:
+            desc, loc = self._fetch_detail(ev.url)
+            ev.description = desc
+            ev.location = loc
+
         logger.info(f"[City of Sunnyvale] {len(events)} events fetched")
         return events
+
+    # ------------------------------------------------------------------ #
+    #  Detail page enrichment                                             #
+    # ------------------------------------------------------------------ #
+    def _fetch_detail(self, url: str) -> tuple[str | None, str | None]:
+        """Fetch event detail page; return (description, location)."""
+        try:
+            resp = self.get(url)
+            soup = self.soup(resp.text)
+
+            desc_el = soup.select_one(".detail-content")
+            description = desc_el.get_text(strip=True)[:1000] if desc_el else None
+
+            location = None
+            for li in soup.select(".detail-list li"):
+                label = li.select_one(".detail-list-label")
+                value = li.select_one(".detail-list-value")
+                if label and value and "location" in label.get_text().lower():
+                    raw = value.get_text(separator=", ", strip=True)
+                    # Remove artefact double-commas from empty address subfields
+                    loc = re.sub(r",\s*,+", ",", raw).strip(", ")
+                    location = loc or None
+                    break
+
+            return description, location
+        except Exception as exc:
+            logger.debug(f"[City of Sunnyvale] detail fetch failed {url}: {exc}")
+            return None, None
 
     # ------------------------------------------------------------------ #
     #  HTML parsing                                                        #
