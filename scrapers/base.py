@@ -77,8 +77,14 @@ class BaseScraper:
     def __init__(self, source_name: str, source_type: str):
         self.source_name = source_name
         self.source_type = source_type
-        self.session = requests.Session()
-        self.session.headers.update(_DEFAULT_HEADERS)
+        # Use curl-cffi with Chrome TLS impersonation when available — this bypasses
+        # Akamai and similar CDN bot-detection that blocks plain requests.
+        try:
+            from curl_cffi import requests as cffi_requests
+            self.session = cffi_requests.Session(impersonate="chrome120")
+        except ImportError:
+            self.session = requests.Session()
+            self.session.headers.update(_DEFAULT_HEADERS)
 
     # ------------------------------------------------------------------ #
     #  Subclasses override this                                            #

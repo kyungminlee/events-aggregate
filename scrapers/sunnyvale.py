@@ -2,7 +2,7 @@
 
 Source:   https://www.sunnyvale.ca.gov/news-center-and-events-calendar/city-calendar
 Platform: Vision CMS (VisionLive / CivicPlus) — server-rendered calendar grid.
-CDN:      Akamai — blocks plain Python requests; curl-cffi Chrome impersonation bypasses it.
+CDN:      Akamai — bypassed via curl-cffi Chrome TLS impersonation in BaseScraper.
 
 The Vision CMS API requires IP allowlisting (returns error 900), so we scrape the
 server-rendered calendar grid instead. The grid is rendered month-by-month via path
@@ -40,26 +40,10 @@ _CAL_PATH = "/news-center-and-events-calendar/city-calendar"
 
 
 class SunnyvaleScraper(BaseScraper):
-    """City of Sunnyvale — Vision CMS calendar grid scraper with curl-cffi Akamai bypass."""
+    """City of Sunnyvale — Vision CMS calendar grid scraper."""
 
     def __init__(self):
         super().__init__("City of Sunnyvale", "city")
-
-    # ------------------------------------------------------------------ #
-    #  HTTP                                                                #
-    # ------------------------------------------------------------------ #
-    def get(self, url: str, **kwargs):
-        """Override BaseScraper.get() to use curl-cffi for Akamai bypass."""
-        try:
-            from curl_cffi import requests as cffi_requests
-            resp = cffi_requests.get(url, impersonate="chrome120", timeout=20, **kwargs)
-            resp.raise_for_status()
-            return resp
-        except ImportError:
-            logger.warning(
-                "[City of Sunnyvale] curl-cffi not installed; falling back to requests (likely 403)"
-            )
-            return super().get(url, **kwargs)
 
     # ------------------------------------------------------------------ #
     #  Main fetch                                                          #

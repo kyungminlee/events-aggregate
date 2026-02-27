@@ -2,7 +2,7 @@
 
 Source:   https://www.paloalto.gov/Events-Directory
 Platform: Granicus OpenCities (server-side rendered ASP.NET)
-CDN:      Akamai — blocks Python requests; requires curl-cffi for Chrome TLS impersonation.
+CDN:      Akamai — bypassed via curl-cffi Chrome TLS impersonation in BaseScraper.
 
 Pagination: Same non-standard format as Menlo Park:
   dlv_OC+CL+Public+Events+Listing=(pageindex=N)
@@ -54,15 +54,6 @@ class PaloAltoScraper(BaseScraper):
     def __init__(self):
         super().__init__("City of Palo Alto", "city")
 
-    def _cffi_get(self, url: str, **kwargs):
-        """HTTP GET using curl-cffi with Chrome TLS impersonation."""
-        try:
-            from curl_cffi import requests as cffi_requests
-            return cffi_requests.get(url, impersonate="chrome120", timeout=20, **kwargs)
-        except ImportError:
-            logger.warning("[Palo Alto] curl-cffi not installed; falling back to requests (likely 403)")
-            return self.get(url, **kwargs)
-
     def fetch_events(self, days_ahead: int = 60) -> list[Event]:
         start, end = self.date_range(days_ahead)
         seen: set[str] = set()
@@ -72,8 +63,7 @@ class PaloAltoScraper(BaseScraper):
             page_param = f"dlv_OC+CL+Public+Events+Listing=(pageindex={page})"
             url = f"{_BASE}{_EVENTS_PATH}?{page_param}"
             try:
-                resp = self._cffi_get(url)
-                resp.raise_for_status()
+                resp = self.get(url)
                 page_items = self._parse_page(resp.text)
                 if not page_items:
                     break
@@ -117,8 +107,7 @@ class PaloAltoScraper(BaseScraper):
     def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None]]:
         """Fetch event detail page; return list of (date_str, time_str) for all occurrences."""
         try:
-            resp = self._cffi_get(detail_url)
-            resp.raise_for_status()
+            resp = self.get(detail_url)
         except Exception as exc:
             logger.debug(f"[Palo Alto] detail page failed {detail_url}: {exc}")
             return []
