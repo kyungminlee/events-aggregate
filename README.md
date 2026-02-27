@@ -7,20 +7,22 @@ A static site that aggregates kids and family events from Bay Area city websites
 Deployed to GitHub Pages — enable it under **Settings → Pages → Source: GitHub Actions**.
 
 The site has two views:
-- **Agenda** (`index.html`) — chronological list with filters
-- **Calendar** (`calendar.html`) — monthly calendar grid; click a day to see its events
+- **Agenda** (`index.html`) — chronological list with search, date-range, and multi-source filters
+- **Calendar** (`calendar.html`) — month or 2-week calendar grid; click a day to see its events
 
 ## Sources
 
 ### City Websites
 | Source | URL | Platform | Status |
 |--------|-----|----------|--------|
+| City of Palo Alto | paloalto.gov | Granicus OpenCities | ✅ Working (curl_cffi Akamai bypass) |
+| City of Menlo Park | menlopark.gov | Granicus OpenCities | ✅ Working |
 | San Jose | sanjoseca.gov | CivicPlus | ⚠️ 403 blocked |
 | Mountain View (city) | mountainview.gov | CivicPlus | ⚠️ 403 blocked |
 | Sunnyvale | sunnyvale.ca.gov | CivicPlus | ⚠️ 403 blocked |
-| Palo Alto (city events) | paloalto.gov | OpenCities | ⚠️ 403 blocked |
-| Menlo Park | menlopark.gov | OpenCities | ✅ Working |
 | Palo Alto Community Centers | ca-paloalto.civicrec.com | CivicRec | ⚠️ No public API |
+
+Both OpenCities scrapers expand **recurring events**: the listing page shows only the first date, so each scraper follows the detail page to collect all individual occurrences.
 
 ### Libraries
 | Library | Platform | Status |
@@ -28,7 +30,7 @@ The site has two views:
 | Mountain View Public Library | LibCal (Springshare) | ✅ Working |
 | Palo Alto City Library (PACL) | BiblioCommons | ✅ Working |
 | Santa Clara County Library (SCCL) | BiblioCommons | ✅ Working |
-| San José Public Library (SJPL) | BiblioCommons | ✅ Working |
+| San José Public Library (SJPL) | BiblioCommons RSS | ✅ Working (kids/family only) |
 
 SCCL covers branches: Sunnyvale, Campbell, Cupertino, Gilroy, Los Altos, Milpitas, Monte Sereno, Morgan Hill, Saratoga.
 
@@ -76,7 +78,7 @@ If you use the `.claude/launch.json` dev server config, start the `site` configu
 ├── requirements.txt
 ├── site/
 │   ├── index.html         # Agenda view
-│   ├── calendar.html      # Calendar view (monthly grid)
+│   ├── calendar.html      # Calendar view (month or 2-week grid)
 │   ├── app.js             # Agenda view logic
 │   ├── calendar.js        # Calendar view logic
 │   ├── style.css
@@ -122,8 +124,6 @@ For BiblioCommons sources, the API `audience` field (`KID`, `TEEN`, `FAMILY`) is
 ## Fixing Broken Scrapers
 
 **CivicPlus (San Jose, Mountain View city, Sunnyvale):** The `/Home/Components/Calendar/` endpoint returns 403. Try adding more browser-like headers or use Playwright for headless scraping.
-
-**OpenCities Palo Alto:** The `/Events-Directory` endpoint returns 403. Same approach as CivicPlus.
 
 **CivicRec (Palo Alto Community Centers):** The recreation platform's API returns HTML rather than JSON without authentication. May require inspecting authenticated API calls or using Playwright.
 
