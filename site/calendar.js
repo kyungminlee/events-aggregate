@@ -42,7 +42,6 @@ const dayNoEvents = $("day-no-events");
 
 const searchInput       = $("search");
 const filterKids        = $("filter-kids");
-const filterLibrary     = $("filter-library");
 const resetBtn          = $("reset-filters");
 const resultCount       = $("result-count");
 const metaUpdated       = $("meta-updated");
@@ -135,12 +134,10 @@ async function loadEvents() {
 function getFiltered() {
   const q        = searchInput.value.trim().toLowerCase();
   const kidsOnly = filterKids.checked;
-  const libOnly  = filterLibrary.checked;
 
   return allEvents.filter(ev => {
-    if (kidsOnly && !ev.is_kids_event)                                    return false;
-    if (libOnly  && ev.source_type !== "library")                         return false;
-    if (selectedSources.size > 0 && !selectedSources.has(ev.source))     return false;
+    if (kidsOnly && !ev.is_kids_event)                                return false;
+    if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
     if (q) {
       const hay = `${ev.title} ${ev.description || ""} ${ev.source} ${(ev.categories || []).join(" ")}`.toLowerCase();
       if (!hay.includes(q)) return false;
@@ -484,14 +481,12 @@ view2WeekBtn.addEventListener("click", () => {
 // ---------------------------------------------------------------------------
 // Filter listeners
 // ---------------------------------------------------------------------------
-searchInput.addEventListener("input",    render);
-filterKids.addEventListener("change",    render);
-filterLibrary.addEventListener("change", render);
+searchInput.addEventListener("input",  render);
+filterKids.addEventListener("change", render);
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
-  filterLibrary.checked = false;
   selectedSources.clear();
   sourceFilterPanel.querySelectorAll("input[type=checkbox]").forEach(cb => { cb.checked = false; });
   updateSourceLabel();

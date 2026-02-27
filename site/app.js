@@ -20,7 +20,6 @@ const cardTpl    = $("card-tpl");
 
 const searchInput       = $("search");
 const filterKids        = $("filter-kids");
-const filterLibrary     = $("filter-library");
 const filterDateFrom    = $("filter-date-from");
 const filterDateTo      = $("filter-date-to");
 const resetBtn          = $("reset-filters");
@@ -116,13 +115,11 @@ async function loadEvents() {
 function getFiltered() {
   const q        = searchInput.value.trim().toLowerCase();
   const kidsOnly = filterKids.checked;
-  const libOnly  = filterLibrary.checked;
   const dateFrom = filterDateFrom.value;
   const dateTo   = filterDateTo.value;
 
   return allEvents.filter((ev) => {
-    if (kidsOnly && !ev.is_kids_event)                          return false;
-    if (libOnly  && ev.source_type !== "library")               return false;
+    if (kidsOnly && !ev.is_kids_event)                               return false;
     if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
     if (dateFrom && ev.date_start < dateFrom)                   return false;
     if (dateTo   && ev.date_start > dateTo)                     return false;
@@ -241,12 +238,11 @@ function render() {
 [searchInput, filterDateFrom, filterDateTo].forEach(
   (el) => el.addEventListener("input", render)
 );
-[filterKids, filterLibrary].forEach((el) => el.addEventListener("change", render));
+filterKids.addEventListener("change", render);
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
-  filterLibrary.checked = false;
   filterDateFrom.value  = "";
   filterDateTo.value    = "";
   // Uncheck all source checkboxes
