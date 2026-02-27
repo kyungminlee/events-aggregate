@@ -95,8 +95,7 @@ class BaseScraper:
         return resp
 
     def get_json(self, url: str, **kwargs) -> dict | list:
-        resp = self.session.get(url, timeout=20, **kwargs)
-        resp.raise_for_status()
+        resp = self.get(url, **kwargs)   # delegates to self.get() so subclass overrides apply
         return resp.json()
 
     def soup(self, html: str) -> BeautifulSoup:

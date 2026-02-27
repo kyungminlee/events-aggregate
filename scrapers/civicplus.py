@@ -1,7 +1,6 @@
 """Shared scraper logic for CivicPlus / CivicEngage government sites.
 
-Used by: San Jose (sanjoseca.gov), Mountain View (mountainview.gov),
-         Sunnyvale (sunnyvale.ca.gov via govAccess).
+Used by: San Jose (sanjoseca.gov), Mountain View (mountainview.gov).
 
 CivicPlus calendar pages are Angular SPAs. We first try a JSON API endpoint
 that some instances expose, then fall back to scraping the server-rendered

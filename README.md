@@ -19,7 +19,7 @@ The site has two views:
 | City of Menlo Park | menlopark.gov | Granicus OpenCities | ✅ Working |
 | San Jose | sanjoseca.gov | CivicPlus | ⚠️ 403 blocked |
 | Mountain View (city) | mountainview.gov | CivicPlus | ⚠️ 403 blocked |
-| Sunnyvale | sunnyvale.ca.gov | CivicPlus | ⚠️ 403 blocked |
+| City of Sunnyvale | sunnyvale.ca.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
 | Palo Alto Community Centers | ca-paloalto.civicrec.com | CivicRec | ⚠️ No public API |
 
 Both OpenCities scrapers expand **recurring events**: the listing page shows only the first date, so each scraper follows the detail page to collect all individual occurrences.
