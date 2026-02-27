@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-02-26T08:24:58.882769+00:00",
-  "total": 1973,
-  "kids_total": 1866,
+  "updated_at": "2026-02-26T16:39:53.690575+00:00",
+  "total": 2099,
+  "kids_total": 1942,
   "library_total": 1827,
   "sources": [
     "Menlo Park",
@@ -74,27 +74,6 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/library/events/how-to-build-a-library.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "7b99e1c8806e",
-      "title": "Drop-in Chess Play",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-26",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
-      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
-      "categories": [
-        "Events for teens",
-        "Events for children",
-        "Events for adults"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "d65bae5c2442",
@@ -183,26 +162,6 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/2/planning-amp-development-services/long-range-planning/area-plans-and-studies/san-antonio-rd-area-plan/sarap_cag-3_-image.jpeg?dimension=smallthumbnail&w=150&h=100"
     },
     {
-      "id": "fdb8e9a1e252",
-      "title": "Storytime",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-26",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "Join us at the library with your little one for stories, songs, and fun!",
-      "categories": [
-        "Events for families",
-        "Events for children"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "bc8b1335309c",
       "title": "Asistencia para Búsqueda de Trabajo",
       "url": "https://sjpl.bibliocommons.com/events/698e38c23cc3e0c9ecb8e49d",
@@ -287,6 +246,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "ca9374f82264",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7263574e1d93",
@@ -1044,6 +1023,27 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
     },
     {
+      "id": "ae617a44161a",
+      "title": "Drop-in Chess Play",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-26",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
+      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
+      "categories": [
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "1009013aa7d9",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dc8",
@@ -1092,45 +1092,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/8ac12bf9945157cb9bf28777cbda2743/CopyofRead_a_thonRectangularLogo2.jpg"
     },
     {
-      "id": "4aa993085f8d",
-      "title": "Storytime",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-27",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "Join us at the library with your little one for stories, songs, and fun!",
-      "categories": [
-        "Events for families",
-        "Events for children"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "ebf4f661fce7",
-      "title": "Teen Media Friday",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-27",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "Teens: we are now watching movies AND playing video games at the library!",
-      "categories": [
-        "Events for teens"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "8f8b215155cc",
       "title": "Asistencia para Búsqueda de Trabajo",
       "url": "https://sjpl.bibliocommons.com/events/698e38c23cc3e0c9ecb8e49e",
@@ -1153,6 +1114,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "692b558d5148",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-27",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "10eb36399c2d",
@@ -1326,6 +1307,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/24d041491a30dcfc742752891c31a2d5/gaming,eventcard-1440x720.png"
+    },
+    {
+      "id": "25e91c8a6e4c",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-27",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c4ec76b33b27",
@@ -1736,6 +1736,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/825a875b686ddb39742c7341698c4e5b/Screenshot2026-01-02170010.png"
     },
     {
+      "id": "26cf4e4e7e0a",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-27",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "fb6c6b53967c",
       "title": "Timeless Art Collective Presents: La Cultura Vive!",
       "url": "https://sjpl.bibliocommons.com/events/699e485d403a4e5652dd6047",
@@ -1804,47 +1824,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/special-events/discover-your-path-event-flier.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "7e4b03a54faa",
-      "title": "English Conversation Club",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-28",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
-      "description": "Practice your English with people from all over the world!",
-      "categories": [
-        "Events for adults"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "96f44540755b",
-      "title": "Library Makes",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-28",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
-      "description": "Join us for an afternoon craft in the Makerspace!",
-      "categories": [
-        "Events for families",
-        "Events for teens",
-        "Events for children",
-        "Events for adults"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "27a534297720",
@@ -1918,26 +1897,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9844165059ec0177f6112e683b5a214b/SVR26RAK.png"
-    },
-    {
-      "id": "0334066d22de",
-      "title": "Storytime",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-02-28",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
-      "description": "Join us at the library with your little one for stories, songs, and fun!",
-      "categories": [
-        "Events for families",
-        "Events for children"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "6af73411d220",
@@ -2152,6 +2111,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "df0ca93e9ebd",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "54c03d2e4a29",
@@ -2540,6 +2519,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "d640fc54348a",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "b262b856f37a",
       "title": "Wee Love Art: Faith Ringgold",
       "url": "https://sjpl.bibliocommons.com/events/690649ac2ea1b1300082bd2a",
@@ -2559,6 +2558,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/6bfbcd49f3136f88a5b36a4f75eb7cde/FaithRinggoldWeeLoveArt.png"
+    },
+    {
+      "id": "b9a71336e069",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4888021ccfc5",
@@ -2900,6 +2918,28 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/ea780f558578f33be264422d9f111bac/HolisticCoding.jpg"
+    },
+    {
+      "id": "18c4338803bc",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-02-28",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4ae7972873a0",
@@ -4256,25 +4296,6 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/2/city-clerk/images/cccommittee-mtg-slides-for-calendar/finance-committee-530.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
-      "id": "4fbe025253a9",
-      "title": "English Conversation Club",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-03",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
-      "description": "Practice your English with people from all over the world!",
-      "categories": [
-        "Events for adults"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "529eeb008395",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dcc",
@@ -4319,26 +4340,6 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/palo-alto-bicycle-advisory-committee-meetings.png?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "7299b29e4eaf",
-      "title": "Storytime",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-03",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
-      "description": "Join us at the library with your little one for stories, songs, and fun!",
-      "categories": [
-        "Events for families",
-        "Events for children"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "1a95f004b1c1",
@@ -4662,6 +4663,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "b18e368c4c9c",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-03",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "0979265a7419",
@@ -5172,6 +5192,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
+      "id": "cb7a371f4a74",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-03",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "1a606c6f881f",
       "title": "Documentary: UNAFF presents Labors of Love: The Life of Henrietta Szol",
       "url": "https://www.paloalto.gov/Events-Directory/Library/Documentary-UNAFF-presents-Labors-of-Love-The-Life-of-Henrietta-Szold",
@@ -5254,44 +5294,6 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
-    },
-    {
-      "id": "a438a565812b",
-      "title": "Teen Media Wednesdays",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-04",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
-      "description": "Teens, we are now watching movies AND playing video games at the library!",
-      "categories": [
-        "Events for teens"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
-      "id": "6203adc09b38",
-      "title": "Teen Tabletop Gaming",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/2026-Teen-Tabletop-Gaming",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-04",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma Street, Menlo Park, CA",
-      "description": "Teens: delve into dungeons and go on epic quests with your friends!",
-      "categories": [
-        "Events for teens"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-tabletop-gaming-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "141ef81ae9b8",
@@ -5685,6 +5687,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "3a9052809fb9",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-04",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "520d081fe917",
       "title": "*Virtual* Silicon Valley Reads: Meet Roz MacLean, Author of \"Together, A Forest\"",
       "url": "https://sjpl.bibliocommons.com/events/69602e012c65973d0016c324",
@@ -5818,6 +5839,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/1d4d43e9e9327e785e871953ccfb4e76/HarkerWomeninSTEMgroup1.7.2026.jpg"
+    },
+    {
+      "id": "40e78eae2bd9",
+      "title": "Teen Tabletop Gaming",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/2026-Teen-Tabletop-Gaming",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-04",
+      "date_end": null,
+      "time_start": "16:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma Street, Menlo Park, CA",
+      "description": "Teens: delve into dungeons and go on epic quests with your friends!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-tabletop-gaming-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c93c8f4cca45",
@@ -6313,6 +6353,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "14ecfb841866",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-05",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "23023edfac60",
@@ -6997,6 +7057,27 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e43e5ed9154fa45616a7bb476529bc5d/Final%20TeensReach%20Logo_white_jpg.jpg"
     },
     {
+      "id": "14f42c3a478f",
+      "title": "Drop-in Chess Play",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-05",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
+      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
+      "categories": [
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "b31f8fc7647c",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dcf",
@@ -7069,6 +7150,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "b036f69c7666",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-06",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "a7cff16bea90",
@@ -7300,6 +7401,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "729eaf27cd2a",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-06",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "92ec96a01338",
@@ -7601,6 +7721,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/825a875b686ddb39742c7341698c4e5b/Screenshot2026-01-02170010.png"
     },
     {
+      "id": "0895bc71e160",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-06",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "9c9273b00668",
       "title": "Music with Shabang Steel Drums",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260307-Steel-Drum-Music-Harry-Best-Shabang",
@@ -7821,6 +7961,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "38c4136131df",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-07",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "2333f89e58a3",
@@ -8181,6 +8341,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "ac771a7f4237",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-07",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "559c8a9a69cb",
       "title": "Bollywood Dance",
       "url": "https://sjpl.bibliocommons.com/events/696abc9b2c65973d001846e5",
@@ -8227,6 +8407,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/835cbf849016f0fe02b6d401b3424fcb/crochet-flat-circle-scaled.jpg"
+    },
+    {
+      "id": "cf59eec7e224",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-07",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c29a6272d962",
@@ -8473,6 +8672,28 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/616a62560ca4d448954e3b5e3fb9bc47/coding.jpg"
+    },
+    {
+      "id": "d546974d041d",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-07",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3c777210aae0",
@@ -10284,6 +10505,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
+      "id": "6b62e73ae498",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-10",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "40547a0e478a",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ebf",
@@ -10859,6 +11099,26 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/policy-and-services-6pm.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "27da81b82fa6",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-10",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "54bf0e89dc4c",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dd4",
@@ -11279,6 +11539,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "c37c198896dd",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-11",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4f2f2bd2deb1",
@@ -11849,6 +12128,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "8c00d888c2cc",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-12",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "8ae187765f0b",
@@ -12701,6 +13000,27 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
     },
     {
+      "id": "50e9bddfcbd8",
+      "title": "Drop-in Chess Play",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-12",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
+      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
+      "categories": [
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "7cb86502fe3f",
       "title": "Human Relations Commission Regular Meeting",
       "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Human-Relations-Commission-Regular-Meeting",
@@ -12807,6 +13127,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "ca61c823a274",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-13",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3de1b057dc29",
@@ -12938,6 +13278,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/24d041491a30dcfc742752891c31a2d5/gaming,eventcard-1440x720.png"
+    },
+    {
+      "id": "d640e6aa45f0",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-13",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c2e4e4d1a105",
@@ -13301,6 +13660,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/6c4bf3559bbe112d12f9f93fbdd1dd72/volunteer3-1400.jpg"
     },
     {
+      "id": "01004a6626aa",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-13",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "5f54f7bfb549",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84dd7",
@@ -13457,6 +13836,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "21673a6804e9",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-14",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3b78d00cf053",
@@ -13817,6 +14216,45 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "c9e69966e00a",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-14",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "c81aa4d589d4",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-14",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "1a496294cb5b",
       "title": "Reading Buddies with Cristel",
       "url": "https://sjpl.bibliocommons.com/events/692f5eb5dfc16d3415e44c7b",
@@ -14068,6 +14506,28 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/518faffc22a4645d6bf0b08898aca3f6/FamilySTEAM.jpg"
+    },
+    {
+      "id": "e84b7ea4154a",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-14",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "53510197b74e",
@@ -14555,25 +15015,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
-      "id": "e838a564860e",
-      "title": "Tea and Tarot",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-12-Tea-and-Tarot",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-15",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "Join us for tea and conversation around the tarot deck.",
-      "categories": [
-        "Events for adults"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/tea-and-tarot-cards-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "4043b6dfc911",
       "title": "AI Explorers: Artificial Intelligence for Middle Schoolers",
       "url": "https://sjpl.bibliocommons.com/events/6972be8d8b29ea2800cb1ce6",
@@ -15047,6 +15488,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/645794accd0336751eaf928d50995d6b/STEMtheme.jpg"
+    },
+    {
+      "id": "24a6ab81a9b0",
+      "title": "Tea and Tarot",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-12-Tea-and-Tarot",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-15",
+      "date_end": null,
+      "time_start": "15:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us for tea and conversation around the tarot deck.",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/tea-and-tarot-cards-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "1c0ac1a6170c",
@@ -15999,6 +16459,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "97eb6f5e003c",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-17",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "c0fe22d3b936",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ec0",
@@ -16593,6 +17072,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
+      "id": "7a6818828841",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-17",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "fb9328d0984a",
       "title": "Global Language Storytime: Mandarin",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260318-Global-Storytime-Mandarin",
@@ -17093,6 +17592,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e8590ad34171b9c38e736613520e9eef/musicmovement_picture.jpg"
+    },
+    {
+      "id": "6553600eee3e",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-18",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "84c7990385ba",
@@ -17689,6 +18207,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
+    },
+    {
+      "id": "51c7599568ef",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-19",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "e0ba0eb70ae6",
@@ -18499,6 +19037,27 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
     },
     {
+      "id": "1ec86f07f655",
+      "title": "Drop-in Chess Play",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-19",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
+      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
+      "categories": [
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "951c8bbf239a",
       "title": "Adult Book Discussion: Yellow Face by R.F. Kuang",
       "url": "https://sccl.bibliocommons.com/events/698e4c028d5e2d09335ecfea",
@@ -18578,28 +19137,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/31ecefe5235b103d4a3009d6ec153a1b/Screenshot2024-05-03111815.png"
     },
     {
-      "id": "993600509837",
-      "title": "Friends of the Library Book Sale",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260320-21-FOL-Book-Sale",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-20",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "The Friends of the Menlo Park Library are hosting a big two-day book sale!",
-      "categories": [
-        "Events for families",
-        "Events for teens",
-        "Events for children",
-        "Events for adults"
-      ],
-      "is_kids_event": true,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/friends-of-library-book-sale.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "b2d438727085",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84ddd",
@@ -18670,6 +19207,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
     },
     {
+      "id": "97de1997e54c",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-20",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "d34262442de8",
       "title": "Baby Storytime: Rerun",
       "url": "https://mountainview.libcal.com/event/16349860",
@@ -18711,6 +19268,28 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/33c98820ea22de5c15deaa6d4f23ceb6/https___cdn.evbuc.com_images_64437903_161125766082_1_original.jpg"
+    },
+    {
+      "id": "b1e65a052343",
+      "title": "Friends of the Library Book Sale",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260320-21-FOL-Book-Sale",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-20",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "The Friends of the Menlo Park Library are hosting a big two-day book sale!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/friends-of-library-book-sale.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7a502f28f7db",
@@ -18843,6 +19422,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/24d041491a30dcfc742752891c31a2d5/gaming,eventcard-1440x720.png"
+    },
+    {
+      "id": "e6f06e19a59b",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-20",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "542699310bc8",
@@ -19138,6 +19736,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/4ad1557fae587b726b74cd3dcfac221b/BiblioEvents%20Image%20Indoor.png"
     },
     {
+      "id": "afd62d5c5448",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-20",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "218462baa8d8",
       "title": "Middle Grade Book Group: The Cookie Crumbles",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260321-Middle-Grade-Alma-Cookie",
@@ -19246,6 +19864,28 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/zero-waste/compost-at-home/garden-jungle-picture.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "3ab33857a528",
+      "title": "Friends of the Library Book Sale",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260320-21-FOL-Book-Sale",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "10:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "The Friends of the Menlo Park Library are hosting a big two-day book sale!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/friends-of-library-book-sale.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "0add1a961c9e",
       "title": "Job Interview Coaching for Adults & Teens",
       "url": "https://sjpl.bibliocommons.com/events/67801703be9184c03ac4e693",
@@ -19310,6 +19950,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "aea7bd3481a8",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "deccd4303ab8",
@@ -19667,6 +20327,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "773e2e148e4e",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "469ded5be329",
       "title": "Crochet Club",
       "url": "https://sjpl.bibliocommons.com/events/6998f0508d5e2d0933608b1d",
@@ -19690,6 +20370,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/835cbf849016f0fe02b6d401b3424fcb/crochet-flat-circle-scaled.jpg"
+    },
+    {
+      "id": "903e732918c6",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c21726f8ab17",
@@ -20010,6 +20709,28 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/518faffc22a4645d6bf0b08898aca3f6/FamilySTEAM.jpg"
+    },
+    {
+      "id": "2a9360d01f52",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-21",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c13615c0b2d6",
@@ -20417,25 +21138,6 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/50fb84cbb767fddf2c6752320d3eb05e/music-dance.jpg"
     },
     {
-      "id": "c37276f2742f",
-      "title": "Am I An American or Am I Not?",
-      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
-      "source": "Menlo Park",
-      "source_type": "city",
-      "date_start": "2026-03-22",
-      "date_end": null,
-      "time_start": null,
-      "time_end": null,
-      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
-      "description": "Visit the library to view our latest special exhibition!",
-      "categories": [
-        "Events for adults"
-      ],
-      "is_kids_event": false,
-      "is_free": null,
-      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
-    },
-    {
       "id": "56e28b92958e",
       "title": "Magic Science Show",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260322-Magic-Science",
@@ -20522,6 +21224,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f3ae31704c3fc5830924836cf3d47882/technology-7111804_1280.jpg"
+    },
+    {
+      "id": "6a71284eb62e",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-22",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "9b51e1f6e1cc",
@@ -21190,6 +21911,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
     },
     {
+      "id": "64c743e0f83e",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-23",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "27d1a79172a6",
       "title": "One-On-One Tech Help",
       "url": "https://sjpl.bibliocommons.com/events/6917d7af0562322f00304a77",
@@ -21834,6 +22574,44 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "ebcb4ed8aba7",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-24",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "08c8e71e43a0",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-24",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "f8be9370544e",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ec1",
@@ -22410,6 +23188,26 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/parks-and-recreation-commission-2022/commissioner-photos/prc-meeting-image.png?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "e6ff1596ac47",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-24",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "9a744c70a1f8",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84de2",
@@ -22674,6 +23472,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/214bac36314f33c8e057843acbda6983/SVR2026Web.png"
     },
     {
+      "id": "8499bdf39281",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-25",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "874d59c612b7",
       "title": "Volunteer Away Your Fines",
       "url": "https://sjpl.bibliocommons.com/events/67fef6890453817cac29c858",
@@ -22810,6 +23627,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "73a0ba38ebdc",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-25",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "0552438b31ec",
@@ -23342,6 +24178,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "56ef682191e5",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-26",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "e1827f9eb256",
       "title": "Family Storytime - Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/67a2c6c18fc0a32800193f24",
@@ -23624,6 +24480,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/091ebc59c4a87f0b60bf996507e8f7d7/people%20to0gether.png"
+    },
+    {
+      "id": "f2f1a2ece5d5",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-26",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "a52374be0783",
@@ -24019,6 +24894,27 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c14baf9ccaed0b93a5d7f6a2cf8a2d4a/TechMentor.png"
     },
     {
+      "id": "a9bc324621c1",
+      "title": "Drop-in Chess Play",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20240912-Drop-in-Chess-Play",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-26",
+      "date_end": null,
+      "time_start": "18:00",
+      "time_end": null,
+      "location": "Oak Room at the Arrillaga Family Recreation Center, 700 Alma Street, Menlo Park, CA 94025",
+      "description": "Whether you're a grandmaster or just learning the basics, our friendly and welcoming environment is perfect for all levels. Drop in to play casual games, learn new strategies, or simply enjoy the company of fellow chess enthusiasts.",
+      "categories": [
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/chess.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "43fbc4b42265",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84de4",
@@ -24068,6 +24964,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
+    },
+    {
+      "id": "d0facfe2c743",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-27",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "18113050b484",
@@ -24270,6 +25186,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e30729b0460e6a3b429bc311eddef4d8/Jimmy-Suzuki-umbrella.jpg"
+    },
+    {
+      "id": "c68976c113d6",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-27",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "2eea4814bbcf",
@@ -24564,6 +25499,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/4ad1557fae587b726b74cd3dcfac221b/BiblioEvents%20Image%20Indoor.png"
     },
     {
+      "id": "a52682d1fde4",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-27",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "37bd08133997",
       "title": "Paper Chains of Kindness",
       "url": "https://sjpl.bibliocommons.com/events/695ffab48b29ea2800c84de5",
@@ -24755,6 +25710,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "5102cebf1288",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "230de994a668",
@@ -25071,6 +26046,64 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "4547498eaaa6",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "5fbbda4a3275",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "70aa33876961",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-28",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "8967b9045e81",
@@ -25725,6 +26758,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/f3ae31704c3fc5830924836cf3d47882/technology-7111804_1280.jpg"
     },
     {
+      "id": "94e616847678",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-29",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "ccfe5d2ddc4e",
       "title": "English & Math Tutoring",
       "url": "https://sjpl.bibliocommons.com/events/697d05ff4dacf581ff77f319",
@@ -26336,6 +27388,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
     },
     {
+      "id": "faf55eecc369",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-30",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "eb12f2ca61bd",
       "title": "Mathema Adventures: A D&D-Inspired Math Games Program for Kids",
       "url": "https://sjpl.bibliocommons.com/events/69692a9591e4576f847cc285",
@@ -26798,6 +27869,44 @@
       "image_url": null
     },
     {
+      "id": "09abe74b999d",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-31",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "6a9567193b0c",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-31",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "1e74f20f178c",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ec2",
@@ -26885,6 +27994,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
+    },
+    {
+      "id": "d26f7557f3b4",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-03-31",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "899f39df22e0",
@@ -27118,6 +28247,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b24e0b68bbc8e62f00a3b31f383b361/playdates.png"
     },
     {
+      "id": "c5c39ea09168",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-01",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "e654b506b402",
       "title": "Tech Mentor at Edenvale Branch",
       "url": "https://sjpl.bibliocommons.com/events/68e551fc23b2d134d7cd3496",
@@ -27206,6 +28354,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "20ad8d3809a8",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-01",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7378c4ba8d14",
@@ -27318,6 +28485,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/532631f952aff8d86b64f52d54c6a160/54980655523_63249f24f7_c.jpg"
+    },
+    {
+      "id": "78b9eb9ecc35",
+      "title": "Teen Tabletop Gaming",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/2026-Teen-Tabletop-Gaming",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-01",
+      "date_end": null,
+      "time_start": "16:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma Street, Menlo Park, CA",
+      "description": "Teens: delve into dungeons and go on epic quests with your friends!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-tabletop-gaming-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "111b51a7cc74",
@@ -27660,6 +28846,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "04c237042043",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-02",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "7bb36558e7e2",
       "title": "Family Storytime - Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/67a2c6c18fc0a32800193f25",
@@ -27919,6 +29125,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b4b1cc3a081ced448e521315389b264/Cbooks.jpg"
+    },
+    {
+      "id": "f09b8e4784c4",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-02",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3fc99d41ee34",
@@ -28375,6 +29600,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/256f669c5fe0b6d0cd1f52acd8cce80e/SCCOOEPTCclass.jpg"
     },
     {
+      "id": "f68273cfa15d",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-03",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "d7172c146b18",
       "title": "Baby Storytime: Rerun",
       "url": "https://mountainview.libcal.com/event/16349862",
@@ -28392,6 +29637,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "d577b0f39224",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-03",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "b86af649f9a4",
@@ -28626,6 +29890,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "af3557f97494",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-03",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "f3cc0e4cfcfe",
@@ -28928,6 +30211,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9462cd1bc8e366e32152c3bf79391f83/Zumbaforkids.jpg"
     },
     {
+      "id": "7ae3232c697c",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-03",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "f43b7bbd5c38",
       "title": "Household Hazardous Waste Station Open",
       "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
@@ -29080,6 +30383,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "a140adb1b11a",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-04",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c9c8a6106702",
@@ -29417,6 +30740,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "58ac9c7c8f53",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-04",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "22e613b48360",
       "title": "Crochet Club",
       "url": "https://sjpl.bibliocommons.com/events/6998f0508d5e2d0933608b1e",
@@ -29440,6 +30783,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/835cbf849016f0fe02b6d401b3424fcb/crochet-flat-circle-scaled.jpg"
+    },
+    {
+      "id": "3ae58e2b2314",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-04",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "b8b00ab4cc2f",
@@ -30013,6 +31375,25 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-partner-day.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "264f77db399f",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-05",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "120d5a2139af",
       "title": "English & Math Tutoring",
       "url": "https://sjpl.bibliocommons.com/events/697d05ff4dacf581ff77f31a",
@@ -30567,6 +31948,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
+    },
+    {
+      "id": "ef689120f1b8",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-06",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "b054ae29b8fa",
@@ -31256,6 +32656,44 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "3ac335d555cf",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-07",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "20c7f69be83d",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-07",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "22238180ad9b",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ec3",
@@ -31519,6 +32957,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
+      "id": "bee45e28be21",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-07",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "3e88db436a49",
       "title": "Family Fun: Color the Earth",
       "url": "https://sjpl.bibliocommons.com/events/6955645094297d3600a2818c",
@@ -31780,6 +33238,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b24e0b68bbc8e62f00a3b31f383b361/playdates.png"
     },
     {
+      "id": "fa26e04630d0",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-08",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "f23972dc3181",
       "title": "Tech Mentor at Edenvale Branch",
       "url": "https://sjpl.bibliocommons.com/events/68e551fc23b2d134d7cd3497",
@@ -31845,6 +33322,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "cdcb4ac573d8",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-08",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "944bca916bac",
@@ -32262,6 +33758,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "13a695cd0d92",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-09",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "12abe3a69f27",
       "title": "Family Storytime - Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/67a2c6c18fc0a32800193f26",
@@ -32521,6 +34037,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b4b1cc3a081ced448e521315389b264/Cbooks.jpg"
+    },
+    {
+      "id": "14ad7c8ef240",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-09",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3814ef3167f6",
@@ -32894,6 +34429,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
     },
     {
+      "id": "79b9e4a5afa3",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-10",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "11ebb7c76c98",
       "title": "Baby Storytime: Rerun",
       "url": "https://mountainview.libcal.com/event/16349863",
@@ -32911,6 +34466,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": null
+    },
+    {
+      "id": "3788dc27214b",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-10",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "85dfb58dd822",
@@ -32976,6 +34550,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "4b5141314af9",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-10",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "93b535240d72",
@@ -33293,6 +34886,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9462cd1bc8e366e32152c3bf79391f83/Zumbaforkids.jpg"
     },
     {
+      "id": "48f98bf855b7",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-10",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "d8a4545fb12b",
       "title": "Hawaiian music with Faith Ako",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/20260411-Music-Faith-Ako",
@@ -33528,6 +35141,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "0d5038d7144d",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-11",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "08fdf4bad459",
@@ -33914,6 +35547,64 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "fc42c705e35d",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-11",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "56552f72c231",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-11",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "5e7927995cb2",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-11",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "bb849ea23970",
       "title": "Reading Buddies with Cristel",
       "url": "https://sjpl.bibliocommons.com/events/692f5eb5dfc16d3415e44c7f",
@@ -34161,6 +35852,28 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/518faffc22a4645d6bf0b08898aca3f6/FamilySTEAM.jpg"
     },
     {
+      "id": "d11ae49a636c",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-11",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "485249545ab7",
       "title": "Saturday STEM Club",
       "url": "https://sjpl.bibliocommons.com/events/690e9c50886bb73600b9c7b9",
@@ -34363,6 +36076,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_04_12-junk-poetry-workshop-bh-dina-klarisse-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "bfb3aa108aea",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-12",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "c410fe4a8b71",
@@ -34853,6 +36585,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
+    },
+    {
+      "id": "676a2a28d780",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-13",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "8fb43f7b846a",
@@ -35503,6 +37254,44 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "a50bcc94e3bb",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-14",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "4ddc8617ffd0",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-14",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "f5c3f784b423",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ec4",
@@ -35899,6 +37688,26 @@
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/city-clerk/images/cccommittee-mtg-slides-for-calendar/policy-and-services-6pm.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
+      "id": "1a630596c924",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-14",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "60c63fd405eb",
       "title": "Create Native American Game Sticks",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-teens/20260415-Native-Game-Sticks",
@@ -36140,6 +37949,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b24e0b68bbc8e62f00a3b31f383b361/playdates.png"
     },
     {
+      "id": "917421c218fc",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-15",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "833adc5e10c7",
       "title": "Tech Mentor at Edenvale Branch",
       "url": "https://sjpl.bibliocommons.com/events/68e551fc23b2d134d7cd3498",
@@ -36228,6 +38056,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "f29026a5648a",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-15",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "3bec4e3d2ff3",
@@ -36653,6 +38500,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "e14ffb72a896",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-16",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "4346fcc1a31a",
       "title": "Family Storytime - Stay & Play",
       "url": "https://sjpl.bibliocommons.com/events/67a2c6c18fc0a32800193f27",
@@ -36889,6 +38756,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b4b1cc3a081ced448e521315389b264/Cbooks.jpg"
+    },
+    {
+      "id": "9cdcfa7bf1b3",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-16",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7bdeb5b2aa82",
@@ -37392,6 +39278,45 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
     },
     {
+      "id": "6d42dce75073",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-17",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "495a34a8982b",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-17",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "ca2f91929d85",
       "title": "STEM Club",
       "url": "https://sjpl.bibliocommons.com/events/697d05ba1e64afd01e57f4a0",
@@ -37455,6 +39380,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "edeb713900cd",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-17",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "ee79298cfda7",
@@ -37683,6 +39627,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9462cd1bc8e366e32152c3bf79391f83/Zumbaforkids.jpg"
     },
     {
+      "id": "3bf22119cf41",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-17",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "a0026937b55b",
       "title": "Friends of the Almaden Library Spring Book Sale",
       "url": "https://sjpl.bibliocommons.com/events/691e383661706d280023aec2",
@@ -37836,6 +39800,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "e38369ada257",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-18",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "aff7f9c91045",
@@ -38148,6 +40132,45 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "26ea8c9b5ee7",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-18",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "495dbe627b8b",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-18",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "b72275f9ca93",
       "title": "Crochet Club",
       "url": "https://sjpl.bibliocommons.com/events/6998f0508d5e2d0933608b1f",
@@ -38171,6 +40194,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/835cbf849016f0fe02b6d401b3424fcb/crochet-flat-circle-scaled.jpg"
+    },
+    {
+      "id": "9d9374929918",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-18",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4dff4d60346d",
@@ -38426,6 +40468,28 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/518faffc22a4645d6bf0b08898aca3f6/FamilySTEAM.jpg"
     },
     {
+      "id": "b4f6e83d9fd8",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-18",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "0cbfb4ee0894",
       "title": "Saturday STEM Club",
       "url": "https://sjpl.bibliocommons.com/events/690e9c50886bb73600b9c7ba",
@@ -38673,6 +40737,25 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/sustainability/events/2026_earth_festival_digital_1200x630.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "5e794ab40721",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-19",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "4083a13a7664",
@@ -39077,6 +41160,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/645794accd0336751eaf928d50995d6b/STEMtheme.jpg"
     },
     {
+      "id": "f0b3f02d57aa",
+      "title": "Tea and Tarot",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-12-Tea-and-Tarot",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-19",
+      "date_end": null,
+      "time_start": "15:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us for tea and conversation around the tarot deck.",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/tea-and-tarot-cards-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "21745c9a0819",
       "title": "Vietnamese Class for Kids",
       "url": "https://sjpl.bibliocommons.com/events/693afddc6f926136000a74d7",
@@ -39185,6 +41287,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
+    },
+    {
+      "id": "6e575b1e7048",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-20",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "1f8a259a59e1",
@@ -39899,6 +42020,44 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2fc244fe67c41a5dab07ae6f0000447/EarthDayStorytime.png"
     },
     {
+      "id": "5624ab2569dc",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-21",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "1872970cc2b3",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-Alma",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-21",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/people-talking-in-a-circle.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "063326f67ce7",
       "title": "Las Madres Playgroup",
       "url": "https://sjpl.bibliocommons.com/events/6920f0c7dff9d93e00d12ec5",
@@ -40356,6 +42515,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e2ee5196f1effbff4322b10fbc4c3d28/199989032-little-girl-reading-a-book-in-the-night-forest-vector-illustration.jpg"
     },
     {
+      "id": "bdcdc53ab860",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-TUES-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-21",
+      "date_end": null,
+      "time_start": "19:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "7bd62ce3d684",
       "title": "Art vs. AI",
       "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/20260422-AI-Ajuan-Mance",
@@ -40572,6 +42751,25 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b24e0b68bbc8e62f00a3b31f383b361/playdates.png"
     },
     {
+      "id": "6cc45cd8c450",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-22",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "7667b574b2b3",
       "title": "Tech Mentor at Edenvale Branch",
       "url": "https://sjpl.bibliocommons.com/events/68e551fc23b2d134d7cd3499",
@@ -40660,6 +42858,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
+    },
+    {
+      "id": "868928fb00e2",
+      "title": "Teen Media Wednesdays",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Wednesdays-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-22",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Belle Haven Library, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Teens, we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "7b631b667f98",
@@ -40987,6 +43204,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/c34b9db5dc03b1b8c8ea6c03cd82a3b3/preschool-storytime-1400.jpg"
     },
     {
+      "id": "a2afaa9fffad",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Thurs-1",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-23",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "6b686c365149",
       "title": "Infant and Toddler Storytime",
       "url": "https://sjpl.bibliocommons.com/events/6941d7666f926136000b4809",
@@ -41179,6 +43416,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/7b4b1cc3a081ced448e521315389b264/Cbooks.jpg"
+    },
+    {
+      "id": "a03175c36e8d",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-23",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "e0c01d237e42",
@@ -41488,6 +43744,45 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/13eb4696c6aeaa086410eea3d0ada659/JobSearch.jpg"
     },
     {
+      "id": "1f6aa059a110",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Fri",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-24",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "e3c6851aa393",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-24",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "6aa7f89ce54c",
       "title": "Itty Bitty Jamboree",
       "url": "https://sccl.bibliocommons.com/events/695846a7111b9da65caa32de",
@@ -41634,6 +43929,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/806581755577c566d1d9afcb11a4297b/school-supplies.jpg"
+    },
+    {
+      "id": "c91cae6dcee9",
+      "title": "Teen Media Friday",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202509-202605-Teen-Media-Friday",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-24",
+      "date_end": null,
+      "time_start": "15:30",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Teens: we are now watching movies AND playing video games at the library!",
+      "categories": [
+        "Events for teens"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/teen-movie-cat-1600-web.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "5f6b5716dba9",
@@ -41838,6 +44152,26 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/9462cd1bc8e366e32152c3bf79391f83/Zumbaforkids.jpg"
     },
     {
+      "id": "530e90264d79",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-FRI-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-24",
+      "date_end": null,
+      "time_start": "17:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "9f77a9c92aad",
       "title": "Household Hazardous Waste Station Open",
       "url": "https://www.paloalto.gov/Events-Directory/Public-Works/Household-Hazardous-Waste-Station-Open",
@@ -42007,6 +44341,26 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/fd3fcc935f70af0fd8821f9f89a65618/SaturdayStorytime.jpg"
+    },
+    {
+      "id": "31f724d3381c",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Sat-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "10:15",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/2/library-and-community-services/images/events/3-young-kids-looking-at-books-and-reading.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "256d680d4b0a",
@@ -42324,6 +44678,64 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/b562a381d0597ab1cb440205b4f44ad5/lightbulbs4.jpg"
     },
     {
+      "id": "ff7b73ddd352",
+      "title": "Storytime",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202509-202605-Storytime-Alma-Sat",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "11:15",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Join us at the library with your little one for stories, songs, and fun!",
+      "categories": [
+        "Events for families",
+        "Events for children"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/reading-a-story-to-two-infants.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "dff597ff5912",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "00862ceb611f",
+      "title": "English Conversation Club",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202601-12-English-Conversation-Club-BH",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Practice your English with people from all over the world!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/conversation-club-discussion.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "b0669054e283",
       "title": "Playhouse Series: The Princess and the Pea",
       "url": "https://www.paloalto.gov/Events-Directory/Community-Services/Playhouse-Series-The-Princess-and-the-Pea",
@@ -42502,6 +44914,28 @@
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/518faffc22a4645d6bf0b08898aca3f6/FamilySTEAM.jpg"
     },
     {
+      "id": "f76d948a7c59",
+      "title": "Library Makes",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-children/202602-202604-Library-Makes",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-25",
+      "date_end": null,
+      "time_start": "14:00",
+      "time_end": null,
+      "location": "Belle Haven Library, Belle Haven Community Campus, 100 Terminal Ave., Menlo Park, CA 94025",
+      "description": "Join us for an afternoon craft in the Makerspace!",
+      "categories": [
+        "Events for families",
+        "Events for teens",
+        "Events for children",
+        "Events for adults"
+      ],
+      "is_kids_event": true,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/202602-04_librarymakescollage.png?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
       "id": "4f645ee4ea30",
       "title": "Saturday STEM Club",
       "url": "https://sjpl.bibliocommons.com/events/690e9c50886bb73600b9c7bb",
@@ -42668,6 +45102,25 @@
       "is_kids_event": false,
       "is_free": null,
       "image_url": "https://www.paloalto.gov/files/assets/public/v/1/community-services/childrens-theatre/production-pictures/2025-playhouse-web-poster_1.jpg?dimension=smallthumbnail&w=150&h=100"
+    },
+    {
+      "id": "04cb454b5bfb",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-26",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "fcfe1cde86b0",
@@ -43264,6 +45717,25 @@
       "is_kids_event": true,
       "is_free": null,
       "image_url": "http://sjpl.bibliocommons.com/events/uploads/images/full/e938a91a0fa7ddcc3388118a6846a510/music&movement.jpg"
+    },
+    {
+      "id": "d882b3d61bac",
+      "title": "Am I An American or Am I Not?",
+      "url": "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Events/Events-for-adults/202603-05-Exhibition-Korematsu",
+      "source": "Menlo Park",
+      "source_type": "city",
+      "date_start": "2026-04-27",
+      "date_end": null,
+      "time_start": "12:00",
+      "time_end": null,
+      "location": "Menlo Park Library, 800 Alma St., Menlo Park, CA 94025",
+      "description": "Visit the library to view our latest special exhibition!",
+      "categories": [
+        "Events for adults"
+      ],
+      "is_kids_event": false,
+      "is_free": null,
+      "image_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/library-and-community-services/images/events/2026_03-05-exhibition-fred-korematsu-1600-x-900.jpg?dimension=smallthumbnail&w=150&h=100"
     },
     {
       "id": "ffe53989fe38",

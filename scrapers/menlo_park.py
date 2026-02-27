@@ -15,15 +15,21 @@ HTML structure (verified):
     <p>25 Feb 2026</p>              date (sometimes includes time)
     <p>Description text…</p>
     <p>Location name + address</p>
-    <p>N more dates</p>             (optional, recurring events)
+    <p>N more dates</p>             (optional, recurring events — plain <p>, no CSS class)
     <p>Tagged as: , Category1, Category2</p>
+
+Recurring events: the listing shows only the first date; the detail page lists all
+occurrences in a <ul> where each <li> has the form:
+  "Thursday, September 04, 2025 | 10:15 AM - 10:45 AM"
 
 We fetch three category passes (children, families, teens) and merge.
 """
 
 from __future__ import annotations
 
+import dataclasses
 import logging
+import re
 from urllib.parse import urljoin
 
 from .base import BaseScraper, Event, make_id
@@ -46,21 +52,42 @@ class MenloParkScraper(BaseScraper):
 
         for cat in _KIDS_CATEGORIES:
             for page in range(1, 50):
-                # Granicus OpenCities uses a non-standard pagination param
                 page_param = f"dlv_OC+CL+Public+Events+Listing=(pageindex={page})"
                 url = f"{_BASE}{_EVENTS_PATH}?{page_param}&category={cat}"
                 try:
                     resp = self.get(url)
-                    page_events = self._parse_page(resp.text)
-                    if not page_events:
+                    page_items = self._parse_page(resp.text)
+                    if not page_items:
                         break
-                    for ev in page_events:
-                        if ev.id not in seen and start.isoformat() <= ev.date_start <= end.isoformat():
-                            seen.add(ev.id)
-                            events.append(ev)
-                    # Stop paging once all events are past our window
-                    if all(ev.date_start > end.isoformat() for ev in page_events):
+
+                    for ev, detail_url in page_items:
+                        # Expand to all occurrence dates if the card showed "N more dates"
+                        if detail_url:
+                            occurrences = self._fetch_all_dates(detail_url)
+                            if not occurrences:
+                                occurrences = [(ev.date_start, ev.time_start)]
+                        else:
+                            occurrences = [(ev.date_start, ev.time_start)]
+
+                        for date_str, time_str in occurrences:
+                            if start.isoformat() <= date_str <= end.isoformat():
+                                # Include time in ID key so same-time-of-day repeats get distinct IDs
+                                id_key = f"{date_str}T{time_str}" if time_str else date_str
+                                new_ev = dataclasses.replace(
+                                    ev,
+                                    id=make_id("Menlo Park", ev.title, id_key),
+                                    date_start=date_str,
+                                    time_start=time_str,
+                                )
+                                if new_ev.id not in seen:
+                                    seen.add(new_ev.id)
+                                    events.append(new_ev)
+
+                    # Stop paging once all first-occurrence dates are past our window
+                    first_dates = [ev.date_start for ev, _ in page_items]
+                    if all(d > end.isoformat() for d in first_dates):
                         break
+
                 except Exception as exc:
                     logger.warning(f"[Menlo Park] cat={cat} page={page} failed: {exc}")
                     break
@@ -68,21 +95,54 @@ class MenloParkScraper(BaseScraper):
         logger.info(f"[Menlo Park] {len(events)} events fetched")
         return events
 
-    def _parse_page(self, html: str) -> list[Event]:
+    def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None]]:
+        """Fetch event detail page; return list of (date_str, time_str) for all occurrences."""
+        try:
+            resp = self.get(detail_url)
+            resp.raise_for_status()
+        except Exception as exc:
+            logger.debug(f"[Menlo Park] detail page failed {detail_url}: {exc}")
+            return []
+
+        soup = self.soup(resp.text)
+        results = []
+
+        # Dates are in <ul><li> elements; each li has the form:
+        # "Thursday, September 04, 2025 | 10:15 AM - 10:45 AM"
+        for li in soup.select("ul li"):
+            text = li.get_text(" ", strip=True)
+            if not re.search(r"\d{4}", text) or "|" not in text:
+                continue
+            date_part, time_part = text.split("|", 1)
+            try:
+                from dateutil import parser as dp
+                dt = dp.parse(date_part.strip())
+                date_str = dt.strftime("%Y-%m-%d")
+                # Take only the start time (before the "-" separator)
+                t_start = re.split(r"\s*[-\u2013]\s*", time_part.strip())[0].strip()
+                dt_t = dp.parse(t_start)
+                time_str: str | None = dt_t.strftime("%H:%M") if (dt_t.hour or dt_t.minute) else None
+                results.append((date_str, time_str))
+            except Exception:
+                pass
+
+        return results
+
+    def _parse_page(self, html: str) -> list[tuple[Event, str | None]]:
         soup = self.soup(html)
-        events = []
+        items = []
 
         # Cards are <a href="…/Events/…"> elements that must contain an <h2>
         for card in soup.select('a[href*="/Events/"]'):
             if not card.select_one("h2"):
                 continue
-            ev = self._parse_card(card)
-            if ev:
-                events.append(ev)
+            result = self._parse_card(card)
+            if result:
+                items.append(result)
 
-        return events
+        return items
 
-    def _parse_card(self, card) -> Event | None:
+    def _parse_card(self, card) -> tuple[Event, str | None] | None:
         try:
             title_el = card.select_one("h2.list-item-title, h2")
             if not title_el:
@@ -150,7 +210,17 @@ class MenloParkScraper(BaseScraper):
                 categories=categories,
                 image_url=image_url,
             )
-            return self.tag_kids(ev)
+            ev = self.tag_kids(ev)
+
+            # Detect recurring events: plain <p> with "N more dates" text (no CSS class)
+            has_more = any(
+                re.search(r"\d+\s+more\s+date", p.get_text(strip=True), re.I)
+                for p in card.find_all("p")
+            )
+            detail_url = url if has_more else None
+
+            return ev, detail_url
+
         except Exception as exc:
             logger.debug(f"[Menlo Park] parse_card failed: {exc}")
             return None
