@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------------------
 let allEvents = [];
 let selectedSources = new Set(); // empty = "all sources"
+const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD in local time
 
 // ---------------------------------------------------------------------------
 // DOM refs
@@ -154,6 +155,10 @@ function makeCard(ev) {
   const article = node.querySelector("article");
 
   article.style.animationDelay = "0ms";
+
+  if (ev.date_start === today) {
+    article.classList.add("ring-2", "ring-sky-400");
+  }
 
   const q = (sel) => node.querySelector(sel);
 
