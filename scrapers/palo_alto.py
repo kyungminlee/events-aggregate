@@ -52,7 +52,7 @@ class PaloAltoScraper(BaseScraper):
     """City of Palo Alto events — uses curl-cffi to bypass Akamai CDN block."""
 
     def __init__(self):
-        super().__init__("Palo Alto", "city")
+        super().__init__("City of Palo Alto", "city")
 
     def _cffi_get(self, url: str, **kwargs):
         """HTTP GET using curl-cffi with Chrome TLS impersonation."""
@@ -94,7 +94,7 @@ class PaloAltoScraper(BaseScraper):
                             id_key = f"{date_str}T{time_str}" if time_str else date_str
                             new_ev = dataclasses.replace(
                                 ev,
-                                id=make_id("Palo Alto", ev.title, id_key),
+                                id=make_id("City of Palo Alto", ev.title, id_key),
                                 date_start=date_str,
                                 time_start=time_str,
                             )
@@ -212,7 +212,7 @@ class PaloAltoScraper(BaseScraper):
                     image_url = src if src.startswith("http") else urljoin(_BASE, src)
 
             ev = Event(
-                id=make_id("Palo Alto", title, date_str),
+                id=make_id("City of Palo Alto", title, date_str),
                 title=title,
                 url=url,
                 source=self.source_name,

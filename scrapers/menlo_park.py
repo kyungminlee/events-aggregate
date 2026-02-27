@@ -43,7 +43,7 @@ _KIDS_CATEGORIES = ["children", "families", "teens"]
 
 class MenloParkScraper(BaseScraper):
     def __init__(self):
-        super().__init__("Menlo Park", "city")
+        super().__init__("City of Menlo Park", "city")
 
     def fetch_events(self, days_ahead: int = 60) -> list[Event]:
         start, end = self.date_range(days_ahead)
@@ -75,7 +75,7 @@ class MenloParkScraper(BaseScraper):
                                 id_key = f"{date_str}T{time_str}" if time_str else date_str
                                 new_ev = dataclasses.replace(
                                     ev,
-                                    id=make_id("Menlo Park", ev.title, id_key),
+                                    id=make_id("City of Menlo Park", ev.title, id_key),
                                     date_start=date_str,
                                     time_start=time_str,
                                 )
@@ -198,7 +198,7 @@ class MenloParkScraper(BaseScraper):
                     image_url = src if src.startswith("http") else urljoin(_BASE, src)
 
             ev = Event(
-                id=make_id("Menlo Park", title, date_str),
+                id=make_id("City of Menlo Park", title, date_str),
                 title=title,
                 url=url,
                 source=self.source_name,
