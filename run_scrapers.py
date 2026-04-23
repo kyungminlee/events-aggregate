@@ -37,6 +37,16 @@ def build_scrapers():
     from scrapers.sunnyvale import SunnyvaleScraper
     from scrapers.palo_alto import PaloAltoScraper
     from scrapers.menlo_park import MenloParkScraper
+    from scrapers.civicplus import (
+        CampbellScraper,
+        GilroyScraper,
+        MilpitasScraper,
+        MorganHillScraper,
+        SaratogaScraper,
+    )
+    from scrapers.eventbrite import DonEdwardsScraper, MidpenScraper
+    from scrapers.hidden_villa import HiddenVillaScraper
+    from scrapers.sccparks import SCCParksScraper
     from scrapers.libcal import MVPLScraper
     from scrapers.libraries import all_library_scrapers
 
@@ -46,6 +56,15 @@ def build_scrapers():
         SunnyvaleScraper(),
         PaloAltoScraper(),
         MenloParkScraper(),
+        MilpitasScraper(),
+        CampbellScraper(),
+        SaratogaScraper(),
+        MorganHillScraper(),
+        GilroyScraper(),
+        DonEdwardsScraper(),
+        MidpenScraper(),
+        HiddenVillaScraper(),
+        SCCParksScraper(),
         MVPLScraper(),
         *all_library_scrapers(),
     ]

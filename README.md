@@ -20,8 +20,29 @@ The site has two views:
 | San Jose | sanjoseca.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
 | Mountain View (city) | mountainview.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
 | City of Sunnyvale | sunnyvale.ca.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
+| City of Milpitas | milpitas.gov | CivicPlus CivicEngage (iCal) | ✅ Working |
+| City of Campbell | campbellca.gov | CivicPlus CivicEngage (iCal) | ✅ Working |
+| City of Saratoga | saratoga.ca.us | CivicPlus CivicEngage (iCal) | ✅ Working |
+| City of Morgan Hill | morganhill.ca.gov | CivicPlus CivicEngage (iCal) | ✅ Working |
+| City of Gilroy | cityofgilroy.org | CivicPlus CivicEngage (iCal) | ✅ Working |
 
 Both OpenCities scrapers expand **recurring events**: the listing page shows only the first date, so each scraper follows the detail page to collect all individual occurrences.
+
+CivicPlus cities share a single scraper (`scrapers/civicplus.py`) that pulls the `iCalendar.aspx?feed=calendar&catID=N` feed per category. Each city's concrete class selects the CIDs that actually publish kids/community events (some cities' "Main Calendar" CID is empty or is only meeting agendas).
+
+### Venues, Parks & Nature Centers
+| Source | URL | Platform | Status |
+|--------|-----|----------|--------|
+| Don Edwards SF Bay NWR | eventbrite.com/o/… | Eventbrite organizer page | ✅ Working |
+| Midpen Open Space | eventbrite.com/o/… | Eventbrite organizer page | ⚠️ First page only (~12 of 30 events) |
+| Santa Clara County Parks | parks.santaclaracounty.gov/events | Drupal (HTML scrape) | ✅ Working |
+| Hidden Villa | hiddenvilla.org/programs/upcoming | WordPress + Schema.org JSON-LD | ✅ Working |
+
+Eventbrite organizers share a single scraper (`scrapers/eventbrite.py`) that reads the Next.js `__NEXT_DATA__` blob embedded in the organizer page. Pagination beyond the first ~12 events requires the internal `/_next/data/...` endpoint (build-ID dependent) or an API token — not implemented yet.
+
+The Santa Clara County Parks scraper (`scrapers/sccparks.py`) walks the Drupal views block in document order, associating `<h2>` date headers with the `.event-card` entries that follow. Covers naturalist programs across Martial Cottle, Coyote Creek, Sanborn, Almaden Quicksilver, Grant Ranch, and other county parks.
+
+The Hidden Villa scraper (`scrapers/hidden_villa.py`) reads the Schema.org Event JSON-LD blocks embedded on each `/programs/upcoming/page/N/` page. Covers farm tours, Lamb Yoga, Art in the Garden, volunteer days, and seasonal programs at the Los Altos Hills farm & preserve.
 
 ### Libraries
 | Library | Platform | Status |
@@ -65,6 +86,10 @@ If you use the `.claude/launch.json` dev server config, start the `site` configu
 │   ├── base.py           # Event dataclass + BaseScraper base class
 │   ├── vision_cms.py     # Vision CMS / VisionLive (San Jose, Mountain View, Sunnyvale)
 │   ├── opencities.py     # Granicus OpenCities generic scraper
+│   ├── civicplus.py      # CivicPlus iCal scraper + Milpitas/Campbell/Saratoga/Morgan Hill/Gilroy
+│   ├── eventbrite.py     # Eventbrite organizer-page scraper + Don Edwards, Midpen
+│   ├── sccparks.py       # Santa Clara County Parks (Drupal HTML scrape)
+│   ├── hidden_villa.py   # Hidden Villa (WordPress Schema.org JSON-LD)
 │   ├── libcal.py         # Springshare LibCal (Mountain View Public Library)
 │   ├── san_jose.py       # City-specific scraper instances
 │   ├── mountain_view.py
