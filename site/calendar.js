@@ -4,11 +4,13 @@
 // State
 // ---------------------------------------------------------------------------
 let allEvents = [];
-const now = new Date();
 
-// Month view state
-let currentYear  = now.getFullYear();
-let currentMonth = now.getMonth();   // 0-based
+// Local YYYY-MM-DD (not UTC, not locale-dependent). Called fresh each render
+// so a tab left open across midnight still highlights the correct "today".
+function todayISO() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
 
 // Two-week view state
 function getWeekStart(d) {
@@ -17,7 +19,12 @@ function getWeekStart(d) {
   s.setHours(0, 0, 0, 0);
   return s;
 }
-let twoWeekStart = getWeekStart(now);
+
+// Month view state (initial values at load; navigation mutates these)
+const _initDate  = new Date();
+let currentYear  = _initDate.getFullYear();
+let currentMonth = _initDate.getMonth();   // 0-based
+let twoWeekStart = getWeekStart(_initDate);
 
 // Shared state
 let currentView    = "month";   // "month" | "2week"
@@ -224,7 +231,7 @@ function renderMonth(filtered) {
   });
 
   const pad      = n => String(n).padStart(2, "0");
-  const today    = now.toISOString().slice(0, 10);
+  const today    = todayISO();
   const firstDay = new Date(currentYear, currentMonth, 1).getDay();
   const lastDay  = new Date(currentYear, currentMonth + 1, 0).getDate();
   const monthStr = `${currentYear}-${pad(currentMonth + 1)}`;
@@ -272,7 +279,7 @@ function renderTwoWeek(filtered) {
   });
 
   const pad   = n => String(n).padStart(2, "0");
-  const today = now.toISOString().slice(0, 10);
+  const today = todayISO();
 
   // Title: "Feb 22 – Mar 7, 2026"
   const endDate = new Date(twoWeekStart);
@@ -439,9 +446,10 @@ $("next-btn").addEventListener("click", () => {
 });
 
 $("today-btn").addEventListener("click", () => {
-  currentYear  = now.getFullYear();
-  currentMonth = now.getMonth();
-  twoWeekStart = getWeekStart(now);
+  const d = new Date();
+  currentYear  = d.getFullYear();
+  currentMonth = d.getMonth();
+  twoWeekStart = getWeekStart(d);
   selectedDate = null;
   dayPanel.classList.add("hidden");
   render();
@@ -470,7 +478,7 @@ view2WeekBtn.addEventListener("click", () => {
   if (currentView === "2week") return;
   currentView = "2week";
   // Snap two-week window so it includes today or the currently displayed month
-  twoWeekStart = getWeekStart(now);
+  twoWeekStart = getWeekStart(new Date());
   view2WeekBtn.classList.add("active");
   viewMonthBtn.classList.remove("active");
   selectedDate = null;

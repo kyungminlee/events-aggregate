@@ -38,8 +38,10 @@ jobs:
 
       - name: Run scrapers
         run: python run_scrapers.py --days 60
-        # Continue even if some scrapers fail (non-zero exit from partial errors)
-        continue-on-error: false
+        # Continue even if some scrapers fail (non-zero exit from partial errors).
+        # run_scrapers.py still writes events.json with the errors list, so the
+        # site stays up-to-date for the scrapers that did succeed.
+        continue-on-error: true
 
       - name: Show results
         run: |
