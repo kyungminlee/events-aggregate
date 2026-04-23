@@ -5,6 +5,9 @@ on:
     # 8:00 AM Pacific Time daily (15:00 UTC, accounting for PST/PDT)
     - cron: "0 15 * * *"
   workflow_dispatch:   # Allow manual trigger from GitHub UI
+  push:
+    branches:
+      - claude/test-scrapers-60v9d
 
 permissions:
   contents: read
@@ -17,11 +20,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  scrape-and-deploy:
+  scrape:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -60,13 +60,23 @@ jobs:
                   print(f'  - {e[\"source\"]}: {e[\"error\"]}')
           "
 
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4
-
       - name: Upload site artifact
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "site"
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: scrape
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
 
       - name: Deploy to GitHub Pages
         id: deployment
