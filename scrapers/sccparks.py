@@ -51,10 +51,63 @@ _TIME_RE = re.compile(
 
 
 class SCCParksScraper(BaseScraper):
-    """Santa Clara County Parks event calendar."""
+    """Santa Clara County Parks event calendar.
+
+    This host blocks the default BaseScraper fingerprint (chrome120) when the
+    request comes from a datacenter IP range (e.g. GitHub Actions): it returns
+    HTTP 403 despite TLS impersonation. Using a newer Chrome fingerprint plus
+    realistic `Sec-*` client-hint headers and a Google referer gets through.
+    Each request falls back through a short list of fingerprints so one of
+    them keeps working as the server-side fingerprint table changes.
+    """
+
+    _IMPERSONATE_PROFILES = ("chrome136", "chrome131", "safari180", "chrome120")
+
+    _REALISTIC_HEADERS = {
+        "Accept": (
+            "text/html,application/xhtml+xml,application/xml;q=0.9,"
+            "image/avif,image/webp,image/apng,*/*;q=0.8"
+        ),
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "cross-site",
+        "Sec-Fetch-User": "?1",
+    }
 
     def __init__(self):
         super().__init__("Santa Clara County Parks", "venue")
+
+    def get(self, url: str, **kwargs):
+        """Override BaseScraper.get to retry across several browser profiles.
+
+        The session created by BaseScraper is chrome120 — we need to rebuild it
+        on the fly for each attempt because `impersonate` is a session-level
+        setting in curl_cffi, not a per-request kwarg.
+        """
+        from curl_cffi import requests as cffi_requests
+
+        last_exc: Optional[Exception] = None
+        headers = {**self._REALISTIC_HEADERS, **kwargs.pop("headers", {})}
+        for profile in self._IMPERSONATE_PROFILES:
+            try:
+                resp = cffi_requests.get(
+                    url,
+                    impersonate=profile,
+                    headers=headers,
+                    timeout=kwargs.pop("timeout", 20),
+                    **kwargs,
+                )
+                resp.raise_for_status()
+                return resp
+            except Exception as exc:
+                last_exc = exc
+                logger.debug(
+                    f"[{self.source_name}] {profile} failed: {exc}; trying next profile"
+                )
+        raise last_exc  # type: ignore[misc]
 
     def fetch_events(self, days_ahead: int = 60) -> list[Event]:
         start, end = self.date_range(days_ahead)
