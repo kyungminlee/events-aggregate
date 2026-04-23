@@ -13,6 +13,7 @@ from .civicplus import (
     SaratogaScraper,
 )
 from .eventbrite import DonEdwardsScraper, MidpenScraper
+from .hidden_villa import HiddenVillaScraper
 from .sccparks import SCCParksScraper
 from .libraries import SCCLScraper, SJPLScraper, all_library_scrapers
 
@@ -29,6 +30,7 @@ __all__ = [
     "GilroyScraper",
     "DonEdwardsScraper",
     "MidpenScraper",
+    "HiddenVillaScraper",
     "SCCParksScraper",
     "SCCLScraper",
     "SJPLScraper",

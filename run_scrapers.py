@@ -45,6 +45,7 @@ def build_scrapers():
         SaratogaScraper,
     )
     from scrapers.eventbrite import DonEdwardsScraper, MidpenScraper
+    from scrapers.hidden_villa import HiddenVillaScraper
     from scrapers.sccparks import SCCParksScraper
     from scrapers.libcal import MVPLScraper
     from scrapers.libraries import all_library_scrapers
@@ -62,6 +63,7 @@ def build_scrapers():
         GilroyScraper(),
         DonEdwardsScraper(),
         MidpenScraper(),
+        HiddenVillaScraper(),
         SCCParksScraper(),
         MVPLScraper(),
         *all_library_scrapers(),
