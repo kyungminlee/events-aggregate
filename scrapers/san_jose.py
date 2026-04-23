@@ -1,18 +1,16 @@
 """Scraper for City of San Jose events.
 
 Source: https://www.sanjoseca.gov/news-stories/city-calendar
-Platform: CivicPlus (CivicEngage)
+Platform: Vision CMS — see scrapers/vision_cms.py for shared logic.
 """
 
-from .civicplus import CivicPlusScraper
+from .vision_cms import VisionCMSScraper
 
 
-class SanJoseScraper(CivicPlusScraper):
+class SanJoseScraper(VisionCMSScraper):
     def __init__(self):
         super().__init__(
             source_name="San Jose",
             base_url="https://www.sanjoseca.gov",
             calendar_path="/news-stories/city-calendar",
-            # Calendar IDs for family/youth categories (update if needed after inspection)
-            calendar_ids=[],
         )

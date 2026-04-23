@@ -17,10 +17,9 @@ The site has two views:
 |--------|-----|----------|--------|
 | City of Palo Alto | paloalto.gov | Granicus OpenCities | ✅ Working (curl_cffi Akamai bypass) |
 | City of Menlo Park | menlopark.gov | Granicus OpenCities | ✅ Working |
-| San Jose | sanjoseca.gov | CivicPlus | ⚠️ 403 blocked |
-| Mountain View (city) | mountainview.gov | CivicPlus | ⚠️ 403 blocked |
+| San Jose | sanjoseca.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
+| Mountain View (city) | mountainview.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
 | City of Sunnyvale | sunnyvale.ca.gov | Vision CMS (VisionLive) | ✅ Working (curl_cffi Akamai bypass) |
-| Palo Alto Community Centers | ca-paloalto.civicrec.com | CivicRec | ⚠️ No public API |
 
 Both OpenCities scrapers expand **recurring events**: the listing page shows only the first date, so each scraper follows the detail page to collect all individual occurrences.
 
@@ -64,10 +63,9 @@ If you use the `.claude/launch.json` dev server config, start the `site` configu
 ```
 ├── scrapers/
 │   ├── base.py           # Event dataclass + BaseScraper base class
-│   ├── civicplus.py      # CivicPlus/CivicEngage (San Jose, MV, Sunnyvale)
+│   ├── vision_cms.py     # Vision CMS / VisionLive (San Jose, Mountain View, Sunnyvale)
 │   ├── opencities.py     # Granicus OpenCities generic scraper
 │   ├── libcal.py         # Springshare LibCal (Mountain View Public Library)
-│   ├── civicrec.py       # CivicRec (Palo Alto Community Centers)
 │   ├── san_jose.py       # City-specific scraper instances
 │   ├── mountain_view.py
 │   ├── sunnyvale.py
@@ -120,12 +118,6 @@ Events are tagged `is_kids_event: true` if their title, description, or categori
 > kid, kids, child, children, youth, family, families, teen, teens, toddler, baby, infant, preschool, storytime, story time, puppet, craft, summer reading, after school, elementary, homework help, lego, young adult, jr., kindergarten, playdate
 
 For BiblioCommons sources, the API `audience` field (`KID`, `TEEN`, `FAMILY`) is also used as a signal.
-
-## Fixing Broken Scrapers
-
-**CivicPlus (San Jose, Mountain View city, Sunnyvale):** The `/Home/Components/Calendar/` endpoint returns 403. Try adding more browser-like headers or use Playwright for headless scraping.
-
-**CivicRec (Palo Alto Community Centers):** The recreation platform's API returns HTML rather than JSON without authentication. May require inspecting authenticated API calls or using Playwright.
 
 ## Deployment
 
