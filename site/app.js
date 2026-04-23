@@ -5,7 +5,13 @@
 // ---------------------------------------------------------------------------
 let allEvents = [];
 let selectedSources = new Set(); // empty = "all sources"
-const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD in local time
+
+// Local YYYY-MM-DD (not UTC, not locale-dependent). Called fresh each render
+// so a tab left open across midnight still highlights the correct "today".
+function todayISO() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
 
 // ---------------------------------------------------------------------------
 // DOM refs
@@ -156,7 +162,7 @@ function makeCard(ev) {
 
   article.style.animationDelay = "0ms";
 
-  if (ev.date_start === today) {
+  if (ev.date_start === todayISO()) {
     article.classList.add("ring-2", "ring-sky-400");
   }
 

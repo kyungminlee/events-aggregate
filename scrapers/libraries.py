@@ -309,7 +309,9 @@ class SJPLScraper(BaseScraper):
                 dt = datetime.fromisoformat(end_utc).astimezone(pacific)
                 if not date_end_local:
                     date_end_local = dt.strftime("%Y-%m-%d")
-                if dt.hour or dt.minute:
+                # SJPL marks all-day / time-TBD events with end_date 23:59 and no start_date;
+                # treat that as an end-of-day sentinel rather than a real end time.
+                if (dt.hour or dt.minute) and (dt.hour, dt.minute) != (23, 59):
                     time_end = dt.strftime("%H:%M")
 
             if not date_start_local:
