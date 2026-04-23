@@ -48,6 +48,19 @@ _BASE = "https://www.paloalto.gov"
 _EVENTS_PATH = "/Events-Directory"
 
 
+def _parse_hhmm(raw: str) -> str | None:
+    """Parse a time fragment like '10:00 AM' into 'HH:MM'. Returns None if unparseable."""
+    raw = raw.strip()
+    if not raw:
+        return None
+    try:
+        from dateutil import parser as dp
+        dt = dp.parse(raw)
+        return dt.strftime("%H:%M") if (dt.hour or dt.minute) else None
+    except Exception:
+        return None
+
+
 class PaloAltoScraper(BaseScraper):
     """City of Palo Alto events — uses curl-cffi to bypass Akamai CDN block."""
 
@@ -74,11 +87,11 @@ class PaloAltoScraper(BaseScraper):
                         occurrences = self._fetch_all_dates(detail_url)
                         if not occurrences:
                             # Detail page failed — fall back to first date from listing
-                            occurrences = [(ev.date_start, ev.time_start)]
+                            occurrences = [(ev.date_start, ev.time_start, ev.time_end)]
                     else:
-                        occurrences = [(ev.date_start, ev.time_start)]
+                        occurrences = [(ev.date_start, ev.time_start, ev.time_end)]
 
-                    for date_str, time_str in occurrences:
+                    for date_str, time_str, time_end in occurrences:
                         if start.isoformat() <= date_str <= end.isoformat():
                             # Include time in ID key so same-day performances get distinct IDs
                             id_key = f"{date_str}T{time_str}" if time_str else date_str
@@ -87,6 +100,7 @@ class PaloAltoScraper(BaseScraper):
                                 id=make_id("City of Palo Alto", ev.title, id_key),
                                 date_start=date_str,
                                 time_start=time_str,
+                                time_end=time_end,
                             )
                             if new_ev.id not in seen:
                                 seen.add(new_ev.id)
@@ -104,8 +118,8 @@ class PaloAltoScraper(BaseScraper):
         logger.info(f"[Palo Alto] {len(events)} events fetched")
         return events
 
-    def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None]]:
-        """Fetch event detail page; return list of (date_str, time_str) for all occurrences."""
+    def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None, str | None]]:
+        """Fetch event detail page; return list of (date_str, time_start, time_end) for all occurrences."""
         try:
             resp = self.get(detail_url)
         except Exception as exc:
@@ -113,7 +127,7 @@ class PaloAltoScraper(BaseScraper):
             return []
 
         soup = self.soup(resp.text)
-        results = []
+        results: list[tuple[str, str | None, str | None]] = []
 
         # Dates are in <ul><li> elements; each li has the form:
         # "Saturday, March 28, 2026 | 10:00 AM - 11:00 AM"
@@ -127,11 +141,10 @@ class PaloAltoScraper(BaseScraper):
                 dt = dp.parse(date_part.strip())
                 date_str = dt.strftime("%Y-%m-%d")
                 # Time range may be "10:00 AM - 11:00 AM" or "10:00 AM \n\t- 11:00 AM"
-                # Take only the start time (everything before the "-" separator)
-                t_start = re.split(r"\s*[-\u2013]\s*", time_part.strip())[0].strip()
-                dt_t = dp.parse(t_start)
-                time_str: str | None = dt_t.strftime("%H:%M") if (dt_t.hour or dt_t.minute) else None
-                results.append((date_str, time_str))
+                parts = re.split(r"\s*[-\u2013]\s*", time_part.strip(), maxsplit=1)
+                time_str = _parse_hhmm(parts[0]) if parts and parts[0] else None
+                time_end = _parse_hhmm(parts[1]) if len(parts) > 1 and parts[1] else None
+                results.append((date_str, time_str, time_end))
             except Exception:
                 pass
 

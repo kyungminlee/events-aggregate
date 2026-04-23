@@ -41,6 +41,19 @@ _EVENTS_PATH = "/Citywide-calendar"
 _KIDS_CATEGORIES = ["children", "families", "teens"]
 
 
+def _parse_hhmm(raw: str) -> str | None:
+    """Parse a time fragment like '10:15 AM' into 'HH:MM'. Returns None if unparseable."""
+    raw = raw.strip()
+    if not raw:
+        return None
+    try:
+        from dateutil import parser as dp
+        dt = dp.parse(raw)
+        return dt.strftime("%H:%M") if (dt.hour or dt.minute) else None
+    except Exception:
+        return None
+
+
 class MenloParkScraper(BaseScraper):
     def __init__(self):
         super().__init__("City of Menlo Park", "city")
@@ -65,11 +78,11 @@ class MenloParkScraper(BaseScraper):
                         if detail_url:
                             occurrences = self._fetch_all_dates(detail_url)
                             if not occurrences:
-                                occurrences = [(ev.date_start, ev.time_start)]
+                                occurrences = [(ev.date_start, ev.time_start, ev.time_end)]
                         else:
-                            occurrences = [(ev.date_start, ev.time_start)]
+                            occurrences = [(ev.date_start, ev.time_start, ev.time_end)]
 
-                        for date_str, time_str in occurrences:
+                        for date_str, time_str, time_end in occurrences:
                             if start.isoformat() <= date_str <= end.isoformat():
                                 # Include time in ID key so same-time-of-day repeats get distinct IDs
                                 id_key = f"{date_str}T{time_str}" if time_str else date_str
@@ -78,6 +91,7 @@ class MenloParkScraper(BaseScraper):
                                     id=make_id("City of Menlo Park", ev.title, id_key),
                                     date_start=date_str,
                                     time_start=time_str,
+                                    time_end=time_end,
                                 )
                                 if new_ev.id not in seen:
                                     seen.add(new_ev.id)
@@ -95,8 +109,8 @@ class MenloParkScraper(BaseScraper):
         logger.info(f"[Menlo Park] {len(events)} events fetched")
         return events
 
-    def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None]]:
-        """Fetch event detail page; return list of (date_str, time_str) for all occurrences."""
+    def _fetch_all_dates(self, detail_url: str) -> list[tuple[str, str | None, str | None]]:
+        """Fetch event detail page; return list of (date_str, time_start, time_end) for all occurrences."""
         try:
             resp = self.get(detail_url)
             resp.raise_for_status()
@@ -105,7 +119,7 @@ class MenloParkScraper(BaseScraper):
             return []
 
         soup = self.soup(resp.text)
-        results = []
+        results: list[tuple[str, str | None, str | None]] = []
 
         # Dates are in <ul><li> elements; each li has the form:
         # "Thursday, September 04, 2025 | 10:15 AM - 10:45 AM"
@@ -118,11 +132,10 @@ class MenloParkScraper(BaseScraper):
                 from dateutil import parser as dp
                 dt = dp.parse(date_part.strip())
                 date_str = dt.strftime("%Y-%m-%d")
-                # Take only the start time (before the "-" separator)
-                t_start = re.split(r"\s*[-\u2013]\s*", time_part.strip())[0].strip()
-                dt_t = dp.parse(t_start)
-                time_str: str | None = dt_t.strftime("%H:%M") if (dt_t.hour or dt_t.minute) else None
-                results.append((date_str, time_str))
+                parts = re.split(r"\s*[-\u2013]\s*", time_part.strip(), maxsplit=1)
+                time_str = _parse_hhmm(parts[0]) if parts and parts[0] else None
+                time_end = _parse_hhmm(parts[1]) if len(parts) > 1 and parts[1] else None
+                results.append((date_str, time_str, time_end))
             except Exception:
                 pass
 
