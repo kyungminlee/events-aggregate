@@ -73,6 +73,17 @@
       <!-- Reset -->
       <button id="reset-filters" class="text-xs text-slate-400 hover:text-slate-600 underline">Reset</button>
 
+      <!-- Hidden-titles button + panel -->
+      <div class="relative" id="hidden-wrap">
+        <button id="hidden-btn" class="hidden border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 hover:border-slate-400 items-center gap-1.5">
+          <span>🚫</span>
+          <span id="hidden-count">0 hidden</span>
+        </button>
+        <div id="hidden-panel" class="hidden absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg z-20 p-3 w-72 max-h-80 overflow-auto flex flex-col gap-1">
+          <!-- list injected by JS -->
+        </div>
+      </div>
+
       <!-- Count -->
       <span id="result-count" class="ml-auto text-xs text-slate-500 font-medium"></span>
     </div>
@@ -104,7 +115,10 @@
       <div class="p-4 flex flex-col flex-1 gap-2">
         <div class="flex items-start justify-between gap-2">
           <h2 class="card-title font-semibold text-slate-800 text-sm leading-snug line-clamp-2"></h2>
-          <span class="card-kids-badge shrink-0 text-xs px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 font-medium hidden">👧 Kids</span>
+          <div class="flex items-center gap-1 shrink-0">
+            <span class="card-kids-badge text-xs px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 font-medium hidden">👧 Kids</span>
+            <button class="card-hide-btn text-slate-300 hover:text-rose-500 text-base leading-none w-5 h-5 flex items-center justify-center rounded transition-colors" title="Hide events with this title" aria-label="Hide">×</button>
+          </div>
         </div>
         <div class="card-date text-sky-600 text-xs font-medium"></div>
         <div class="card-location text-slate-500 text-xs truncate hidden"></div>
@@ -118,6 +132,7 @@
     </article>
   </template>
 
-  <script src="app.js?v=2"></script>
+  <script src="hidden.js?v=1"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

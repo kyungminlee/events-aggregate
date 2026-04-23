@@ -58,6 +58,11 @@ const sourceFilterBtn   = $("source-filter-btn");
 const sourceFilterPanel = $("source-filter-panel");
 const sourceFilterLabel = $("source-filter-label");
 
+const hiddenWrap   = $("hidden-wrap");
+const hiddenBtn    = $("hidden-btn");
+const hiddenPanel  = $("hidden-panel");
+const hiddenCount  = $("hidden-count");
+
 const viewMonthBtn  = $("view-month");
 const view2WeekBtn  = $("view-2week");
 
@@ -143,6 +148,7 @@ function getFiltered() {
   const kidsOnly = filterKids.checked;
 
   return allEvents.filter(ev => {
+    if (isTitleHidden(ev.title))                                      return false;
     if (kidsOnly && !ev.is_kids_event)                                return false;
     if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
     if (q) {
@@ -355,12 +361,28 @@ function makeCard(ev) {
   title.className = "font-semibold text-slate-800 text-sm leading-snug line-clamp-2";
   title.textContent = ev.title;
   titleRow.appendChild(title);
+  const rightCluster = document.createElement("div");
+  rightCluster.className = "flex items-center gap-1 shrink-0";
   if (ev.is_kids_event) {
     const badge = document.createElement("span");
-    badge.className = "shrink-0 text-xs px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 font-medium";
+    badge.className = "text-xs px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 font-medium";
     badge.textContent = "👧 Kids";
-    titleRow.appendChild(badge);
+    rightCluster.appendChild(badge);
   }
+  const hideBtn = document.createElement("button");
+  hideBtn.className = "text-slate-300 hover:text-rose-500 text-base leading-none w-5 h-5 flex items-center justify-center rounded transition-colors";
+  hideBtn.title = "Hide events with this title";
+  hideBtn.setAttribute("aria-label", "Hide");
+  hideBtn.textContent = "×";
+  hideBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    hiddenTitleAdd(ev.title);
+    refreshHiddenUI();
+    render();
+  });
+  rightCluster.appendChild(hideBtn);
+  titleRow.appendChild(rightCluster);
   body.appendChild(titleRow);
 
   if (ev.time_start) {
@@ -502,6 +524,76 @@ resetBtn.addEventListener("click", () => {
 });
 
 // ---------------------------------------------------------------------------
+// Hidden-titles UI
+// ---------------------------------------------------------------------------
+function refreshHiddenUI() {
+  const map = hiddenTitlesGet();
+  const n = Object.keys(map).length;
+
+  if (n === 0) {
+    hiddenBtn.classList.add("hidden");
+    hiddenBtn.classList.remove("flex");
+    hiddenPanel.classList.add("hidden");
+    return;
+  }
+
+  hiddenBtn.classList.remove("hidden");
+  hiddenBtn.classList.add("flex");
+  hiddenCount.textContent = `${n} hidden`;
+
+  hiddenPanel.innerHTML = "";
+
+  const header = document.createElement("div");
+  header.className = "flex items-center justify-between pb-2 mb-1 border-b border-slate-100";
+  const heading = document.createElement("span");
+  heading.className = "text-xs font-semibold text-slate-500 uppercase tracking-wide";
+  heading.textContent = "Hidden titles";
+  const clearAll = document.createElement("button");
+  clearAll.className = "text-xs text-rose-500 hover:text-rose-700 underline";
+  clearAll.textContent = "Unhide all";
+  clearAll.addEventListener("click", () => {
+    hiddenTitlesClear();
+    refreshHiddenUI();
+    render();
+  });
+  header.appendChild(heading);
+  header.appendChild(clearAll);
+  hiddenPanel.appendChild(header);
+
+  Object.entries(map).forEach(([norm, display]) => {
+    const row = document.createElement("div");
+    row.className = "flex items-center gap-2 py-0.5";
+    const titleEl = document.createElement("span");
+    titleEl.className = "flex-1 text-sm text-slate-700 truncate";
+    titleEl.textContent = display;
+    titleEl.title = display;
+    const undo = document.createElement("button");
+    undo.className = "text-xs text-sky-500 hover:text-sky-700 underline shrink-0";
+    undo.textContent = "Unhide";
+    undo.addEventListener("click", () => {
+      hiddenTitleRemove(display);
+      refreshHiddenUI();
+      render();
+    });
+    row.appendChild(titleEl);
+    row.appendChild(undo);
+    hiddenPanel.appendChild(row);
+  });
+}
+
+hiddenBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  hiddenPanel.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (!hiddenWrap.contains(e.target)) {
+    hiddenPanel.classList.add("hidden");
+  }
+});
+
+// ---------------------------------------------------------------------------
 // Init
 // ---------------------------------------------------------------------------
+refreshHiddenUI();
 loadEvents();

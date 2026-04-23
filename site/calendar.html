@@ -86,6 +86,17 @@
       <!-- Reset -->
       <button id="reset-filters" class="text-xs text-slate-400 hover:text-slate-600 underline">Reset</button>
 
+      <!-- Hidden-titles button + panel -->
+      <div class="relative" id="hidden-wrap">
+        <button id="hidden-btn" class="hidden border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 hover:border-slate-400 items-center gap-1.5">
+          <span>🚫</span>
+          <span id="hidden-count">0 hidden</span>
+        </button>
+        <div id="hidden-panel" class="hidden absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg z-20 p-3 w-72 max-h-80 overflow-auto flex flex-col gap-1">
+          <!-- list injected by JS -->
+        </div>
+      </div>
+
       <!-- Count -->
       <span id="result-count" class="ml-auto text-xs text-slate-500 font-medium"></span>
     </div>
@@ -155,6 +166,7 @@
     </div>
   </main>
 
-  <script src="calendar.js?v=2"></script>
+  <script src="hidden.js?v=1"></script>
+  <script src="calendar.js?v=3"></script>
 </body>
 </html>

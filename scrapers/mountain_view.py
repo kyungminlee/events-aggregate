@@ -1,13 +1,13 @@
 """Scraper for City of Mountain View events.
 
 Source: https://www.mountainview.gov/whats-happening/events
-Platform: CivicPlus (CivicEngage)
+Platform: Vision CMS — see scrapers/vision_cms.py for shared logic.
 """
 
-from .civicplus import CivicPlusScraper
+from .vision_cms import VisionCMSScraper
 
 
-class MountainViewScraper(CivicPlusScraper):
+class MountainViewScraper(VisionCMSScraper):
     def __init__(self):
         super().__init__(
             source_name="Mountain View",
