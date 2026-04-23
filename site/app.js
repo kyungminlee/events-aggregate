@@ -38,6 +38,11 @@ const sourceFilterBtn   = $("source-filter-btn");
 const sourceFilterPanel = $("source-filter-panel");
 const sourceFilterLabel = $("source-filter-label");
 
+const hiddenWrap   = $("hidden-wrap");
+const hiddenBtn    = $("hidden-btn");
+const hiddenPanel  = $("hidden-panel");
+const hiddenCount  = $("hidden-count");
+
 // ---------------------------------------------------------------------------
 // Source filter dropdown
 // ---------------------------------------------------------------------------
@@ -126,6 +131,7 @@ function getFiltered() {
   const dateTo   = filterDateTo.value;
 
   return allEvents.filter((ev) => {
+    if (isTitleHidden(ev.title))                                     return false;
     if (kidsOnly && !ev.is_kids_event)                               return false;
     if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
     if (dateFrom && ev.date_start < dateFrom)                   return false;
@@ -201,6 +207,15 @@ function makeCard(ev) {
   link.href = ev.url;
   link.title = `More info: ${ev.title}`;
 
+  // Hide button
+  q(".card-hide-btn").addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    hiddenTitleAdd(ev.title);
+    refreshHiddenUI();
+    render();
+  });
+
   // Category tags
   const cats = (ev.categories || []).filter(Boolean).slice(0, 4);
   if (cats.length) {
@@ -244,6 +259,75 @@ function render() {
 }
 
 // ---------------------------------------------------------------------------
+// Hidden-titles UI
+// ---------------------------------------------------------------------------
+function refreshHiddenUI() {
+  const map = hiddenTitlesGet();
+  const n = Object.keys(map).length;
+
+  if (n === 0) {
+    hiddenBtn.classList.add("hidden");
+    hiddenBtn.classList.remove("flex");
+    hiddenPanel.classList.add("hidden");
+    return;
+  }
+
+  hiddenBtn.classList.remove("hidden");
+  hiddenBtn.classList.add("flex");
+  hiddenCount.textContent = `${n} hidden`;
+
+  hiddenPanel.innerHTML = "";
+
+  const header = document.createElement("div");
+  header.className = "flex items-center justify-between pb-2 mb-1 border-b border-slate-100";
+  const heading = document.createElement("span");
+  heading.className = "text-xs font-semibold text-slate-500 uppercase tracking-wide";
+  heading.textContent = "Hidden titles";
+  const clearAll = document.createElement("button");
+  clearAll.className = "text-xs text-rose-500 hover:text-rose-700 underline";
+  clearAll.textContent = "Unhide all";
+  clearAll.addEventListener("click", () => {
+    hiddenTitlesClear();
+    refreshHiddenUI();
+    render();
+  });
+  header.appendChild(heading);
+  header.appendChild(clearAll);
+  hiddenPanel.appendChild(header);
+
+  Object.entries(map).forEach(([norm, display]) => {
+    const row = document.createElement("div");
+    row.className = "flex items-center gap-2 py-0.5";
+    const titleEl = document.createElement("span");
+    titleEl.className = "flex-1 text-sm text-slate-700 truncate";
+    titleEl.textContent = display;
+    titleEl.title = display;
+    const undo = document.createElement("button");
+    undo.className = "text-xs text-sky-500 hover:text-sky-700 underline shrink-0";
+    undo.textContent = "Unhide";
+    undo.addEventListener("click", () => {
+      hiddenTitleRemove(display);
+      refreshHiddenUI();
+      render();
+    });
+    row.appendChild(titleEl);
+    row.appendChild(undo);
+    hiddenPanel.appendChild(row);
+  });
+}
+
+hiddenBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  hiddenPanel.classList.toggle("hidden");
+});
+
+document.addEventListener("click", (e) => {
+  if (!hiddenWrap.contains(e.target)) {
+    hiddenPanel.classList.add("hidden");
+  }
+});
+
+// ---------------------------------------------------------------------------
 // Event listeners
 // ---------------------------------------------------------------------------
 [searchInput, filterDateFrom, filterDateTo].forEach(
@@ -268,4 +352,5 @@ resetBtn.addEventListener("click", () => {
 // ---------------------------------------------------------------------------
 // Bootstrap
 // ---------------------------------------------------------------------------
+refreshHiddenUI();
 loadEvents();
