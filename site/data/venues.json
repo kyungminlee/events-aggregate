@@ -1,0 +1,416 @@
+{
+  "Almaden": {
+    "address": "6445 Camden Ave, San Jose, CA 95120",
+    "display": "SJPL \u2014 Almaden",
+    "lat": 37.2214644,
+    "lng": -121.8691377
+  },
+  "Alum Rock": {
+    "address": "3090 Alum Rock Ave, San Jose, CA 95127",
+    "display": "SJPL \u2014 Alum Rock",
+    "lat": 37.3652963,
+    "lng": -121.828055
+  },
+  "Alviso": {
+    "address": "5050 N 1st St, San Jose, CA 95002",
+    "display": "SJPL \u2014 Alviso",
+    "lat": 37.4246231,
+    "lng": -121.9691094
+  },
+  "Bascom": {
+    "address": "1000 S Bascom Ave, San Jose, CA 95128",
+    "display": "SJPL \u2014 Bascom",
+    "lat": 37.3075348,
+    "lng": -121.9311591
+  },
+  "Belle Haven Library": {
+    "address": "100 Terminal Ave, Menlo Park, CA 94025",
+    "display": "Belle Haven Library",
+    "lat": 37.4783161,
+    "lng": -122.1674571
+  },
+  "Berryessa": {
+    "address": "3355 Noble Ave, San Jose, CA 95132",
+    "display": "SJPL \u2014 Berryessa",
+    "lat": 37.3940641,
+    "lng": -121.8409587
+  },
+  "Biblioteca Latinoamericana": {
+    "address": "921 S 1st St, San Jose, CA 95110",
+    "display": "SJPL \u2014 Biblioteca Latinoamericana",
+    "lat": 37.3222882,
+    "lng": -121.8804012
+  },
+  "Calabazas": {
+    "address": "1230 S Blaney Ave, San Jose, CA 95129",
+    "display": "SJPL \u2014 Calabazas",
+    "lat": 37.3026251,
+    "lng": -122.0234348
+  },
+  "Cambrian": {
+    "address": "1780 Hillsdale Ave, San Jose, CA 95124",
+    "display": "SJPL \u2014 Cambrian",
+    "lat": 37.2644679,
+    "lng": -121.9149492
+  },
+  "Campbell": {
+    "address": "77 Harrison Ave, Campbell, CA 95008",
+    "display": "SCCL \u2014 Campbell",
+    "lat": 37.2882126,
+    "lng": -121.9432313
+  },
+  "Casa Grande": {
+    "address": "21350 Almaden Rd, San Jose, CA 95120",
+    "display": "Casa Grande \u2014 Almaden Quicksilver",
+    "lat": 37.1784273,
+    "lng": -121.8194486
+  },
+  "Centennial Recreation": {
+    "address": "171 W Edmundson Ave, Morgan Hill, CA 95037",
+    "display": "Centennial Recreation Center",
+    "lat": 37.112204,
+    "lng": -121.646615
+  },
+  "Central Park Library": {
+    "address": "2635 Homestead Rd, Santa Clara, CA 95051",
+    "display": "SCCity \u2014 Central Park",
+    "lat": 37.3406039,
+    "lng": -121.9736632
+  },
+  "Children's Library": {
+    "address": "1276 Harriet St, Palo Alto, CA 94301",
+    "display": "Palo Alto \u2014 Children's Library",
+    "lat": 37.4448143,
+    "lng": -122.14519
+  },
+  "City Hall": {
+    "address": "456 W Olive Ave, Sunnyvale, CA 94086",
+    "display": "Sunnyvale City Hall",
+    "lat": 37.3710008,
+    "lng": -122.0374338
+  },
+  "College Terrace": {
+    "address": "2300 Wellesley St, Palo Alto, CA 94306",
+    "display": "Palo Alto \u2014 College Terrace",
+    "lat": 37.4228172,
+    "lng": -122.1489278
+  },
+  "Columbia Neighborhood Center": {
+    "address": "785 Morse Ave, Sunnyvale, CA 94085",
+    "display": "Columbia Neighborhood Center",
+    "lat": 37.3949175,
+    "lng": -122.0187916
+  },
+  "Council Chamber": {
+    "address": "70 N First St, Campbell, CA 95008",
+    "display": "Campbell Council Chamber",
+    "lat": 37.2884255,
+    "lng": -121.9441054
+  },
+  "Cupertino": {
+    "address": "10800 Torre Ave, Cupertino, CA 95014",
+    "display": "SCCL \u2014 Cupertino",
+    "lat": 37.3178237,
+    "lng": -122.0289235
+  },
+  "Downtown Library": {
+    "address": "270 Forest Ave, Palo Alto, CA 94301",
+    "display": "Palo Alto \u2014 Downtown",
+    "lat": 37.4438796,
+    "lng": -122.1592083
+  },
+  "East SJ Carnegie": {
+    "address": "1102 E Santa Clara St, San Jose, CA 95116",
+    "display": "SJPL \u2014 East SJ Carnegie",
+    "lat": 37.3464402,
+    "lng": -121.8682181
+  },
+  "Edenvale": {
+    "address": "101 Branham Ln E, San Jose, CA 95111",
+    "display": "SJPL \u2014 Edenvale",
+    "lat": 37.2677033,
+    "lng": -121.8210821
+  },
+  "Educational Park": {
+    "address": "1772 Educational Park Dr, San Jose, CA 95133",
+    "display": "SJPL \u2014 Educational Park",
+    "lat": 37.3655983,
+    "lng": -121.8577282
+  },
+  "Evergreen": {
+    "address": "2635 Aborn Rd, San Jose, CA 95121",
+    "display": "SJPL \u2014 Evergreen",
+    "lat": 37.3131384,
+    "lng": -121.7966093
+  },
+  "Gilroy": {
+    "address": "350 W 6th St, Gilroy, CA 95020",
+    "display": "SCCL \u2014 Gilroy",
+    "lat": 37.0050762,
+    "lng": -121.5726956
+  },
+  "Hidden Villa": {
+    "address": "26870 Moody Rd, Los Altos Hills, CA 94022",
+    "display": "Hidden Villa",
+    "lat": 37.3540149,
+    "lng": -122.1563281
+  },
+  "Hillview": {
+    "address": "1600 Hopkins Dr, San Jose, CA 95122",
+    "display": "SJPL \u2014 Hillview",
+    "lat": 37.3377771,
+    "lng": -121.8311421
+  },
+  "Household Hazardous Waste Station": {
+    "address": "2501 Embarcadero Way, Palo Alto, CA 94303",
+    "display": "Household Hazardous Waste Station",
+    "lat": 37.4522958,
+    "lng": -122.1110259
+  },
+  "Joseph D. Grant County Park": {
+    "address": "Joseph D. Grant County Park, Santa Clara County, CA",
+    "display": "Joseph D. Grant County Park",
+    "lat": 37.3461784,
+    "lng": -121.7022927
+  },
+  "Joyce Ellington": {
+    "address": "491 E Empire St, San Jose, CA 95112",
+    "display": "SJPL \u2014 Joyce Ellington",
+    "lat": 37.3498012,
+    "lng": -121.8870197
+  },
+  "King Library": {
+    "address": "150 E San Fernando St, San Jose, CA 95112",
+    "display": "SJPL \u2014 Dr. Martin Luther King Jr.",
+    "lat": 37.3355074,
+    "lng": -121.8850772
+  },
+  "Los Altos": {
+    "address": "13 S San Antonio Rd, Los Altos, CA 94022",
+    "display": "SCCL \u2014 Los Altos",
+    "lat": 37.3808665,
+    "lng": -122.1133137
+  },
+  "MV Library": {
+    "address": "585 Franklin St, Mountain View, CA 94041",
+    "display": "Mountain View Library",
+    "lat": 37.3903196,
+    "lng": -122.08339
+  },
+  "Magical Bridge Playground": {
+    "address": "3700 Middlefield Rd, Palo Alto, CA 94306",
+    "display": "Magical Bridge Playground",
+    "lat": 37.4222255,
+    "lng": -122.1153335
+  },
+  "Martial Cottle Park": {
+    "address": "5283 Snell Ave, San Jose, CA 95136",
+    "display": "Martial Cottle Park",
+    "lat": 37.2628156,
+    "lng": -121.8310736
+  },
+  "Masonic Center": {
+    "address": "380 W Dunne Ave, Morgan Hill, CA 95037",
+    "display": "Masonic Center (Morgan Hill)",
+    "lat": 37.1219728,
+    "lng": -121.6583875
+  },
+  "Menlo Park Library": {
+    "address": "800 Alma St, Menlo Park, CA 94025",
+    "display": "Menlo Park Library",
+    "lat": 37.4531439,
+    "lng": -122.1789573
+  },
+  "Milpitas": {
+    "address": "160 N Main St, Milpitas, CA 95035",
+    "display": "SCCL \u2014 Milpitas",
+    "lat": 37.4324266,
+    "lng": -121.9070434
+  },
+  "Mission Branch Library": {
+    "address": "1098 Lexington St, Santa Clara, CA 95050",
+    "display": "SCCity \u2014 Mission",
+    "lat": 37.3473397,
+    "lng": -121.9447968
+  },
+  "Mitchell Park Library": {
+    "address": "3700 Middlefield Rd, Palo Alto, CA 94303",
+    "display": "Palo Alto \u2014 Mitchell Park",
+    "lat": 37.4221606,
+    "lng": -122.1128177
+  },
+  "Morgan Hill": {
+    "address": "660 W Main Ave, Morgan Hill, CA 95037",
+    "display": "SCCL \u2014 Morgan Hill",
+    "lat": 37.1244091,
+    "lng": -121.6628141
+  },
+  "Mountain View Senior Center": {
+    "address": "266 Escuela Ave, Mountain View, CA 94040",
+    "display": "Mountain View Senior Center",
+    "lat": 37.3988442,
+    "lng": -122.0942383
+  },
+  "Mt. Pleasant": {
+    "address": "3090 S White Rd, San Jose, CA 95148",
+    "display": "SJPL \u2014 Mt. Pleasant",
+    "lat": 37.3179017,
+    "lng": -121.7938619
+  },
+  "Northside Branch Library": {
+    "address": "695 Moreland Way, Santa Clara, CA 95051",
+    "display": "SCCity \u2014 Northside",
+    "lat": 37.3957815,
+    "lng": -121.9469793
+  },
+  "Oak Room at the Arrillaga": {
+    "address": "700 Alma St, Menlo Park, CA 94025",
+    "display": "Arrillaga Family Recreation Center",
+    "lat": 37.452728,
+    "lng": -122.178297
+  },
+  "Palo Alto Children's Theatre": {
+    "address": "1305 Middlefield Rd, Palo Alto, CA 94301",
+    "display": "Palo Alto Children's Theatre",
+    "lat": 37.4443277,
+    "lng": -122.145605
+  },
+  "Pearl Avenue": {
+    "address": "4270 Pearl Ave, San Jose, CA 95136",
+    "display": "SJPL \u2014 Pearl Avenue",
+    "lat": 37.2677995,
+    "lng": -121.8664471
+  },
+  "Picchetti Ranch": {
+    "address": "13100 Montebello Rd, Cupertino, CA 95014",
+    "display": "Picchetti Ranch",
+    "lat": 37.2940603,
+    "lng": -122.0904634
+  },
+  "Pioneer Park": {
+    "address": "1100 Church St, Mountain View, CA 94041",
+    "display": "Pioneer Park (Mountain View)",
+    "lat": 37.389938,
+    "lng": -122.085638
+  },
+  "Regional Water Quality Control Plant": {
+    "address": "2501 Embarcadero Way, Palo Alto, CA 94303",
+    "display": "Regional Water Quality Control Plant",
+    "lat": 37.4522958,
+    "lng": -122.1110259
+  },
+  "Rinconada Library": {
+    "address": "1213 Newell Rd, Palo Alto, CA 94303",
+    "display": "Palo Alto \u2014 Rinconada",
+    "lat": 37.4449758,
+    "lng": -122.1390735
+  },
+  "Rose Garden": {
+    "address": "1580 Naglee Ave, San Jose, CA 95126",
+    "display": "SJPL \u2014 Rose Garden",
+    "lat": 37.3318621,
+    "lng": -121.9262338
+  },
+  "Russian Ridge": {
+    "address": "Russian Ridge Open Space Preserve, San Mateo County, CA",
+    "display": "Russian Ridge Preserve",
+    "lat": 37.3214504,
+    "lng": -122.2293384
+  },
+  "San Francisco Bay National Wildlife Refuge": {
+    "address": "2 Marshlands Rd, Fremont, CA 94555",
+    "display": "Don Edwards SF Bay NWR",
+    "lat": 37.5321035,
+    "lng": -122.0715848
+  },
+  "San Ysidro Park": {
+    "address": "7700 Murray Ave, Gilroy, CA 95020",
+    "display": "San Ysidro Park",
+    "lat": 37.0182854,
+    "lng": -121.5673917
+  },
+  "Sanborn": {
+    "address": "16055 Sanborn Rd, Saratoga, CA 95070",
+    "display": "Sanborn County Park",
+    "lat": 37.234013,
+    "lng": -122.064174
+  },
+  "Santa Teresa": {
+    "address": "290 International Cir, San Jose, CA 95119",
+    "display": "SJPL \u2014 Santa Teresa",
+    "lat": 37.2374873,
+    "lng": -121.79983
+  },
+  "Saratoga": {
+    "address": "13650 Saratoga Ave, Saratoga, CA 95070",
+    "display": "SCCL \u2014 Saratoga",
+    "lat": 37.2700537,
+    "lng": -122.0152172
+  },
+  "Seven Trees": {
+    "address": "3597 Cas Dr, San Jose, CA 95111",
+    "display": "SJPL \u2014 Seven Trees",
+    "lat": 37.284562,
+    "lng": -121.8326514
+  },
+  "Sunnyvale Public Library": {
+    "address": "665 W Olive Ave, Sunnyvale, CA 94086",
+    "display": "Sunnyvale Public Library",
+    "lat": 37.3719447,
+    "lng": -122.0391018
+  },
+  "Tully": {
+    "address": "880 Tully Rd, San Jose, CA 95111",
+    "display": "SJPL \u2014 Tully",
+    "lat": 37.3113892,
+    "lng": -121.8408783
+  },
+  "Veterans Plaza": {
+    "address": "457 E Calaveras Blvd, Milpitas, CA 95035",
+    "display": "Veterans Plaza",
+    "lat": 37.4322914,
+    "lng": -121.8985672
+  },
+  "Villa Mira Monte": {
+    "address": "17860 Monterey Rd, Morgan Hill, CA 95037",
+    "display": "Villa Mira Monte",
+    "lat": 37.1347914,
+    "lng": -121.6573035
+  },
+  "Village Square": {
+    "address": "1100 Church St, Mountain View, CA 94041",
+    "display": "Village Square Community Room",
+    "lat": 37.389938,
+    "lng": -122.085638
+  },
+  "Vineland": {
+    "address": "1450 Blossom Hill Rd, San Jose, CA 95118",
+    "display": "SJPL \u2014 Vineland",
+    "lat": 37.2402699,
+    "lng": -121.8921881
+  },
+  "West Valley": {
+    "address": "1243 San Tomas Aquino Rd, San Jose, CA 95117",
+    "display": "SJPL \u2014 West Valley",
+    "lat": 37.3023359,
+    "lng": -121.9793537
+  },
+  "Willow Glen": {
+    "address": "1157 Minnesota Ave, San Jose, CA 95125",
+    "display": "SJPL \u2014 Willow Glen",
+    "lat": 37.3029995,
+    "lng": -121.9000848
+  },
+  "Windy Hill": {
+    "address": "555 Portola Rd, Portola Valley, CA 94028",
+    "display": "Windy Hill Preserve",
+    "lat": 37.3762294,
+    "lng": -122.2229135
+  },
+  "Woodland": {
+    "address": "1975 Grant Rd, Los Altos, CA 94024",
+    "display": "SCCL \u2014 Woodland",
+    "lat": 37.3442773,
+    "lng": -122.0754769
+  }
+}

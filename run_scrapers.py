@@ -49,6 +49,7 @@ def build_scrapers():
     from scrapers.sccparks import SCCParksScraper
     from scrapers.libcal import MVPLScraper
     from scrapers.libraries import all_library_scrapers
+    from scrapers.santa_clara_city_library import SantaClaraCityLibraryScraper
 
     return [
         SanJoseScraper(),
@@ -66,6 +67,7 @@ def build_scrapers():
         HiddenVillaScraper(),
         SCCParksScraper(),
         MVPLScraper(),
+        SantaClaraCityLibraryScraper(),
         *all_library_scrapers(),
     ]
 
