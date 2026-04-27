@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bay Area Kids & Family Events — Map</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <style>
+    /* Map fills the viewport below filters */
+    #map {
+      height: calc(100vh - 180px);
+      min-height: 500px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    /* Custom marker: numbered badge showing event count */
+    .venue-marker {
+      background: #0284c7;
+      color: white;
+      border: 2px solid white;
+      border-radius: 999px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      width: 32px;
+      height: 32px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .venue-marker.kids { background: #8b5cf6; }
+    /* Popup event list */
+    .popup-venue-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .popup-count {
+      font-size: 11px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+    .popup-events {
+      max-height: 240px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .popup-event {
+      font-size: 12px;
+      padding: 6px 8px;
+      background: #f8fafc;
+      border-radius: 6px;
+      line-height: 1.35;
+    }
+    .popup-event-title {
+      font-weight: 500;
+      color: #0f172a;
+    }
+    .popup-event-date {
+      color: #0369a1;
+      font-size: 11px;
+    }
+    .popup-event a {
+      color: #0284c7;
+      font-size: 11px;
+    }
+    .popup-event a:hover { text-decoration: underline; }
+    /* Leaflet popup max width override */
+    .leaflet-popup-content { margin: 10px 12px; width: 260px !important; }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-sky-500 to-violet-500 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <div>
+        <h1 class="text-2xl font-bold tracking-tight">🎉 Bay Area Family Events</h1>
+        <p class="text-sky-100 text-sm mt-0.5">Kids &amp; family activities from Bay Area cities and libraries</p>
+      </div>
+      <div class="text-right text-xs text-sky-100">
+        <div id="meta-updated"></div>
+        <div id="meta-counts"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- View tabs -->
+  <div class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 flex">
+      <a href="index.html" class="px-4 py-2.5 text-sm font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 transition-colors">📋 Agenda</a>
+      <a href="calendar.html" class="px-4 py-2.5 text-sm font-medium border-b-2 border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 transition-colors">📅 Calendar</a>
+      <a href="map.html" class="px-4 py-2.5 text-sm font-medium border-b-2 border-sky-500 text-sky-600">🗺️ Map</a>
+    </div>
+  </div>
+
+  <!-- Filters bar (mirrors index.html) -->
+  <div class="bg-white border-b border-slate-200 shadow-sm relative z-[1000]">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap gap-3 items-center">
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search events…"
+        class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm w-44 focus:outline-none focus:ring-2 focus:ring-sky-400"
+      />
+
+      <label class="flex items-center gap-2 cursor-pointer select-none">
+        <input type="checkbox" id="filter-kids" class="sr-only peer" />
+        <div class="toggle-pill peer-checked:bg-violet-500">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="text-sm font-medium text-slate-700">👧 Kids &amp; Family only</span>
+      </label>
+
+      <div class="relative" id="source-filter-wrap">
+        <button id="source-filter-btn" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 flex items-center gap-1.5 hover:border-slate-400">
+          <span id="source-filter-label">All sources</span>
+          <span class="text-slate-400 text-xs">▾</span>
+        </button>
+        <div id="source-filter-panel" class="hidden absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-xl shadow-lg z-20 p-3 w-64 flex flex-col gap-1.5"></div>
+      </div>
+
+      <div class="flex items-center gap-1">
+        <input type="date" id="filter-date-from" class="border border-slate-300 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-sky-400" />
+        <span class="text-slate-400 text-xs">–</span>
+        <input type="date" id="filter-date-to" class="border border-slate-300 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-sky-400" />
+      </div>
+
+      <button id="reset-filters" class="text-xs text-slate-400 hover:text-slate-600 underline">Reset</button>
+
+      <span id="result-count" class="ml-auto text-xs text-slate-500 font-medium"></span>
+    </div>
+  </div>
+
+  <!-- Map container -->
+  <main class="max-w-6xl mx-auto px-4 py-4">
+    <div id="map"></div>
+    <p class="text-xs text-slate-400 mt-2">
+      Map data © <a href="https://www.openstreetmap.org/copyright" class="underline">OpenStreetMap</a> contributors.
+      Only events at known venues are shown — about <span id="geocoded-pct">—</span> of all events.
+    </p>
+  </main>
+
+  <script src="map.js?v=2"></script>
+</body>
+</html>

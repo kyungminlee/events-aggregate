@@ -56,8 +56,9 @@ class VisionCMSScraper(BaseScraper):
         calendar_path: Path to the calendar page (e.g. "/whats-happening/events").
     """
 
-    def __init__(self, source_name: str, base_url: str, calendar_path: str):
-        super().__init__(source_name, "city")
+    def __init__(self, source_name: str, base_url: str, calendar_path: str,
+                 source_type: str = "city"):
+        super().__init__(source_name, source_type)
         self.base_url = base_url.rstrip("/")
         self.calendar_path = calendar_path
 

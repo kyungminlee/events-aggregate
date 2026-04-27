@@ -43,6 +43,12 @@ jobs:
         # site stays up-to-date for the scrapers that did succeed.
         continue-on-error: true
 
+      - name: Geocode events
+        run: python -m scrapers.geocode
+        # Non-fatal — if Nominatim is rate-limiting us, events.json stays
+        # un-annotated and the map view just shows fewer markers.
+        continue-on-error: true
+
       - name: Show results
         run: |
           echo "=== events.json summary ==="

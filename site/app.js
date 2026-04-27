@@ -8,9 +8,14 @@ let selectedSources = new Set(); // empty = "all sources"
 
 // Local YYYY-MM-DD (not UTC, not locale-dependent). Called fresh each render
 // so a tab left open across midnight still highlights the correct "today".
-function todayISO() {
-  const d = new Date();
+function toISO(d) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+function todayISO()      { return toISO(new Date()); }
+function oneMonthISO() {
+  const d = new Date();
+  d.setMonth(d.getMonth() + 1);
+  return toISO(d);
 }
 
 // ---------------------------------------------------------------------------
@@ -338,8 +343,8 @@ filterKids.addEventListener("change", render);
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
-  filterDateFrom.value  = "";
-  filterDateTo.value    = "";
+  filterDateFrom.value  = todayISO();
+  filterDateTo.value    = oneMonthISO();
   // Uncheck all source checkboxes
   selectedSources.clear();
   sourceFilterPanel.querySelectorAll("input[type=checkbox]").forEach((cb) => {
@@ -352,5 +357,7 @@ resetBtn.addEventListener("click", () => {
 // ---------------------------------------------------------------------------
 // Bootstrap
 // ---------------------------------------------------------------------------
+filterDateFrom.value = todayISO();
+filterDateTo.value   = oneMonthISO();
 refreshHiddenUI();
 loadEvents();
