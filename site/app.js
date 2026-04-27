@@ -32,6 +32,7 @@ const cardTpl    = $("card-tpl");
 
 const searchInput       = $("search");
 const filterKids        = $("filter-kids");
+const filterSaved       = $("filter-saved");
 const filterDateFrom    = $("filter-date-from");
 const filterDateTo      = $("filter-date-to");
 const resetBtn          = $("reset-filters");
@@ -135,9 +136,12 @@ function getFiltered() {
   const dateFrom = filterDateFrom.value;
   const dateTo   = filterDateTo.value;
 
+  const savedOnly = filterSaved.checked;
+
   return allEvents.filter((ev) => {
     if (isTitleHidden(ev.title))                                     return false;
     if (kidsOnly && !ev.is_kids_event)                               return false;
+    if (savedOnly && !isEventSaved(ev.id))                           return false;
     if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
     if (dateFrom && ev.date_start < dateFrom)                   return false;
     if (dateTo   && ev.date_start > dateTo)                     return false;
@@ -211,6 +215,24 @@ function makeCard(ev) {
   const link = q(".card-link");
   link.href = ev.url;
   link.title = `More info: ${ev.title}`;
+
+  // Save (star) button
+  const saveBtn = q(".card-save-btn");
+  function paintSave() {
+    const saved = isEventSaved(ev.id);
+    saveBtn.textContent = saved ? "★" : "☆";
+    saveBtn.classList.toggle("text-amber-500", saved);
+    saveBtn.classList.toggle("text-slate-300", !saved);
+    saveBtn.title = saved ? "Unsave event" : "Save event";
+  }
+  paintSave();
+  saveBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    savedEventToggle(ev.id);
+    paintSave();
+    if (filterSaved.checked) render();
+  });
 
   // Hide button
   q(".card-hide-btn").addEventListener("click", (e) => {
@@ -339,10 +361,12 @@ document.addEventListener("click", (e) => {
   (el) => el.addEventListener("input", render)
 );
 filterKids.addEventListener("change", render);
+filterSaved.addEventListener("change", render);
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
+  filterSaved.checked   = false;
   filterDateFrom.value  = todayISO();
   filterDateTo.value    = oneMonthISO();
   // Uncheck all source checkboxes

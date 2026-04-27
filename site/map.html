@@ -126,6 +126,14 @@
         <span class="text-sm font-medium text-slate-700">👧 Kids &amp; Family only</span>
       </label>
 
+      <label class="flex items-center gap-2 cursor-pointer select-none">
+        <input type="checkbox" id="filter-saved" class="sr-only peer" />
+        <div class="toggle-pill peer-checked:bg-amber-500">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="text-sm font-medium text-slate-700">★ Saved only</span>
+      </label>
+
       <div class="relative" id="source-filter-wrap">
         <button id="source-filter-btn" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 flex items-center gap-1.5 hover:border-slate-400">
           <span id="source-filter-label">All sources</span>
@@ -155,6 +163,7 @@
     </p>
   </main>
 
-  <script src="map.js?v=2"></script>
+  <script src="saved.js?v=1"></script>
+  <script src="map.js?v=3"></script>
 </body>
 </html>
