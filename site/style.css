@@ -42,6 +42,29 @@ input[type="checkbox"]:checked ~ .toggle-pill .toggle-knob {
 .badge-city { background: #dbeafe; color: #1d4ed8; }
 .badge-library { background: #d1fae5; color: #065f46; }
 
+/* Save (star) button — used in card right-cluster and map popup */
+.save-btn { cursor: pointer; user-select: none; }
+
+/* Map popup save button */
+.popup-event-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+}
+.popup-save-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  color: #cbd5e1;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+.popup-save-btn:hover { color: #f59e0b; }
+.popup-save-btn.is-saved { color: #f59e0b; }
+
 /* Card fade in */
 .event-card {
   animation: fadeUp 0.2s ease-out both;

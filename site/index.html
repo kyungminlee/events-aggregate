@@ -53,6 +53,15 @@
         <span class="text-sm font-medium text-slate-700">👧 Kids &amp; Family only</span>
       </label>
 
+      <!-- Saved toggle -->
+      <label class="flex items-center gap-2 cursor-pointer select-none">
+        <input type="checkbox" id="filter-saved" class="sr-only peer" />
+        <div class="toggle-pill peer-checked:bg-amber-500">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="text-sm font-medium text-slate-700">★ Saved only</span>
+      </label>
+
       <!-- Source filter -->
       <div class="relative" id="source-filter-wrap">
         <button id="source-filter-btn" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-sky-400 flex items-center gap-1.5 hover:border-slate-400">
@@ -118,6 +127,7 @@
           <h2 class="card-title font-semibold text-slate-800 text-sm leading-snug line-clamp-2"></h2>
           <div class="flex items-center gap-1 shrink-0">
             <span class="card-kids-badge text-xs px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 font-medium hidden">👧 Kids</span>
+            <button class="card-save-btn save-btn text-slate-300 hover:text-amber-500 text-base leading-none w-5 h-5 flex items-center justify-center rounded transition-colors" title="Save event" aria-label="Save">☆</button>
             <button class="card-hide-btn text-slate-300 hover:text-rose-500 text-base leading-none w-5 h-5 flex items-center justify-center rounded transition-colors" title="Hide events with this title" aria-label="Hide">×</button>
           </div>
         </div>
@@ -134,6 +144,7 @@
   </template>
 
   <script src="hidden.js?v=1"></script>
-  <script src="app.js?v=4"></script>
+  <script src="saved.js?v=1"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>

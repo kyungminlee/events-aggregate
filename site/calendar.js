@@ -49,6 +49,7 @@ const dayNoEvents = $("day-no-events");
 
 const searchInput       = $("search");
 const filterKids        = $("filter-kids");
+const filterSaved       = $("filter-saved");
 const resetBtn          = $("reset-filters");
 const resultCount       = $("result-count");
 const metaUpdated       = $("meta-updated");
@@ -144,12 +145,14 @@ async function loadEvents() {
 // Filter
 // ---------------------------------------------------------------------------
 function getFiltered() {
-  const q        = searchInput.value.trim().toLowerCase();
-  const kidsOnly = filterKids.checked;
+  const q         = searchInput.value.trim().toLowerCase();
+  const kidsOnly  = filterKids.checked;
+  const savedOnly = filterSaved.checked;
 
   return allEvents.filter(ev => {
     if (isTitleHidden(ev.title))                                      return false;
     if (kidsOnly && !ev.is_kids_event)                                return false;
+    if (savedOnly && !isEventSaved(ev.id))                            return false;
     if (selectedSources.size > 0 && !selectedSources.has(ev.source)) return false;
     if (q) {
       const hay = `${ev.title} ${ev.description || ""} ${ev.source} ${(ev.categories || []).join(" ")}`.toLowerCase();
@@ -369,6 +372,28 @@ function makeCard(ev) {
     badge.textContent = "👧 Kids";
     rightCluster.appendChild(badge);
   }
+  const saveBtn = document.createElement("button");
+  saveBtn.className = "save-btn text-base leading-none w-5 h-5 flex items-center justify-center rounded transition-colors";
+  saveBtn.setAttribute("aria-label", "Save");
+  function paintSave() {
+    const saved = isEventSaved(ev.id);
+    saveBtn.textContent = saved ? "★" : "☆";
+    saveBtn.classList.toggle("text-amber-500", saved);
+    saveBtn.classList.toggle("text-slate-300", !saved);
+    saveBtn.classList.toggle("hover:text-amber-600", saved);
+    saveBtn.classList.toggle("hover:text-amber-500", !saved);
+    saveBtn.title = saved ? "Unsave event" : "Save event";
+  }
+  paintSave();
+  saveBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    savedEventToggle(ev.id);
+    paintSave();
+    if (filterSaved.checked) render();
+  });
+  rightCluster.appendChild(saveBtn);
+
   const hideBtn = document.createElement("button");
   hideBtn.className = "text-slate-300 hover:text-rose-500 text-base leading-none w-5 h-5 flex items-center justify-center rounded transition-colors";
   hideBtn.title = "Hide events with this title";
@@ -513,10 +538,12 @@ view2WeekBtn.addEventListener("click", () => {
 // ---------------------------------------------------------------------------
 searchInput.addEventListener("input",  render);
 filterKids.addEventListener("change", render);
+filterSaved.addEventListener("change", render);
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
+  filterSaved.checked   = false;
   selectedSources.clear();
   sourceFilterPanel.querySelectorAll("input[type=checkbox]").forEach(cb => { cb.checked = false; });
   updateSourceLabel();

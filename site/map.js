@@ -25,6 +25,7 @@ const $ = (id) => document.getElementById(id);
 
 const searchInput       = $("search");
 const filterKids        = $("filter-kids");
+const filterSaved       = $("filter-saved");
 const filterDateFrom    = $("filter-date-from");
 const filterDateTo      = $("filter-date-to");
 const resetBtn          = $("reset-filters");
@@ -86,6 +87,7 @@ document.addEventListener("click", (e) => {
 // ---------------------------------------------------------------------------
 function passesFilters(ev) {
   if (filterKids.checked && !ev.is_kids_event) return false;
+  if (filterSaved.checked && !isEventSaved(ev.id)) return false;
 
   const dateFrom = filterDateFrom.value;
   const dateTo   = filterDateTo.value;
@@ -177,9 +179,15 @@ function buildPopup(group) {
 
   const items = group.events.slice(0, 20).map((ev) => {
     const timeBit = ev.time_start ? ` · ${fmtTime(ev.time_start)}` : "";
+    const saved = isEventSaved(ev.id);
+    const star  = saved ? "★" : "☆";
+    const title = saved ? "Unsave event" : "Save event";
     return `
       <div class="popup-event">
-        <div class="popup-event-title">${esc(ev.title)}</div>
+        <div class="popup-event-row">
+          <div class="popup-event-title">${esc(ev.title)}</div>
+          <button type="button" class="popup-save-btn ${saved ? "is-saved" : ""}" data-save-id="${esc(ev.id)}" title="${title}" aria-label="Save">${star}</button>
+        </div>
         <div class="popup-event-date">${fmtDate(ev.date_start)}${timeBit}</div>
         <a href="${esc(ev.url)}" target="_blank" rel="noopener">Details →</a>
       </div>
@@ -215,6 +223,29 @@ function initMap() {
     maxClusterRadius: 40,
   });
   map.addLayer(cluster);
+
+  // Delegate save-button clicks inside any open popup. Re-render after toggle
+  // when the saved-only filter is active (so unsaved events fall off the map).
+  map.on("popupopen", (e) => {
+    const root = e.popup.getElement();
+    if (!root) return;
+    root.querySelectorAll(".popup-save-btn").forEach((btn) => {
+      btn.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+        const id = btn.dataset.saveId;
+        savedEventToggle(id);
+        const saved = isEventSaved(id);
+        btn.textContent = saved ? "★" : "☆";
+        btn.classList.toggle("is-saved", saved);
+        btn.title = saved ? "Unsave event" : "Save event";
+        if (filterSaved.checked) {
+          map.closePopup(e.popup);
+          render();
+        }
+      });
+    });
+  });
 }
 
 // ---------------------------------------------------------------------------
@@ -257,10 +288,12 @@ async function loadEvents() {
   (el) => el.addEventListener("input", render)
 );
 filterKids.addEventListener("change", render);
+filterSaved.addEventListener("change", render);
 
 resetBtn.addEventListener("click", () => {
   searchInput.value     = "";
   filterKids.checked    = false;
+  filterSaved.checked   = false;
   filterDateFrom.value  = todayISO();
   filterDateTo.value    = oneMonthISO();
   selectedSources.clear();
