@@ -7,6 +7,7 @@ on:
   workflow_dispatch:   # Allow manual trigger from GitHub UI
   push:
     branches:
+      - main
       - claude/test-scrapers-60v9d
 
 permissions:
